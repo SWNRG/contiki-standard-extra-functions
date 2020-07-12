@@ -1,0 +1,190 @@
+[00:58:21 - main] [Cooja.java:1315] [INFO] - > Starting Cooja
+[00:58:21 - main] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux_64.config
+[00:58:21 - main] [Cooja.java:2886] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[00:58:21 - main] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:58:21 - main] [CompileContiki.java:140] [INFO] - > make udp-server-DixonQ-no-output.z1 TARGET=z1 
+[00:58:21 - main] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[00:58:21 - main] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-version-attack.z1 TARGET=z1 
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-server-DixonQ-no-output.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:22 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:23 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:24 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:25 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:26 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[00:58:27 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.SimControl
+[00:58:27 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.Visualizer
+[00:58:27 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.LogListener
+[00:58:27 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.TimeLine
+[00:58:27 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.Notes
+[00:58:27 - main] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[00:58:27 - main] [LogScriptEngine.java:265] [INFO] - Script timeout in 10900000 ms
+[00:58:27 - main] [ScriptRunner.java:387] [INFO] - Test script activated
+[00:58:27 - Thread-2] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1592863107682
+[01:07:52 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 5.00%, done in 10731.8 sec
+[01:13:44 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 10.00%, done in 8251.3 sec
+[01:19:22 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 15.00%, done in 7111.1 sec
+[01:27:12 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 20.00%, done in 6901.2 sec
+[01:43:57 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 25.00%, done in 8189.2 sec
+[02:02:59 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 30.00%, done in 9035.2 sec
+[02:25:33 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 35.00%, done in 9705.0 sec
+[02:50:11 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 40.00%, done in 10055.4 sec
+[03:14:26 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 45.00%, done in 9972.2 sec
+[03:38:37 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 50.00%, done in 9609.7 sec
+[04:01:14 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 55.00%, done in 8973.0 sec
+[04:22:28 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 60.00%, done in 8160.5 sec
+[04:44:51 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 65.00%, done in 7314.2 sec
+[05:08:36 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 70.00%, done in 6432.3 sec
+[05:34:22 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 75.00%, done in 5518.4 sec
+[05:58:23 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 80.00%, done in 4498.9 sec
+[06:19:59 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 85.00%, done in 3404.4 sec
+[06:44:49 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 90.00%, done in 2309.1 sec
+[07:10:23 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 95.00%, done in 1174.5 sec
+[07:29:31 - Thread-2] [LogScriptEngine.java:375] [INFO] - Timeout event @ 10900000000
+[07:29:32 - Thread-1] [LogScriptEngine.java:309] [INFO] - Test script finished
+[07:29:32 - Thread-2] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1592886572113	Duration: 23464431 ms	Simulated time 10900000 ms	Ratio 0.4645328923595036
+[07:29:32 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated

@@ -1,0 +1,2 @@
+java -Xmx12298m -jar ~/contiki/tools/cooja/dist/cooja.jar -nogui=./dixon-121n-3hr-conf1-w7.csc
+

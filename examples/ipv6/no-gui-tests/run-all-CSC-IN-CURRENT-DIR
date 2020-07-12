@@ -1,0 +1,28 @@
+#!/bin/bash
+$PERIOD = 300
+
+echo "start running ALL avaliable csc files"
+            for filename in *.csc ;
+            	do
+            		for conf_level in {2..2}; # i can run it for multi conf OUTSIDE...
+            			do
+            				for window in {3..3}; #dixon Q-test window memory
+            					do
+				      				#remove old cooja output. Not needed any more...
+										rm -f COOJA.testlog
+										rm -f COOJA.log
+										python3 ./changeProjectParams.py -fp $conf_level
+										./changeProjectParams.py -dqw $window -dconf $conf_level
+
+										echo      
+								      echo "Running scenario: " $filename "with conf_level:" $conf_level
+										echo
+										java -Xmx8192m -jar ~/contiki/tools/cooja/dist/cooja.jar -nogui="$filename" #-contiki='~/contiki/'
+										# remane current cooja output to appropriate folder name
+										cp COOJA.testlog './'"$filename"'-conf_level-'$conf_level'-window-'$window'.log' 
+								done
+						 done
+			      done	
+echo "============= script file finished =========================="
+
+
