@@ -36,10 +36,18 @@ static uint8_t uart_buffer[UART_BUFFER_SIZE];
 static uint8_t uart_buffer_index = 0;
 /*********************************/
 
+#if OVERHEAD_STATS
+	static int udp_total_counter = 0;	
+#endif
+
 static struct uip_udp_conn *server_conn;
 static struct uip_udp_conn *client_conn;
 
 static uip_ipaddr_t ServerIpAddress;
+
+int counter = 0; // just a round counter
+
+static rpl_dag_t *dag; //moved here to be global var
 
 /* When the controller detects version number attack, it orders to stop
  * resetting the tricle timer. The variable lies in rpl-dag.c
@@ -59,6 +67,11 @@ tcpip_handler(void) /* CLIENTS' SIDE TRIGGERED */
   uip_ipaddr_t *child_node;
   
   if(uip_newdata()) {
+  
+#if OVERHEAD_STATS
+  udp_total_counter++;
+#endif
+  
     appdata = (char *)uip_appdata;
     appdata[uip_datalen()] = 0;
 #define PRINT_DETAILS 0
@@ -282,6 +295,7 @@ ping_only(void){ /* periodically ping the controller */
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(udp_server_process, ev, data)
 {
+  
   uip_ipaddr_t ipaddr;
   struct uip_ds6_addr *root_if;
 
@@ -308,7 +322,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
   uip_ds6_addr_add(&ipaddr, 0, ADDR_MANUAL);
   root_if = uip_ds6_addr_lookup(&ipaddr);
   if(root_if != NULL) {
-    rpl_dag_t *dag;
+    //rpl_dag_t *dag; //turned into global var at the top
     dag = rpl_set_root(RPL_DEFAULT_INSTANCE,(uip_ip6addr_t *)&ipaddr);
     uip_ip6addr(&ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0, 0, 0);
     rpl_set_prefix(dag, &ipaddr, 64);
@@ -356,6 +370,26 @@ PROCESS_THREAD(udp_server_process, ev, data)
     if(etimer_expired(&periodic)) {
       etimer_reset(&periodic);
       ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
+      
+      counter++;
+      
+      // TODO: sent this to the controller. 
+      /* If any node is found with equal or less, 
+       * this is a rank attack
+      */
+      printf("R: %d, my current rank: %d\n",counter, dag->rank);
+            
+#if DODAG_ATTACK_STATS      
+      printf("R: %d, trickle resets number: %d\n",counter,rpl_stats.resets);
+      printf("R: %d, global repairs: %d\n",counter,rpl_stats.global_repairs);
+#endif
+
+#if OVERHEAD_STATS
+		printf("R:%d, icmp_send:%d\n",counter, uip_stat.icmp.sent);
+		printf("R:%d, icmp_recv:%d\n",counter, uip_stat.icmp.recv);
+		printf("R:%d, Total incoming UDP:%d\n",counter, udp_total_counter);
+#endif
+      
     }
   }
   PROCESS_END();

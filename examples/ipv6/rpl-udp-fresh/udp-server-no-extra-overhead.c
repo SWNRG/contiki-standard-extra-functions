@@ -20,7 +20,6 @@
 #define SEND_TIME		(random_rand() % (SEND_INTERVAL))
 
 #define MAX_PAYLOAD_LEN		30
-#define DIXONQ_PRINT_OFF 0
 
 //#define DEBUG DEBUG_PRINT
 #include "net/ip/uip-debug.h"
@@ -42,14 +41,8 @@ static struct uip_udp_conn *client_conn;
 
 static uip_ipaddr_t ServerIpAddress;
 
-/* When the controller detects version number attack, it orders to stop
- * resetting the tricle timer. The variable lies in rpl-dag.c
- */
-#include "net/rpl/rpl-dag.c"
-extern uint8_t ignore_version_number_incos;
+int counter = 0; // just a rounds counter
 
-// moved here as a global var
-static rpl_dag_t *dag;
 
 PROCESS(udp_server_process, "UDP server process");
 //PROCESS(read_serial, "Read serial process");
@@ -88,99 +81,21 @@ tcpip_handler(void) /* CLIENTS' SIDE TRIGGERED */
     	  (appdata[0] == 'V' && appdata[1] == 'A') ) /* node is under version num attack */
     { 	
     	 /* controller reads UART line starting with 2 chars (NP, etc.) */
-#if DIXONQ_PRINT_OFF
 		 printf("%s from ", appdata);
 		 printLongAddr(child_node);	
-		 printf("\n");  
-#endif		  
+		 printf("\n");   
     } 
     else{    
     	/* printing an incoming message, e.g. various enviromental measurements */
-#if DIXONQ_PRINT_OFF
 		 printf("%s from ", appdata);
 		 printLongAddr(child_node);
 		 printf("\n");
-#endif
 #if SERVER_REPLY
-    	 PRINTF("Server Replying... \n");
+    	 printf("Server Replying... \n");
     	 send_custom_msg(&UIP_IP_BUF->srcipaddr, server_msg);    
 #endif
 	}
   }
-}
-/*-------------- All direct children and their descentants -------------------*/
-static void
-print_all_routes(void)
-{
-	uip_ds6_route_t *r;
-	uip_ipaddr_t *nexthop;
-	uip_ipaddr_t *local_child; 	 	 	
-		 	 	
-	for(r = uip_ds6_route_head();
-		r != NULL;
-		r = uip_ds6_route_next(r)) {
-		
-		 nexthop = uip_ds6_route_nexthop(r);
-		 local_child = &r->ipaddr;
-
-		 PRINTF("Counter: %d Route: %02d -> %02d\n", counter, 
-					r->ipaddr.u8[15], nexthop->u8[15]);
-
-		/* BE CAREFUL: WE DONT WANT TO MESS WITH THE IPs in RPL.
-		 * Hence local_child will be transformed from global IP to
-		 * local IP, by transforming local_child[0] from fd00 to fe80
-		 */		 
-		 local_child->u8[0] = (uint8_t *)254;
-		 local_child->u8[1] = (uint8_t *)128;
-
-		 /* Controller is reading a line starting from "Route " */
-#if DIXONQ_PRINT_OFF
-		 printf("Route: ");
-		 printIP6Address(local_child); //direct child
-		 //printLongAddr(&r->ipaddr); // fd00:...
-		 printf(" ");
-		 printIP6Address(nexthop); // all decentant(s)
-		 /* when lt >>> 0, the connection does not exist any more */
-		 printf(" lt:%lu\n", r->state.lifetime);	 
-#endif
-	}//for *r 
-} 	
-/*---------------------------------------------------------------------------*/
-static void
-print_stats(void)
-{
-	printf("Printing all ENABLED stats\n");  
-#define PRINTROUTES 0
-#if PRINTROUTES  
-	print_all_routes();
-#endif	 
-
-#define PRINTNBRS 0
-#if PRINTNBRS
-	print_all_neighbors(); // it seems to have problem...
-#endif
-}
-/****************NOT USED! Direct children, only once **********************/
-static void 
-print_all_neighbors(void)
-{
-	/*
-	 * The same information (sink's direct children),
-	 * can be aquired from the routes. When child = father,
-	 * this is a direct child of sink.
-	 */	 
-	uip_ds6_nbr_t *nbr = nbr_table_head(ds6_neighbors);
-	//printf("Counter %d: My nbr-children only: \n",counter);    	
-	
-	while(nbr != NULL) {
-#if DIXONQ_PRINT_OFF
-		printf("Sinks child: ");
-		printLongAddr(&nbr->ipaddr);
-		printf("\n");
-		nbr = nbr_table_next(ds6_neighbors, nbr);
-#endif
-	}
-	//printf("End of neighbors\n"); 		
 }
 /*---------------------------------------------------------------------------*/
 static void
@@ -199,90 +114,12 @@ print_local_addresses(void)
       /* will keep the last one fe80 */
       ServerIpAddress = uip_ds6_if.addr_list[i].ipaddr;
       
-
       /* hack to make address "final" */
       if (state == ADDR_TENTATIVE) {
 			uip_ds6_if.addr_list[i].state = ADDR_PREFERRED;
       }
     }
   }
-}
-/*---------------------------------------------------------------------------*/
-static void 
-serial_input_byte(unsigned char c)
-{
-	int i=0;
-	int t=0;
-	uint8_t node_ip_length = 41; /* 32(IP) + 7(:) + 2([]) 0-40 */ 
-	uint8_t node_ip[node_ip_length];  
-	uip_ipaddr_t uip_node_ip;
-	
-	char buf[MAX_PAYLOAD_LEN];
-	char in_comm[3];//[3];
-	//in_comm = (char *) malloc(3);
-
-	PRINTF("DATA in from UART\n"); /* java crashes if too fast */
-				
-	if(c != '\n' && uart_buffer_index < UART_BUFFER_SIZE){
-	  uart_buffer[uart_buffer_index++] = c;
-	}
-	else{
-      uart_buffer[uart_buffer_index] = '\0';
-      uart_buffer_index = 0;
-
-      printf("Controller message: %s\n",uart_buffer); 
-
-		in_comm[0] = uart_buffer[0];
-		in_comm[1] = uart_buffer[1]; // e.g. "SP"
-		in_comm[2] ='\0';
-		PRINTF("in_comm %s\n",in_comm);
-
-		i = i+3; /* jump the space char " ", but include the [ */
-						
-		/* Start processing the message */
-		while(uart_buffer[i]!='\0'){
-			node_ip[t]=uart_buffer[i];					
-			PRINTF("buf_in:%c, node_ip[%u] %c\n",uart_buffer[i],t,node_ip[t]);
-			t++; i++;   
-		}
-		PRINTF("END INCOMING IP\n");
-		
-		/* Transform IP to global (fd00) : */
-		node_ip[2]='d';
-		node_ip[3]='0';
-
-//if successfuly transform{
-	   /* Convertion from String to IPv6 */
-		//uiplib_ip6addrconv("[fd00:0000:0000:0000:c30c:0000:0000:0002]", &uip_node_ip);
-		uiplib_ip6addrconv(node_ip, &uip_node_ip);
-		sprintf(buf, in_comm);
-		uip_udp_packet_sendto(client_conn, buf, strlen(buf),
-		 		&uip_node_ip, UIP_HTONS(UDP_SERVER_PORT));
-#define PRINT_DET 0
-#if PRINT_DET
-		printf("#SEND %s to node ",in_comm);
-		printShortAddr(&uip_node_ip);
-		printf("\n");
-	
-		printLongAddr(&uip_node_ip);
-		printf(", in_comm msg: %s\n", in_comm);
-#endif	
-		 //}else{
-#define print_output 0
-#if print_output
-			 printf("Failed incoming IPv6: ");
-			 int g;
-			 for (g = 0; g<sizeof(node_ip)+1; g++){
-				 printf("%c",&node_ip[g]);
-			 }
-			 printf("\n");
-			 printf("Output: ");
-			 printLongAddr(&uip_node_ip);
-			 printf("\n");
-#endif
-			// printf("FAILED SENDING MESSAGE!\n\n");
-		   //}
-   }
 }
 /*---------------------------------------------------------------------------*/
 static void
@@ -294,6 +131,7 @@ ping_only(void){ /* periodically ping the controller */
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(udp_server_process, ev, data)
 {
+  
   uip_ipaddr_t ipaddr;
   struct uip_ds6_addr *root_if;
 
@@ -320,7 +158,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
   uip_ds6_addr_add(&ipaddr, 0, ADDR_MANUAL);
   root_if = uip_ds6_addr_lookup(&ipaddr);
   if(root_if != NULL) {
-    // rpl_dag_t *dag; // moved to top as a global
+    rpl_dag_t *dag;
     dag = rpl_set_root(RPL_DEFAULT_INSTANCE,(uip_ip6addr_t *)&ipaddr);
     uip_ip6addr(&ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0, 0, 0);
     rpl_set_prefix(dag, &ipaddr, 64);
@@ -342,18 +180,15 @@ PROCESS_THREAD(udp_server_process, ev, data)
     PROCESS_EXIT();
   }
   udp_bind(server_conn, UIP_HTONS(UDP_SERVER_PORT));
-         
+
+/*         
   client_conn = udp_new(NULL, UIP_HTONS(UDP_SERVER_PORT), NULL); 
   if(client_conn == NULL) {
     printf("No UDP connection available, exiting the process!\n");
     PROCESS_EXIT();
   }
   udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
-
-	/* separate threat is not needed??? */
-	/* if mote==Z1, uart0_set_input, if mote==sky, uart1_set_input */
-	uart0_init(BAUD2UBR(115200));
-	uart0_set_input(serial_input_byte);
+*/
 
   static struct etimer periodic;
   static struct ctimer backoff_timer;
@@ -367,17 +202,13 @@ PROCESS_THREAD(udp_server_process, ev, data)
     
     if(etimer_expired(&periodic)) {
       etimer_reset(&periodic);
+      //ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
       
-      // TODO: sent this to the controller. 
-      /* If any node is found with equal or less, 
-       * this is a rank attack
-      */
-      printf("My current rank: %d\n", dag->rank);
+      counter++;
       
-      
-#if DIXONQ_PRINT_OFF
-      ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
-#endif      
+		printf("R: %d, icmp_send: %d\n",counter, uip_stat.icmp.sent);
+		printf("R: %d, icmp_recv: %d\n",counter, uip_stat.icmp.recv);
+		   
     }
   }
   PROCESS_END();

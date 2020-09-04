@@ -39,6 +39,21 @@
 #define PRINT_ON 0
 #endif
 
+/* Enable only when collecting statistics for overhead comparison */
+#ifndef OVERHEAD_STATS
+#define OVERHEAD_STATS 1
+#endif
+
+
+/* variable in contiki/core/net/rpl/rpl-mrhof.c 
+ * It will print all details about chosen parent.
+ * Good for monitoring MRHOF behaviour and nodes' rank
+ */
+#ifndef PRINT_CHOOSING_PARENT_DETAILS
+#define PRINT_CHOOSING_PARENT_DETAILS 0
+#endif
+ 
+ 
 //#undef NETSTACK_CONF_MAC
 //#define NETSTACK_CONF_MAC     csma_driver
 
@@ -55,7 +70,8 @@
 
 #define RPL_CONF_DEFAULT_ROUTE_INFINITE_LIFETIME 1
 
-#define UIP_CONF_STATISTICS 1   // Tryfon stats ON
+#define UIP_CONF_STATISTICS 1   // stats ON
+#define RPL_CONF_STATS 1 // enable counting of dio_timer resets 
 
 #if WITH_NON_STORING
 #undef RPL_NS_CONF_LINK_NUM

@@ -20,7 +20,6 @@
 #define SEND_TIME		(random_rand() % (SEND_INTERVAL))
 
 #define MAX_PAYLOAD_LEN		30
-#define DIXONQ_PRINT_OFF 0
 
 //#define DEBUG DEBUG_PRINT
 #include "net/ip/uip-debug.h"
@@ -42,14 +41,13 @@ static struct uip_udp_conn *client_conn;
 
 static uip_ipaddr_t ServerIpAddress;
 
+int counter = 0; // just a round counter
+
 /* When the controller detects version number attack, it orders to stop
  * resetting the tricle timer. The variable lies in rpl-dag.c
  */
 #include "net/rpl/rpl-dag.c"
 extern uint8_t ignore_version_number_incos;
-
-// moved here as a global var
-static rpl_dag_t *dag;
 
 PROCESS(udp_server_process, "UDP server process");
 //PROCESS(read_serial, "Read serial process");
@@ -88,19 +86,15 @@ tcpip_handler(void) /* CLIENTS' SIDE TRIGGERED */
     	  (appdata[0] == 'V' && appdata[1] == 'A') ) /* node is under version num attack */
     { 	
     	 /* controller reads UART line starting with 2 chars (NP, etc.) */
-#if DIXONQ_PRINT_OFF
-		 printf("%s from ", appdata);
-		 printLongAddr(child_node);	
-		 printf("\n");  
-#endif		  
+		// printf("%s from ", appdata);
+		// printLongAddr(child_node);	
+		// printf("\n");   
     } 
     else{    
     	/* printing an incoming message, e.g. various enviromental measurements */
-#if DIXONQ_PRINT_OFF
-		 printf("%s from ", appdata);
-		 printLongAddr(child_node);
-		 printf("\n");
-#endif
+	//	 printf("%s from ", appdata);
+	//	 printLongAddr(child_node);
+	//	 printf("\n");
 #if SERVER_REPLY
     	 PRINTF("Server Replying... \n");
     	 send_custom_msg(&UIP_IP_BUF->srcipaddr, server_msg);    
@@ -134,7 +128,6 @@ print_all_routes(void)
 		 local_child->u8[1] = (uint8_t *)128;
 
 		 /* Controller is reading a line starting from "Route " */
-#if DIXONQ_PRINT_OFF
 		 printf("Route: ");
 		 printIP6Address(local_child); //direct child
 		 //printLongAddr(&r->ipaddr); // fd00:...
@@ -142,7 +135,6 @@ print_all_routes(void)
 		 printIP6Address(nexthop); // all decentant(s)
 		 /* when lt >>> 0, the connection does not exist any more */
 		 printf(" lt:%lu\n", r->state.lifetime);	 
-#endif
 	}//for *r 
 } 	
 /*---------------------------------------------------------------------------*/
@@ -173,12 +165,10 @@ print_all_neighbors(void)
 	//printf("Counter %d: My nbr-children only: \n",counter);    	
 	
 	while(nbr != NULL) {
-#if DIXONQ_PRINT_OFF
 		printf("Sinks child: ");
 		printLongAddr(&nbr->ipaddr);
 		printf("\n");
 		nbr = nbr_table_next(ds6_neighbors, nbr);
-#endif
 	}
 	//printf("End of neighbors\n"); 		
 }
@@ -294,6 +284,7 @@ ping_only(void){ /* periodically ping the controller */
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(udp_server_process, ev, data)
 {
+  
   uip_ipaddr_t ipaddr;
   struct uip_ds6_addr *root_if;
 
@@ -320,7 +311,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
   uip_ds6_addr_add(&ipaddr, 0, ADDR_MANUAL);
   root_if = uip_ds6_addr_lookup(&ipaddr);
   if(root_if != NULL) {
-    // rpl_dag_t *dag; // moved to top as a global
+    rpl_dag_t *dag;
     dag = rpl_set_root(RPL_DEFAULT_INSTANCE,(uip_ip6addr_t *)&ipaddr);
     uip_ip6addr(&ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0, 0, 0);
     rpl_set_prefix(dag, &ipaddr, 64);
@@ -367,17 +358,12 @@ PROCESS_THREAD(udp_server_process, ev, data)
     
     if(etimer_expired(&periodic)) {
       etimer_reset(&periodic);
+      //ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
       
-      // TODO: sent this to the controller. 
-      /* If any node is found with equal or less, 
-       * this is a rank attack
-      */
-      printf("My current rank: %d\n", dag->rank);
+      counter++;
+      printf("R: %d, trickle resets number: %d\n",counter,rpl_stats.resets);
+      printf("R: %d, global repairs: %d\n",counter,rpl_stats.global_repairs);
       
-      
-#if DIXONQ_PRINT_OFF
-      ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
-#endif      
     }
   }
   PROCESS_END();
