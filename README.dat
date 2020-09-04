@@ -1,4 +1,10 @@
 Changes in this contiki:
+Look carefully inside /examples/ipv6/rpl-udp-fresh. 
+You will find many different cooja simulations, from most of them extracted data 
+relevant to this research. 
+Look in project.conf carefully for extra parameters turning various feutures
+on/off. Look inside the basic *.c node files (nodeXXX, sinkXXX) for the same 
+boolean settings.
 
 project.conf
 /* inside rpl-mrhof.c you can enable printing details (rank) of chosen parent 
