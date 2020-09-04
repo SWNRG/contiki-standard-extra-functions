@@ -1,0 +1,54 @@
+file icmp6.c
+Declarations:
+
+/* George they will be sent to app layer for extra info to the sink*/ 
+static  rpl_parent_t *dao_preffered_parent;
+static  uip_ipaddr_t *dao_preffered_parent_ip;
+static  uip_ipaddr_t dao_prefix_own_ip;
+
+
+Inside
+dao_output(rpl_parent_t *parent, uint8_t lifetime)
+before the last line   dao_output_target(parent, &prefix, lifetime);
+
+dao_preffered_parent = parent;
+dao_preffered_parent_ip = rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
+dao_prefix_own_ip = prefix; //node's current own IP address
+
+
+Inside any client (E.g. upd-client.c)
+Declarations
+
+/* George: Get the preffered parent, and the current own IP of the node */
+#include "net/rpl/rpl-icmp6.c"
+extern   rpl_parent_t *dao_preffered_parent;
+extern   uip_ipaddr_t *dao_preffered_parent_ip;
+extern   uip_ipaddr_t dao_prefix_own_ip;
+
+/* George monitor this var. When changed, the node has changed parent */
+rpl_parent_t *my_cur_parent;
+uip_ipaddr_t *my_cur_parent_ip;
+
+// George Run this method anywhere iterating (e.g. inside PROCESS_THREAD
+void monitor_DAO(void)
+{
+/* dont forget: parent_ip = rpl_get_parent_ipaddr(parent->dag->preferred_parent)*/
+
+	// George I checked, can directly compare if(parent ==parent2)
+	if(my_cur_parent != dao_preffered_parent){
+		printf("RPL-G: DAO parent change detected. My old parent: ");
+		printLongAddr(my_cur_parent_ip);
+		printf(", my new parent: ");
+		printLongAddr(dao_preffered_parent_ip);
+		printf("\n");
+		my_cur_parent = dao_preffered_parent;
+		my_cur_parent_ip = dao_preffered_parent_ip;
+	}
+}
+
+// George print only the last part of the address (e.g. 02). Handy for debugging
+#ifndef printShortAddr
+#define printShortAddr(addr) printf(" %02x ",((uint8_t *)addr)[15])
+#endif
+//Printf full IPv6 address
+#define printLongAddr(addr) printf("[%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x]", ((uint8_t *)addr)[0], ((uint8_t *)addr)[1], ((uint8_t *)addr)[2], ((uint8_t *)addr)[3], ((uint8_t *)addr)[4], ((uint8_t *)addr)[5], ((uint8_t *)addr)[6], ((uint8_t *)addr)[7], ((uint8_t *)addr)[8], ((uint8_t *)addr)[9], ((uint8_t *)addr)[10], ((uint8_t *)addr)[11], ((uint8_t *)addr)[12], ((uint8_t *)addr)[13], ((uint8_t *)addr)[14], ((uint8_t *)addr)[15])
