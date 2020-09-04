@@ -1,5 +1,6 @@
 Changes in this contiki:
-Look carefully inside /examples/ipv6/rpl-udp-fresh. 
+
+First, look carefully inside /examples/ipv6/rpl-udp-fresh. 
 You will find many different cooja simulations, from most of them extracted data 
 relevant to this research. 
 Look in project.conf carefully for extra parameters turning various feutures

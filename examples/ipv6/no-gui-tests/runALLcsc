@@ -1,0 +1,33 @@
+#!/bin/bash
+
+
+# BE CAREFUL: THIS script is not deleting runtime code from nodes*.c
+# results are NOT GOOD
+# Avoid using it
+
+
+#create folders if they dont exist
+mkdir -p initial_logs
+mkdir -p logs
+
+#delete old log files if any
+rm COOJA.testlog
+rm COOJA.log
+
+#start running ALL avaliable csc files
+for filename in *.csc ;
+	do
+		for i in {1..1} 
+			do 
+				echo "running scenario: " $filename
+				java -Xmx12298m -jar ~/contiki/tools/cooja/dist/cooja.jar -nogui="$filename" #-contiki='../../../..'
+				cp COOJA.testlog './initial_logs/'"$filename"'-'$i'.log' 
+				rm COOJA.testlog
+				rm COOJA.log
+				echo ""
+				echo "finished round:" $i
+				echo ""
+			done
+	done
+
+

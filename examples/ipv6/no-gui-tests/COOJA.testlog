@@ -1,0 +1,1734 @@
+Random seed: 123456
+866716:78:Rime started with address 193.12.0.0.0.0.0.78
+874449:78:MAC c1:0c:00:00:00:00:00:4e Contiki-e8a1950 started. Node id is set to 78.
+877847:71:Rime started with address 193.12.0.0.0.0.0.71
+880216:78:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+885580:71:MAC c1:0c:00:00:00:00:00:47 Contiki-e8a1950 started. Node id is set to 71.
+888392:78:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004e
+890542:78:Starting 'UDP client process'
+891347:71:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+891375:41:Rime started with address 193.12.0.0.0.0.0.41
+892042:36:Rime started with address 193.12.0.0.0.0.0.36
+899103:41:MAC c1:0c:00:00:00:00:00:29 Contiki-e8a1950 started. Node id is set to 41.
+899522:71:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0047
+899775:36:MAC c1:0c:00:00:00:00:00:24 Contiki-e8a1950 started. Node id is set to 36.
+899996:26:Rime started with address 193.12.0.0.0.0.0.26
+901671:71:Starting 'UDP client process'
+904870:41:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+905542:36:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+907543:72:Rime started with address 193.12.0.0.0.0.0.72
+907725:26:MAC c1:0c:00:00:00:00:00:1a Contiki-e8a1950 started. Node id is set to 26.
+913045:41:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0029
+913492:26:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+913717:36:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0024
+915195:41:Starting 'UDP client process'
+915276:72:MAC c1:0c:00:00:00:00:00:48 Contiki-e8a1950 started. Node id is set to 72.
+915866:36:Starting 'UDP client process'
+921043:72:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+921668:26:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001a
+923818:26:Starting 'UDP client process'
+926963:87:Rime started with address 193.12.0.0.0.0.0.87
+929218:72:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0048
+931367:72:Starting 'UDP client process'
+934693:87:MAC c1:0c:00:00:00:00:00:57 Contiki-e8a1950 started. Node id is set to 87.
+937738:10:Rime started with address 193.12.0.0.0.0.0.10
+940460:87:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+944542:69:Rime started with address 193.12.0.0.0.0.0.69
+945423:10:MAC c1:0c:00:00:00:00:00:0a Contiki-e8a1950 started. Node id is set to 10.
+948636:87:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0057
+950785:87:Starting 'UDP client process'
+951190:10:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+952275:69:MAC c1:0c:00:00:00:00:00:45 Contiki-e8a1950 started. Node id is set to 69.
+958042:69:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+959290:10:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000a
+961440:10:Starting 'UDP client process'
+966217:69:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0045
+968366:69:Starting 'UDP client process'
+971328:50:Rime started with address 193.12.0.0.0.0.0.50
+974763:81:Rime started with address 193.12.0.0.0.0.0.81
+976920:62:Rime started with address 193.12.0.0.0.0.0.62
+979061:50:MAC c1:0c:00:00:00:00:00:32 Contiki-e8a1950 started. Node id is set to 50.
+982493:81:MAC c1:0c:00:00:00:00:00:51 Contiki-e8a1950 started. Node id is set to 81.
+984654:62:MAC c1:0c:00:00:00:00:00:3e Contiki-e8a1950 started. Node id is set to 62.
+984828:50:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+988260:81:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+989419:52:Rime started with address 193.12.0.0.0.0.0.52
+990421:62:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+993004:50:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0032
+995153:50:Starting 'UDP client process'
+996436:81:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0051
+997152:52:MAC c1:0c:00:00:00:00:00:34 Contiki-e8a1950 started. Node id is set to 52.
+998585:81:Starting 'UDP client process'
+998597:62:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003e
+1000747:62:Starting 'UDP client process'
+1002919:52:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1004767:57:Rime started with address 193.12.0.0.0.0.0.57
+1006661:30:Rime started with address 193.12.0.0.0.0.0.30
+1011095:52:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0034
+1012500:57:MAC c1:0c:00:00:00:00:00:39 Contiki-e8a1950 started. Node id is set to 57.
+1013244:52:Starting 'UDP client process'
+1014394:30:MAC c1:0c:00:00:00:00:00:1e Contiki-e8a1950 started. Node id is set to 30.
+1018267:57:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1020161:30:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1026443:57:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0039
+1028337:30:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001e
+1028592:57:Starting 'UDP client process'
+1030487:30:Starting 'UDP client process'
+1055429:13:Rime started with address 193.12.0.0.0.0.0.13
+1062096:91:Rime started with address 193.12.0.0.0.0.0.91
+1063114:13:MAC c1:0c:00:00:00:00:00:0d Contiki-e8a1950 started. Node id is set to 13.
+1068619:33:Rime started with address 193.12.0.0.0.0.0.33
+1068881:13:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1069830:91:MAC c1:0c:00:00:00:00:00:5b Contiki-e8a1950 started. Node id is set to 91.
+1075597:91:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1076352:33:MAC c1:0c:00:00:00:00:00:21 Contiki-e8a1950 started. Node id is set to 33.
+1076981:13:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000d
+1078435:37:Rime started with address 193.12.0.0.0.0.0.37
+1079131:13:Starting 'UDP client process'
+1080898:90:Rime started with address 193.12.0.0.0.0.0.90
+1080950:56:Rime started with address 193.12.0.0.0.0.0.56
+1082119:33:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1082402:46:Rime started with address 193.12.0.0.0.0.0.46
+1082788:47:Rime started with address 193.12.0.0.0.0.0.47
+1083773:91:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:005b
+1085923:91:Starting 'UDP client process'
+1086168:37:MAC c1:0c:00:00:00:00:00:25 Contiki-e8a1950 started. Node id is set to 37.
+1088632:90:MAC c1:0c:00:00:00:00:00:5a Contiki-e8a1950 started. Node id is set to 90.
+1088683:56:MAC c1:0c:00:00:00:00:00:38 Contiki-e8a1950 started. Node id is set to 56.
+1090131:46:MAC c1:0c:00:00:00:00:00:2e Contiki-e8a1950 started. Node id is set to 46.
+1090294:33:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0021
+1090517:47:MAC c1:0c:00:00:00:00:00:2f Contiki-e8a1950 started. Node id is set to 47.
+1091935:37:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1092443:33:Starting 'UDP client process'
+1094088:74:Rime started with address 193.12.0.0.0.0.0.74
+1094399:90:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1094450:56:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1095898:46:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1096284:47:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1100110:37:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0025
+1100977:2:Rime started with address 193.12.0.0.0.0.0.2
+1101821:74:MAC c1:0c:00:00:00:00:00:4a Contiki-e8a1950 started. Node id is set to 74.
+1102259:37:Starting 'UDP client process'
+1102575:90:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:005a
+1102626:56:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0038
+1104074:46:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002e
+1104460:47:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002f
+1104725:90:Starting 'UDP client process'
+1104775:56:Starting 'UDP client process'
+1106224:46:Starting 'UDP client process'
+1106610:47:Starting 'UDP client process'
+1107588:74:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1108548:2:MAC c1:0c:00:00:00:00:00:02 Contiki-e8a1950 started. Node id is set to 2.
+1109080:32:Rime started with address 193.12.0.0.0.0.0.32
+1114279:2:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1115513:8:Rime started with address 193.12.0.0.0.0.0.8
+1115764:74:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004a
+1116301:83:Rime started with address 193.12.0.0.0.0.0.83
+1116813:32:MAC c1:0c:00:00:00:00:00:20 Contiki-e8a1950 started. Node id is set to 32.
+1117914:74:Starting 'UDP client process'
+1122382:2:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0002
+1122580:32:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1123016:79:Rime started with address 193.12.0.0.0.0.0.79
+1123084:8:MAC c1:0c:00:00:00:00:00:08 Contiki-e8a1950 started. Node id is set to 8.
+1124031:83:MAC c1:0c:00:00:00:00:00:53 Contiki-e8a1950 started. Node id is set to 83.
+1124532:2:Starting 'UDP client process'
+1128815:8:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1129349:88:Rime started with address 193.12.0.0.0.0.0.88
+1129798:83:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1130749:79:MAC c1:0c:00:00:00:00:00:4f Contiki-e8a1950 started. Node id is set to 79.
+1130755:32:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0020
+1132904:32:Starting 'UDP client process'
+1136516:79:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1136918:8:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0008
+1137079:88:MAC c1:0c:00:00:00:00:00:58 Contiki-e8a1950 started. Node id is set to 88.
+1137974:83:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0053
+1138610:67:Rime started with address 193.12.0.0.0.0.0.67
+1139068:8:Starting 'UDP client process'
+1140123:83:Starting 'UDP client process'
+1142846:88:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1144692:79:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004f
+1146343:67:MAC c1:0c:00:00:00:00:00:43 Contiki-e8a1950 started. Node id is set to 67.
+1146842:79:Starting 'UDP client process'
+1151022:88:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0058
+1152110:67:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1153171:88:Starting 'UDP client process'
+1160285:67:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0043
+1162434:67:Starting 'UDP client process'
+1165599:70:Rime started with address 193.12.0.0.0.0.0.70
+1173332:70:MAC c1:0c:00:00:00:00:00:46 Contiki-e8a1950 started. Node id is set to 70.
+1179099:70:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1187274:70:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0046
+1189423:70:Starting 'UDP client process'
+1191474:20:Rime started with address 193.12.0.0.0.0.0.20
+1193592:65:Rime started with address 193.12.0.0.0.0.0.65
+1199202:20:MAC c1:0c:00:00:00:00:00:14 Contiki-e8a1950 started. Node id is set to 20.
+1201325:65:MAC c1:0c:00:00:00:00:00:41 Contiki-e8a1950 started. Node id is set to 65.
+1204969:20:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1207092:65:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1213144:20:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0014
+1213215:4:Rime started with address 193.12.0.0.0.0.0.4
+1215267:65:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0041
+1215294:20:Starting 'UDP client process'
+1217416:65:Starting 'UDP client process'
+1220297:35:Rime started with address 193.12.0.0.0.0.0.35
+1220786:4:MAC c1:0c:00:00:00:00:00:04 Contiki-e8a1950 started. Node id is set to 4.
+1226517:4:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1228030:35:MAC c1:0c:00:00:00:00:00:23 Contiki-e8a1950 started. Node id is set to 35.
+1233797:35:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1234620:4:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0004
+1236770:4:Starting 'UDP client process'
+1241972:35:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0023
+1244121:35:Starting 'UDP client process'
+1247030:1:Rime started with address 193.12.0.0.0.0.0.1
+1250604:29:Rime started with address 193.12.0.0.0.0.0.29
+1254163:43:Rime started with address 193.12.0.0.0.0.0.43
+1254601:1:MAC c1:0c:00:00:00:00:00:01 Contiki-e8a1950 started. Node id is set to 1.
+1255927:68:Rime started with address 193.12.0.0.0.0.0.68
+1258333:29:MAC c1:0c:00:00:00:00:00:1d Contiki-e8a1950 started. Node id is set to 29.
+1259214:66:Rime started with address 193.12.0.0.0.0.0.66
+1260332:1:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1261892:43:MAC c1:0c:00:00:00:00:00:2b Contiki-e8a1950 started. Node id is set to 43.
+1263660:68:MAC c1:0c:00:00:00:00:00:44 Contiki-e8a1950 started. Node id is set to 68.
+1264100:29:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1266627:9:Rime started with address 193.12.0.0.0.0.0.9
+1266947:66:MAC c1:0c:00:00:00:00:00:42 Contiki-e8a1950 started. Node id is set to 66.
+1267659:43:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1268436:1:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0001
+1269427:68:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1270585:1:Starting 'UDP server process'
+1272057:1:SINK: PERIOD: 300
+1272276:29:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001d
+1272714:66:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1274198:9:MAC c1:0c:00:00:00:00:00:09 Contiki-e8a1950 started. Node id is set to 9.
+1274288:1:SINK: DixonQ active n value: 5
+1274426:29:Starting 'UDP client process'
+1275835:43:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002b
+1276674:1:SINK: DixonQ confidence_level: 1
+1276699:49:Rime started with address 193.12.0.0.0.0.0.49
+1277523:42:Rime started with address 193.12.0.0.0.0.0.42
+1277602:68:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0044
+1277985:43:Starting 'UDP client process'
+1279477:55:Rime started with address 193.12.0.0.0.0.0.55
+1279486:1:SINK: PERIOD from project-conf.h: 300
+1279751:68:Starting 'UDP client process'
+1279929:9:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1280889:66:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0042
+1283038:66:Starting 'UDP client process'
+1284429:49:MAC c1:0c:00:00:00:00:00:31 Contiki-e8a1950 started. Node id is set to 49.
+1285252:42:MAC c1:0c:00:00:00:00:00:2a Contiki-e8a1950 started. Node id is set to 42.
+1287210:55:MAC c1:0c:00:00:00:00:00:37 Contiki-e8a1950 started. Node id is set to 55.
+1288032:9:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0009
+1290182:9:Starting 'UDP client process'
+1290196:49:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1291019:42:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1292977:55:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1298372:49:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0031
+1299195:42:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002a
+1300521:49:Starting 'UDP client process'
+1301153:55:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0037
+1301345:42:Starting 'UDP client process'
+1303302:55:Starting 'UDP client process'
+1309979:63:Rime started with address 193.12.0.0.0.0.0.63
+1315066:16:Rime started with address 193.12.0.0.0.0.0.16
+1317713:63:MAC c1:0c:00:00:00:00:00:3f Contiki-e8a1950 started. Node id is set to 63.
+1322794:16:MAC c1:0c:00:00:00:00:00:10 Contiki-e8a1950 started. Node id is set to 16.
+1323480:63:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1327518:17:Rime started with address 193.12.0.0.0.0.0.17
+1328561:16:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1329990:48:Rime started with address 193.12.0.0.0.0.0.48
+1331656:63:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003f
+1332462:27:Rime started with address 193.12.0.0.0.0.0.27
+1333806:63:Starting 'UDP client process'
+1335246:17:MAC c1:0c:00:00:00:00:00:11 Contiki-e8a1950 started. Node id is set to 17.
+1335776:80:Rime started with address 193.12.0.0.0.0.0.80
+1336736:16:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0010
+1337449:22:Rime started with address 193.12.0.0.0.0.0.22
+1337720:48:MAC c1:0c:00:00:00:00:00:30 Contiki-e8a1950 started. Node id is set to 48.
+1337911:18:Rime started with address 193.12.0.0.0.0.0.18
+1338252:39:Rime started with address 193.12.0.0.0.0.0.39
+1338886:16:Starting 'UDP client process'
+1340191:27:MAC c1:0c:00:00:00:00:00:1b Contiki-e8a1950 started. Node id is set to 27.
+1341013:17:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1342976:64:Rime started with address 193.12.0.0.0.0.0.64
+1343487:48:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1343506:80:MAC c1:0c:00:00:00:00:00:50 Contiki-e8a1950 started. Node id is set to 80.
+1345177:22:MAC c1:0c:00:00:00:00:00:16 Contiki-e8a1950 started. Node id is set to 22.
+1345639:18:MAC c1:0c:00:00:00:00:00:12 Contiki-e8a1950 started. Node id is set to 18.
+1345958:27:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1345985:39:MAC c1:0c:00:00:00:00:00:27 Contiki-e8a1950 started. Node id is set to 39.
+1347889:60:Rime started with address 193.12.0.0.0.0.0.60
+1349188:17:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0011
+1349273:80:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1350709:64:MAC c1:0c:00:00:00:00:00:40 Contiki-e8a1950 started. Node id is set to 64.
+1350944:22:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1351338:17:Starting 'UDP client process'
+1351406:18:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1351663:48:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0030
+1351752:39:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1353812:48:Starting 'UDP client process'
+1354134:27:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001b
+1355623:60:MAC c1:0c:00:00:00:00:00:3c Contiki-e8a1950 started. Node id is set to 60.
+1356284:27:Starting 'UDP client process'
+1356442:54:Rime started with address 193.12.0.0.0.0.0.54
+1356476:64:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1357449:80:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0050
+1359119:22:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0016
+1359581:18:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0012
+1359598:80:Starting 'UDP client process'
+1359927:39:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0027
+1361269:22:Starting 'UDP client process'
+1361390:60:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1361731:18:Starting 'UDP client process'
+1362076:39:Starting 'UDP client process'
+1364175:54:MAC c1:0c:00:00:00:00:00:36 Contiki-e8a1950 started. Node id is set to 54.
+1364651:64:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0040
+1366800:64:Starting 'UDP client process'
+1369566:60:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003c
+1369942:54:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1371716:60:Starting 'UDP client process'
+1378118:54:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0036
+1380267:54:Starting 'UDP client process'
+1409443:76:Rime started with address 193.12.0.0.0.0.0.76
+1417176:76:MAC c1:0c:00:00:00:00:00:4c Contiki-e8a1950 started. Node id is set to 76.
+1421449:12:Rime started with address 193.12.0.0.0.0.0.12
+1422943:76:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1429134:12:MAC c1:0c:00:00:00:00:00:0c Contiki-e8a1950 started. Node id is set to 12.
+1431119:76:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004c
+1433269:76:Starting 'UDP client process'
+1434901:12:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1443001:12:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000c
+1445151:12:Starting 'UDP client process'
+1449244:73:Rime started with address 193.12.0.0.0.0.0.73
+1456977:73:MAC c1:0c:00:00:00:00:00:49 Contiki-e8a1950 started. Node id is set to 73.
+1459304:14:Rime started with address 193.12.0.0.0.0.0.14
+1462744:73:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1466989:14:MAC c1:0c:00:00:00:00:00:0e Contiki-e8a1950 started. Node id is set to 14.
+1470919:73:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0049
+1472756:14:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1473068:73:Starting 'UDP client process'
+1480856:14:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000e
+1483006:14:Starting 'UDP client process'
+1490416:51:Rime started with address 193.12.0.0.0.0.0.51
+1496622:77:Rime started with address 193.12.0.0.0.0.0.77
+1498149:51:MAC c1:0c:00:00:00:00:00:33 Contiki-e8a1950 started. Node id is set to 51.
+1501936:31:Rime started with address 193.12.0.0.0.0.0.31
+1503916:51:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1504355:77:MAC c1:0c:00:00:00:00:00:4d Contiki-e8a1950 started. Node id is set to 77.
+1509669:31:MAC c1:0c:00:00:00:00:00:1f Contiki-e8a1950 started. Node id is set to 31.
+1510122:77:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1512092:51:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0033
+1514241:51:Starting 'UDP client process'
+1515436:31:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1518298:77:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004d
+1520448:77:Starting 'UDP client process'
+1523612:31:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001f
+1525762:31:Starting 'UDP client process'
+1528026:24:Rime started with address 193.12.0.0.0.0.0.24
+1535754:24:MAC c1:0c:00:00:00:00:00:18 Contiki-e8a1950 started. Node id is set to 24.
+1541521:24:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1549696:24:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0018
+1550079:53:Rime started with address 193.12.0.0.0.0.0.53
+1551846:24:Starting 'UDP client process'
+1554106:45:Rime started with address 193.12.0.0.0.0.0.45
+1555431:28:Rime started with address 193.12.0.0.0.0.0.28
+1557812:53:MAC c1:0c:00:00:00:00:00:35 Contiki-e8a1950 started. Node id is set to 53.
+1559964:58:Rime started with address 193.12.0.0.0.0.0.58
+1561835:45:MAC c1:0c:00:00:00:00:00:2d Contiki-e8a1950 started. Node id is set to 45.
+1563160:28:MAC c1:0c:00:00:00:00:00:1c Contiki-e8a1950 started. Node id is set to 28.
+1563579:53:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1567602:45:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1567698:58:MAC c1:0c:00:00:00:00:00:3a Contiki-e8a1950 started. Node id is set to 58.
+1568927:28:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1571755:53:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0035
+1573446:11:Rime started with address 193.12.0.0.0.0.0.11
+1573465:58:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1573904:53:Starting 'UDP client process'
+1575217:84:Rime started with address 193.12.0.0.0.0.0.84
+1575778:45:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002d
+1577103:28:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:001c
+1577928:45:Starting 'UDP client process'
+1579253:28:Starting 'UDP client process'
+1579968:6:Rime started with address 193.12.0.0.0.0.0.6
+1581131:11:MAC c1:0c:00:00:00:00:00:0b Contiki-e8a1950 started. Node id is set to 11.
+1581641:58:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003a
+1582947:84:MAC c1:0c:00:00:00:00:00:54 Contiki-e8a1950 started. Node id is set to 84.
+1583791:58:Starting 'UDP client process'
+1584025:44:Rime started with address 193.12.0.0.0.0.0.44
+1584027:21:Rime started with address 193.12.0.0.0.0.0.21
+1586898:11:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1587539:6:MAC c1:0c:00:00:00:00:00:06 Contiki-e8a1950 started. Node id is set to 6.
+1588714:84:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1591754:44:MAC c1:0c:00:00:00:00:00:2c Contiki-e8a1950 started. Node id is set to 44.
+1591755:21:MAC c1:0c:00:00:00:00:00:15 Contiki-e8a1950 started. Node id is set to 21.
+1593270:6:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1594998:11:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000b
+1596890:84:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0054
+1597148:11:Starting 'UDP client process'
+1597521:44:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1597522:21:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1599039:84:Starting 'UDP client process'
+1601373:6:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0006
+1603523:6:Starting 'UDP client process'
+1604737:82:Rime started with address 193.12.0.0.0.0.0.82
+1605697:21:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0015
+1605697:44:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:002c
+1607847:21:Starting 'UDP client process'
+1607847:44:Starting 'UDP client process'
+1612467:82:MAC c1:0c:00:00:00:00:00:52 Contiki-e8a1950 started. Node id is set to 82.
+1618234:82:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1626410:82:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0052
+1628559:82:Starting 'UDP client process'
+1632317:92:Rime started with address 193.12.0.0.0.0.0.92
+1640051:92:MAC c1:0c:00:00:00:00:00:5c Contiki-e8a1950 started. Node id is set to 92.
+1644413:89:Rime started with address 193.12.0.0.0.0.0.89
+1645818:92:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1652143:89:MAC c1:0c:00:00:00:00:00:59 Contiki-e8a1950 started. Node id is set to 89.
+1652859:40:Rime started with address 193.12.0.0.0.0.0.40
+1653994:92:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:005c
+1656144:92:Starting 'UDP client process'
+1657910:89:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1660587:40:MAC c1:0c:00:00:00:00:00:28 Contiki-e8a1950 started. Node id is set to 40.
+1666086:89:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0059
+1666354:40:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1668235:89:Starting 'UDP client process'
+1674018:19:Rime started with address 193.12.0.0.0.0.0.19
+1674529:40:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0028
+1676679:40:Starting 'UDP client process'
+1681746:19:MAC c1:0c:00:00:00:00:00:13 Contiki-e8a1950 started. Node id is set to 19.
+1687513:19:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1695657:75:Rime started with address 193.12.0.0.0.0.0.75
+1695688:19:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0013
+1697838:19:Starting 'UDP client process'
+1703390:75:MAC c1:0c:00:00:00:00:00:4b Contiki-e8a1950 started. Node id is set to 75.
+1707922:85:Rime started with address 193.12.0.0.0.0.0.85
+1709157:75:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1715652:85:MAC c1:0c:00:00:00:00:00:55 Contiki-e8a1950 started. Node id is set to 85.
+1717333:75:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:004b
+1719483:75:Starting 'UDP client process'
+1721419:85:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1729595:85:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0055
+1731744:85:Starting 'UDP client process'
+1739366:86:Rime started with address 193.12.0.0.0.0.0.86
+1746454:38:Rime started with address 193.12.0.0.0.0.0.38
+1747096:86:MAC c1:0c:00:00:00:00:00:56 Contiki-e8a1950 started. Node id is set to 86.
+1748841:15:Rime started with address 193.12.0.0.0.0.0.15
+1750480:61:Rime started with address 193.12.0.0.0.0.0.61
+1752863:86:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1754187:38:MAC c1:0c:00:00:00:00:00:26 Contiki-e8a1950 started. Node id is set to 38.
+1756526:15:MAC c1:0c:00:00:00:00:00:0f Contiki-e8a1950 started. Node id is set to 15.
+1758214:61:MAC c1:0c:00:00:00:00:00:3d Contiki-e8a1950 started. Node id is set to 61.
+1759954:38:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1761039:86:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0056
+1762293:15:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1763188:86:Starting 'UDP client process'
+1763981:61:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1764197:3:Rime started with address 193.12.0.0.0.0.0.3
+1768129:38:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0026
+1770278:38:Starting 'UDP client process'
+1770393:15:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:000f
+1771639:23:Rime started with address 193.12.0.0.0.0.0.23
+1771768:3:MAC c1:0c:00:00:00:00:00:03 Contiki-e8a1950 started. Node id is set to 3.
+1772157:61:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003d
+1772543:15:Starting 'UDP client process'
+1774307:61:Starting 'UDP client process'
+1777499:3:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1779367:23:MAC c1:0c:00:00:00:00:00:17 Contiki-e8a1950 started. Node id is set to 23.
+1785134:23:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1785602:3:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0003
+1787752:3:Starting 'UDP client process'
+1793309:23:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0017
+1795459:23:Starting 'UDP client process'
+1810195:25:Rime started with address 193.12.0.0.0.0.0.25
+1817923:25:MAC c1:0c:00:00:00:00:00:19 Contiki-e8a1950 started. Node id is set to 25.
+1823690:25:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1831865:25:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0019
+1834015:25:Starting 'UDP client process'
+1840707:59:Rime started with address 193.12.0.0.0.0.0.59
+1842680:34:Rime started with address 193.12.0.0.0.0.0.34
+1848441:59:MAC c1:0c:00:00:00:00:00:3b Contiki-e8a1950 started. Node id is set to 59.
+1849203:93:Rime started with address 193.12.0.0.0.0.0.93
+1850413:34:MAC c1:0c:00:00:00:00:00:22 Contiki-e8a1950 started. Node id is set to 34.
+1854208:59:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1856180:34:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1856937:93:MAC c1:0c:00:00:00:00:00:5d Contiki-e8a1950 started. Node id is set to 93.
+1862384:59:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:003b
+1862704:93:nullsec CSMA nullrdc, channel check rate 128 Hz, radio channel 26
+1864355:34:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:0022
+1864534:59:Starting 'UDP client process'
+1866504:34:Starting 'UDP client process'
+1870880:93:Tentative link-local IPv6 address fe80:0000:0000:0000:c30c:0000:0000:005d
+1873030:93:Starting 'UDP client process'
+300892325:78:R:1, icmp_sent_TOTAL:20
+300894168:78:R:1, icmp_recv_TOTAL:51
+300903313:71:R:1, icmp_sent_TOTAL:15
+300905152:71:R:1, icmp_recv_TOTAL:23
+300917094:41:R:1, icmp_sent_TOTAL:16
+300917550:36:R:1, icmp_sent_TOTAL:14
+300918893:41:R:1, icmp_recv_TOTAL:28
+300919349:36:R:1, icmp_recv_TOTAL:14
+300925766:26:R:1, icmp_sent_TOTAL:21
+300927581:26:R:1, icmp_recv_TOTAL:42
+300933260:72:R:1, icmp_sent_TOTAL:14
+300935060:72:R:1, icmp_recv_TOTAL:34
+300952260:87:R:1, icmp_sent_TOTAL:13
+300954058:87:R:1, icmp_recv_TOTAL:17
+300963245:10:R:1, icmp_sent_TOTAL:16
+300965044:10:R:1, icmp_recv_TOTAL:22
+300970152:69:R:1, icmp_sent_TOTAL:21
+300971994:69:R:1, icmp_recv_TOTAL:44
+300997469:50:R:1, icmp_sent_TOTAL:14
+300999269:50:R:1, icmp_recv_TOTAL:36
+301000864:81:R:1, icmp_sent_TOTAL:14
+301002177:62:R:1, icmp_sent_TOTAL:12
+301002704:81:R:1, icmp_recv_TOTAL:48
+301003976:62:R:1, icmp_recv_TOTAL:31
+301031958:30:R:1, icmp_sent_TOTAL:12
+301033756:30:R:1, icmp_recv_TOTAL:15
+301034465:57:R:1, icmp_sent_TOTAL:16
+301036263:57:R:1, icmp_recv_TOTAL:45
+301037433:52:R:1, icmp_sent_TOTAL:103
+301039342:52:R:1, icmp_recv_TOTAL:164
+301087392:91:R:1, icmp_sent_TOTAL:13
+301087745:13:R:1, icmp_sent_TOTAL:27
+301089191:91:R:1, icmp_recv_TOTAL:15
+301089544:13:R:1, icmp_recv_TOTAL:69
+301095126:33:R:1, icmp_sent_TOTAL:20
+301096926:33:R:1, icmp_recv_TOTAL:54
+301103732:37:R:1, icmp_sent_TOTAL:15
+301105530:37:R:1, icmp_recv_TOTAL:20
+301106428:90:R:1, icmp_sent_TOTAL:16
+301106668:56:R:1, icmp_sent_TOTAL:13
+301108225:90:R:1, icmp_recv_TOTAL:45
+301108467:56:R:1, icmp_recv_TOTAL:31
+301108770:47:R:1, icmp_sent_TOTAL:20
+301109115:46:R:1, icmp_sent_TOTAL:14
+301110586:47:R:1, icmp_recv_TOTAL:57
+301110913:46:R:1, icmp_recv_TOTAL:43
+301123071:74:R:1, icmp_sent_TOTAL:18
+301124870:74:R:1, icmp_recv_TOTAL:49
+301133026:2:R:1, icmp_sent_TOTAL:51
+301134547:32:R:1, icmp_sent_TOTAL:12
+301134824:2:R:1, icmp_recv_TOTAL:86
+301136386:32:R:1, icmp_recv_TOTAL:24
+301141133:8:R:1, icmp_sent_TOTAL:16
+301141769:83:R:1, icmp_sent_TOTAL:13
+301142932:8:R:1, icmp_recv_TOTAL:20
+301143606:83:R:1, icmp_recv_TOTAL:22
+301148625:79:R:1, icmp_sent_TOTAL:19
+301150468:79:R:1, icmp_recv_TOTAL:39
+301155028:88:R:1, icmp_sent_TOTAL:15
+301156863:88:R:1, icmp_recv_TOTAL:28
+301163906:67:R:1, icmp_sent_TOTAL:16
+301165705:67:R:1, icmp_recv_TOTAL:20
+301191105:70:R:1, icmp_sent_TOTAL:14
+301192904:70:R:1, icmp_recv_TOTAL:32
+301217403:20:R:1, icmp_sent_TOTAL:16
+301219202:20:R:1, icmp_recv_TOTAL:44
+301226306:65:R:1, icmp_sent_TOTAL:24
+301228105:65:R:1, icmp_recv_TOTAL:60
+301245594:35:R:1, icmp_sent_TOTAL:14
+301247392:35:R:1, icmp_recv_TOTAL:17
+301261059:4:R:1, icmp_sent_TOTAL:28
+301262858:4:R:1, icmp_recv_TOTAL:50
+301276281:1:R:1, TOTAL_icmp_sent:5
+301278194:1:R:1, TOTAL_icmp_recv:315
+301280092:43:R:1, icmp_sent_TOTAL:17
+301280586:29:R:1, icmp_sent_TOTAL:36
+301281891:43:R:1, icmp_recv_TOTAL:41
+301282385:29:R:1, icmp_recv_TOTAL:64
+301285202:66:R:1, icmp_sent_TOTAL:32
+301287013:66:R:1, icmp_recv_TOTAL:65
+301292629:9:R:1, icmp_sent_TOTAL:15
+301294466:9:R:1, icmp_recv_TOTAL:41
+301302820:42:R:1, icmp_sent_TOTAL:18
+301304619:42:R:1, icmp_recv_TOTAL:32
+301304985:55:R:1, icmp_sent_TOTAL:14
+301306397:49:R:1, icmp_sent_TOTAL:16
+301306784:55:R:1, icmp_recv_TOTAL:15
+301307016:68:R:1, icmp_sent_TOTAL:52
+301308195:49:R:1, icmp_recv_TOTAL:45
+301308815:68:R:1, icmp_recv_TOTAL:98
+301335698:63:R:1, icmp_sent_TOTAL:14
+301337498:63:R:1, icmp_recv_TOTAL:30
+301340624:16:R:1, icmp_sent_TOTAL:19
+301342467:16:R:1, icmp_recv_TOTAL:40
+301352814:17:R:1, icmp_sent_TOTAL:14
+301354612:17:R:1, icmp_recv_TOTAL:21
+301356448:48:R:1, icmp_sent_TOTAL:26
+301358286:48:R:1, icmp_recv_TOTAL:45
+301361437:80:R:1, icmp_sent_TOTAL:20
+301361450:27:R:1, icmp_sent_TOTAL:57
+301363248:27:R:1, icmp_recv_TOTAL:81
+301363280:80:R:1, icmp_recv_TOTAL:40
+301363841:18:R:1, icmp_sent_TOTAL:13
+301364021:39:R:1, icmp_sent_TOTAL:14
+301365640:18:R:1, icmp_recv_TOTAL:55
+301365837:39:R:1, icmp_recv_TOTAL:37
+301367504:22:R:1, icmp_sent_TOTAL:18
+301368530:64:R:1, icmp_sent_TOTAL:25
+301369302:22:R:1, icmp_recv_TOTAL:48
+301370372:64:R:1, icmp_recv_TOTAL:58
+301373186:60:R:1, icmp_sent_TOTAL:16
+301374984:60:R:1, icmp_recv_TOTAL:40
+301383838:54:R:1, icmp_sent_TOTAL:23
+301385637:54:R:1, icmp_recv_TOTAL:48
+301447590:12:R:1, icmp_sent_TOTAL:15
+301449389:12:R:1, icmp_recv_TOTAL:45
+301461717:76:R:1, icmp_sent_TOTAL:33
+301463516:76:R:1, icmp_recv_TOTAL:64
+301474539:73:R:1, icmp_sent_TOTAL:19
+301476338:73:R:1, icmp_recv_TOTAL:35
+301493039:14:R:1, icmp_sent_TOTAL:19
+301494844:14:R:1, icmp_recv_TOTAL:64
+301516094:51:R:1, icmp_sent_TOTAL:16
+301517930:51:R:1, icmp_recv_TOTAL:46
+301526441:77:R:1, icmp_sent_TOTAL:23
+301527232:31:R:1, icmp_sent_TOTAL:15
+301528240:77:R:1, icmp_recv_TOTAL:53
+301529031:31:R:1, icmp_recv_TOTAL:35
+301553623:24:R:1, icmp_sent_TOTAL:15
+301555466:24:R:1, icmp_recv_TOTAL:35
+301575771:53:R:1, icmp_sent_TOTAL:16
+301577593:53:R:1, icmp_recv_TOTAL:38
+301579614:45:R:1, icmp_sent_TOTAL:12
+301581413:45:R:1, icmp_recv_TOTAL:33
+301582681:28:R:1, icmp_sent_TOTAL:15
+301584480:28:R:1, icmp_recv_TOTAL:42
+301585471:58:R:1, icmp_sent_TOTAL:14
+301587270:58:R:1, icmp_recv_TOTAL:33
+301599336:11:R:1, icmp_sent_TOTAL:14
+301601038:84:R:1, icmp_sent_TOTAL:15
+301601174:11:R:1, icmp_recv_TOTAL:39
+301602874:84:R:1, icmp_recv_TOTAL:34
+301609321:44:R:1, icmp_sent_TOTAL:13
+301611120:44:R:1, icmp_recv_TOTAL:15
+301611541:21:R:1, icmp_sent_TOTAL:58
+301613340:21:R:1, icmp_recv_TOTAL:82
+301615923:6:R:1, icmp_sent_TOTAL:20
+301617722:6:R:1, icmp_recv_TOTAL:68
+301630244:82:R:1, icmp_sent_TOTAL:12
+301632043:82:R:1, icmp_recv_TOTAL:22
+301672013:89:R:1, icmp_sent_TOTAL:22
+301673811:89:R:1, icmp_recv_TOTAL:47
+301675670:92:R:1, icmp_sent_TOTAL:38
+301677469:92:R:1, icmp_recv_TOTAL:75
+301680871:40:R:1, icmp_sent_TOTAL:22
+301682670:40:R:1, icmp_recv_TOTAL:45
+301699787:19:R:1, icmp_sent_TOTAL:19
+301701603:19:R:1, icmp_recv_TOTAL:37
+301721163:75:R:1, icmp_sent_TOTAL:16
+301722962:75:R:1, icmp_recv_TOTAL:20
+301743061:85:R:1, icmp_sent_TOTAL:31
+301744861:85:R:1, icmp_recv_TOTAL:77
+301768529:86:R:1, icmp_sent_TOTAL:17
+301770328:86:R:1, icmp_recv_TOTAL:52
+301774560:15:R:1, icmp_sent_TOTAL:13
+301776359:15:R:1, icmp_recv_TOTAL:23
+301783182:61:R:1, icmp_sent_TOTAL:21
+301784981:61:R:1, icmp_recv_TOTAL:60
+301790228:38:R:1, icmp_sent_TOTAL:83
+301792138:38:R:1, icmp_recv_TOTAL:119
+301797390:23:R:1, icmp_sent_TOTAL:36
+301799225:23:R:1, icmp_recv_TOTAL:65
+301816337:3:R:1, icmp_sent_TOTAL:58
+301818136:3:R:1, icmp_recv_TOTAL:95
+301849811:25:R:1, icmp_sent_TOTAL:20
+301851610:25:R:1, icmp_recv_TOTAL:60
+301866214:59:R:1, icmp_sent_TOTAL:12
+301868013:59:R:1, icmp_recv_TOTAL:20
+301878979:93:R:1, icmp_sent_TOTAL:14
+301880778:93:R:1, icmp_recv_TOTAL:46
+301906299:34:R:1, icmp_sent_TOTAL:39
+301908098:34:R:1, icmp_recv_TOTAL:68
+600888301:78:R:2, icmp_sent_TOTAL:29
+600890101:78:R:2, icmp_recv_TOTAL:72
+600899432:71:R:2, icmp_sent_TOTAL:19
+600901231:71:R:2, icmp_recv_TOTAL:31
+600912952:41:R:2, icmp_sent_TOTAL:20
+600913618:36:R:2, icmp_sent_TOTAL:20
+600914751:41:R:2, icmp_recv_TOTAL:39
+600915417:36:R:2, icmp_recv_TOTAL:17
+600921582:26:R:2, icmp_sent_TOTAL:27
+600923381:26:R:2, icmp_recv_TOTAL:62
+600929128:72:R:2, icmp_sent_TOTAL:20
+600930927:72:R:2, icmp_recv_TOTAL:49
+600948549:87:R:2, icmp_sent_TOTAL:17
+600950348:87:R:2, icmp_recv_TOTAL:25
+600959324:10:R:2, icmp_sent_TOTAL:21
+600961123:10:R:2, icmp_recv_TOTAL:33
+600970772:69:R:2, icmp_sent_TOTAL:62
+600972684:69:R:2, icmp_recv_TOTAL:114
+600992904:50:R:2, icmp_sent_TOTAL:20
+600994703:50:R:2, icmp_recv_TOTAL:62
+600996340:81:R:2, icmp_sent_TOTAL:20
+600998139:81:R:2, icmp_recv_TOTAL:79
+600998506:62:R:2, icmp_sent_TOTAL:18
+601000305:62:R:2, icmp_recv_TOTAL:46
+601011109:52:R:2, icmp_sent_TOTAL:155
+601013021:52:R:2, icmp_recv_TOTAL:237
+601026344:57:R:2, icmp_sent_TOTAL:39
+601028238:30:R:2, icmp_sent_TOTAL:18
+601028255:57:R:2, icmp_recv_TOTAL:106
+601030036:30:R:2, icmp_recv_TOTAL:25
+601082082:13:R:2, icmp_sent_TOTAL:82
+601083682:91:R:2, icmp_sent_TOTAL:18
+601083994:13:R:2, icmp_recv_TOTAL:153
+601085481:91:R:2, icmp_recv_TOTAL:18
+601090196:33:R:2, icmp_sent_TOTAL:42
+601092107:33:R:2, icmp_recv_TOTAL:100
+601100021:37:R:2, icmp_sent_TOTAL:19
+601101820:37:R:2, icmp_recv_TOTAL:25
+601102527:56:R:2, icmp_sent_TOTAL:37
+601103977:46:R:2, icmp_sent_TOTAL:27
+601104326:56:R:2, icmp_recv_TOTAL:55
+601105776:46:R:2, icmp_recv_TOTAL:71
+601106236:90:R:2, icmp_sent_TOTAL:38
+601108035:90:R:2, icmp_recv_TOTAL:83
+601109345:47:R:2, icmp_sent_TOTAL:39
+601111267:47:R:2, icmp_recv_TOTAL:103
+601119426:74:R:2, icmp_sent_TOTAL:38
+601121225:74:R:2, icmp_recv_TOTAL:77
+601126736:2:R:2, icmp_sent_TOTAL:83
+601128691:2:R:2, icmp_recv_TOTAL:120
+601130666:32:R:2, icmp_sent_TOTAL:18
+601132465:32:R:2, icmp_recv_TOTAL:27
+601137202:8:R:2, icmp_sent_TOTAL:37
+601137887:83:R:2, icmp_sent_TOTAL:20
+601139001:8:R:2, icmp_recv_TOTAL:32
+601139686:83:R:2, icmp_recv_TOTAL:32
+601144592:79:R:2, icmp_sent_TOTAL:25
+601146391:79:R:2, icmp_recv_TOTAL:53
+601150935:88:R:2, icmp_sent_TOTAL:23
+601152734:88:R:2, icmp_recv_TOTAL:50
+601164108:67:R:2, icmp_sent_TOTAL:32
+601165915:67:R:2, icmp_recv_TOTAL:32
+601187175:70:R:2, icmp_sent_TOTAL:23
+601188974:70:R:2, icmp_recv_TOTAL:62
+601217039:20:R:2, icmp_sent_TOTAL:63
+601218989:20:R:2, icmp_recv_TOTAL:135
+601223114:65:R:2, icmp_sent_TOTAL:46
+601224914:65:R:2, icmp_recv_TOTAL:79
+601239557:4:R:2, icmp_sent_TOTAL:54
+601241357:4:R:2, icmp_recv_TOTAL:76
+601241883:35:R:2, icmp_sent_TOTAL:18
+601243682:35:R:2, icmp_recv_TOTAL:25
+601275740:43:R:2, icmp_sent_TOTAL:40
+601276281:1:R:2, TOTAL_icmp_sent:5
+601276513:29:R:2, icmp_sent_TOTAL:68
+601277539:43:R:2, icmp_recv_TOTAL:70
+601278193:1:R:2, TOTAL_icmp_recv:539
+601278332:29:R:2, icmp_recv_TOTAL:98
+601282992:68:R:2, icmp_sent_TOTAL:93
+601284930:68:R:2, icmp_recv_TOTAL:166
+601288315:9:R:2, icmp_sent_TOTAL:21
+601290115:9:R:2, icmp_recv_TOTAL:70
+601297878:66:R:2, icmp_sent_TOTAL:79
+601298276:49:R:2, icmp_sent_TOTAL:24
+601299789:66:R:2, icmp_recv_TOTAL:144
+601300075:49:R:2, icmp_recv_TOTAL:69
+601301063:55:R:2, icmp_sent_TOTAL:21
+601302862:55:R:2, icmp_recv_TOTAL:19
+601303242:42:R:2, icmp_sent_TOTAL:30
+601305041:42:R:2, icmp_recv_TOTAL:42
+601331565:63:R:2, icmp_sent_TOTAL:21
+601333364:63:R:2, icmp_recv_TOTAL:43
+601340982:16:R:2, icmp_sent_TOTAL:56
+601342793:16:R:2, icmp_recv_TOTAL:96
+601352810:48:R:2, icmp_sent_TOTAL:102
+601353015:17:R:2, icmp_sent_TOTAL:27
+601354720:48:R:2, icmp_recv_TOTAL:160
+601354823:17:R:2, icmp_recv_TOTAL:25
+601356363:27:R:2, icmp_sent_TOTAL:78
+601357362:80:R:2, icmp_sent_TOTAL:27
+601358274:27:R:2, icmp_recv_TOTAL:125
+601359161:80:R:2, icmp_recv_TOTAL:55
+601359497:18:R:2, icmp_sent_TOTAL:29
+601361409:18:R:2, icmp_recv_TOTAL:110
+601363210:22:R:2, icmp_sent_TOTAL:39
+601363801:39:R:2, icmp_sent_TOTAL:33
+601364563:64:R:2, icmp_sent_TOTAL:35
+601365035:22:R:2, icmp_recv_TOTAL:78
+601365644:39:R:2, icmp_recv_TOTAL:58
+601366361:64:R:2, icmp_recv_TOTAL:86
+601373780:60:R:2, icmp_sent_TOTAL:30
+601375616:60:R:2, icmp_recv_TOTAL:55
+601379215:54:R:2, icmp_sent_TOTAL:39
+601381015:54:R:2, icmp_recv_TOTAL:75
+601437235:76:R:2, icmp_sent_TOTAL:48
+601439034:76:R:2, icmp_recv_TOTAL:96
+601447370:12:R:2, icmp_sent_TOTAL:33
+601449177:12:R:2, icmp_recv_TOTAL:75
+601474741:73:R:2, icmp_sent_TOTAL:34
+601476548:73:R:2, icmp_recv_TOTAL:48
+601486213:14:R:2, icmp_sent_TOTAL:35
+601488135:14:R:2, icmp_recv_TOTAL:100
+601512002:51:R:2, icmp_sent_TOTAL:22
+601513801:51:R:2, icmp_recv_TOTAL:69
+601518198:77:R:2, icmp_sent_TOTAL:56
+601519997:77:R:2, icmp_recv_TOTAL:94
+601523678:31:R:2, icmp_sent_TOTAL:27
+601525477:31:R:2, icmp_recv_TOTAL:86
+601549602:24:R:2, icmp_sent_TOTAL:23
+601551401:24:R:2, icmp_recv_TOTAL:48
+601571956:53:R:2, icmp_sent_TOTAL:53
+601573755:53:R:2, icmp_recv_TOTAL:96
+601577008:28:R:2, icmp_sent_TOTAL:23
+601578807:28:R:2, icmp_recv_TOTAL:60
+601579814:45:R:2, icmp_sent_TOTAL:26
+601581550:58:R:2, icmp_sent_TOTAL:19
+601581620:45:R:2, icmp_recv_TOTAL:39
+601583349:58:R:2, icmp_recv_TOTAL:48
+601595022:11:R:2, icmp_sent_TOTAL:28
+601596794:84:R:2, icmp_sent_TOTAL:24
+601596822:11:R:2, icmp_recv_TOTAL:73
+601598592:84:R:2, icmp_recv_TOTAL:46
+601601657:6:R:2, icmp_sent_TOTAL:39
+601603568:6:R:2, icmp_recv_TOTAL:111
+601605602:44:R:2, icmp_sent_TOTAL:31
+601607401:44:R:2, icmp_recv_TOTAL:35
+601609468:21:R:2, icmp_sent_TOTAL:98
+601611403:21:R:2, icmp_recv_TOTAL:132
+601626323:82:R:2, icmp_sent_TOTAL:18
+601628122:82:R:2, icmp_recv_TOTAL:29
+601658598:92:R:2, icmp_sent_TOTAL:83
+601660512:92:R:2, icmp_recv_TOTAL:166
+601670278:89:R:2, icmp_sent_TOTAL:57
+601672078:89:R:2, icmp_recv_TOTAL:98
+601678568:40:R:2, icmp_sent_TOTAL:43
+601680372:40:R:2, icmp_recv_TOTAL:80
+601699939:19:R:2, icmp_sent_TOTAL:40
+601701746:19:R:2, icmp_recv_TOTAL:59
+601717233:75:R:2, icmp_sent_TOTAL:29
+601719031:75:R:2, icmp_recv_TOTAL:46
+601738504:85:R:2, icmp_sent_TOTAL:50
+601740415:85:R:2, icmp_recv_TOTAL:148
+601760943:86:R:2, icmp_sent_TOTAL:25
+601762742:86:R:2, icmp_recv_TOTAL:71
+601770418:15:R:2, icmp_sent_TOTAL:16
+601772216:15:R:2, icmp_recv_TOTAL:29
+601774929:38:R:2, icmp_sent_TOTAL:191
+601776841:38:R:2, icmp_recv_TOTAL:265
+601778368:61:R:2, icmp_sent_TOTAL:81
+601780279:61:R:2, icmp_recv_TOTAL:175
+601791419:3:R:2, icmp_sent_TOTAL:91
+601793331:3:R:2, icmp_recv_TOTAL:137
+601793978:23:R:2, icmp_sent_TOTAL:59
+601795890:23:R:2, icmp_recv_TOTAL:114
+601837219:25:R:2, icmp_sent_TOTAL:34
+601839170:25:R:2, icmp_recv_TOTAL:114
+601862293:59:R:2, icmp_sent_TOTAL:18
+601864092:59:R:2, icmp_recv_TOTAL:27
+601869185:34:R:2, icmp_sent_TOTAL:68
+601871096:34:R:2, icmp_recv_TOTAL:109
+601875387:93:R:2, icmp_sent_TOTAL:36
+601877215:93:R:2, icmp_recv_TOTAL:80
+900888293:78:R:3, icmp_sent_TOTAL:34
+900890093:78:R:3, icmp_recv_TOTAL:79
+900899414:71:R:3, icmp_sent_TOTAL:24
+900901213:71:R:3, icmp_recv_TOTAL:35
+900912953:41:R:3, icmp_sent_TOTAL:25
+900913620:36:R:3, icmp_sent_TOTAL:23
+900914751:41:R:3, icmp_recv_TOTAL:47
+900915418:36:R:3, icmp_recv_TOTAL:17
+900921574:26:R:3, icmp_sent_TOTAL:32
+900923374:26:R:3, icmp_recv_TOTAL:70
+900929129:72:R:3, icmp_sent_TOTAL:25
+900930928:72:R:3, icmp_recv_TOTAL:56
+900948550:87:R:3, icmp_sent_TOTAL:22
+900950349:87:R:3, icmp_recv_TOTAL:28
+900959325:10:R:3, icmp_sent_TOTAL:26
+900961124:10:R:3, icmp_recv_TOTAL:36
+900966130:69:R:3, icmp_sent_TOTAL:68
+900968041:69:R:3, icmp_recv_TOTAL:122
+900992906:50:R:3, icmp_sent_TOTAL:23
+900994705:50:R:3, icmp_recv_TOTAL:74
+900996341:81:R:3, icmp_sent_TOTAL:25
+900998139:81:R:3, icmp_recv_TOTAL:86
+900998488:62:R:3, icmp_sent_TOTAL:22
+901000287:62:R:3, icmp_recv_TOTAL:54
+901011119:52:R:3, icmp_sent_TOTAL:191
+901013031:52:R:3, icmp_recv_TOTAL:276
+901026354:57:R:3, icmp_sent_TOTAL:48
+901028229:30:R:3, icmp_sent_TOTAL:21
+901028266:57:R:3, icmp_recv_TOTAL:119
+901030028:30:R:3, icmp_recv_TOTAL:28
+901077017:13:R:3, icmp_sent_TOTAL:94
+901078928:13:R:3, icmp_recv_TOTAL:172
+901083683:91:R:3, icmp_sent_TOTAL:22
+901085482:91:R:3, icmp_recv_TOTAL:20
+901090206:33:R:3, icmp_sent_TOTAL:46
+901092117:33:R:3, icmp_recv_TOTAL:109
+901100013:37:R:3, icmp_sent_TOTAL:23
+901101812:37:R:3, icmp_recv_TOTAL:31
+901102484:90:R:3, icmp_sent_TOTAL:43
+901102528:56:R:3, icmp_sent_TOTAL:42
+901103970:46:R:3, icmp_sent_TOTAL:30
+901104283:90:R:3, icmp_recv_TOTAL:94
+901104327:56:R:3, icmp_recv_TOTAL:62
+901104375:47:R:3, icmp_sent_TOTAL:44
+901105769:46:R:3, icmp_recv_TOTAL:79
+901106287:47:R:3, icmp_recv_TOTAL:110
+901115665:74:R:3, icmp_sent_TOTAL:44
+901117463:74:R:3, icmp_recv_TOTAL:84
+901122677:2:R:3, icmp_sent_TOTAL:94
+901124588:2:R:3, icmp_recv_TOTAL:125
+901130667:32:R:3, icmp_sent_TOTAL:22
+901132466:32:R:3, icmp_recv_TOTAL:31
+901137203:8:R:3, icmp_sent_TOTAL:42
+901137869:83:R:3, icmp_sent_TOTAL:23
+901139002:8:R:3, icmp_recv_TOTAL:36
+901139668:83:R:3, icmp_recv_TOTAL:36
+901144583:79:R:3, icmp_sent_TOTAL:30
+901146382:79:R:3, icmp_recv_TOTAL:61
+901150927:88:R:3, icmp_sent_TOTAL:27
+901152726:88:R:3, icmp_recv_TOTAL:55
+901160198:67:R:3, icmp_sent_TOTAL:36
+901161997:67:R:3, icmp_recv_TOTAL:35
+901187176:70:R:3, icmp_sent_TOTAL:26
+901188975:70:R:3, icmp_recv_TOTAL:68
+901213053:20:R:3, icmp_sent_TOTAL:74
+901214964:20:R:3, icmp_recv_TOTAL:149
+901215180:65:R:3, icmp_sent_TOTAL:54
+901216979:65:R:3, icmp_recv_TOTAL:92
+901234915:4:R:3, icmp_sent_TOTAL:65
+901236713:4:R:3, icmp_recv_TOTAL:85
+901241875:35:R:3, icmp_sent_TOTAL:22
+901243673:35:R:3, icmp_recv_TOTAL:27
+901275083:29:R:3, icmp_sent_TOTAL:81
+901275751:43:R:3, icmp_sent_TOTAL:46
+901276272:1:R:3, TOTAL_icmp_sent:5
+901276995:29:R:3, icmp_recv_TOTAL:112
+901277550:43:R:3, icmp_recv_TOTAL:76
+901277616:68:R:3, icmp_sent_TOTAL:111
+901278185:1:R:3, TOTAL_icmp_recv:625
+901279527:68:R:3, icmp_recv_TOTAL:188
+901280894:66:R:3, icmp_sent_TOTAL:103
+901282805:66:R:3, icmp_recv_TOTAL:175
+901288307:9:R:3, icmp_sent_TOTAL:25
+901290107:9:R:3, icmp_recv_TOTAL:78
+901298267:49:R:3, icmp_sent_TOTAL:29
+901299111:42:R:3, icmp_sent_TOTAL:35
+901300066:49:R:3, icmp_recv_TOTAL:76
+901300910:42:R:3, icmp_recv_TOTAL:47
+901304767:55:R:3, icmp_sent_TOTAL:31
+901306565:55:R:3, icmp_recv_TOTAL:20
+901331557:63:R:3, icmp_sent_TOTAL:25
+901333356:63:R:3, icmp_recv_TOTAL:55
+901336654:16:R:3, icmp_sent_TOTAL:64
+901338564:16:R:3, icmp_recv_TOTAL:105
+901349106:17:R:3, icmp_sent_TOTAL:32
+901350904:17:R:3, icmp_recv_TOTAL:28
+901354152:27:R:3, icmp_sent_TOTAL:101
+901356063:27:R:3, icmp_recv_TOTAL:140
+901357354:80:R:3, icmp_sent_TOTAL:34
+901357831:48:R:3, icmp_sent_TOTAL:127
+901359027:22:R:3, icmp_sent_TOTAL:44
+901359153:80:R:3, icmp_recv_TOTAL:62
+901359499:18:R:3, icmp_sent_TOTAL:33
+901359742:48:R:3, icmp_recv_TOTAL:188
+901359840:39:R:3, icmp_sent_TOTAL:40
+901360825:22:R:3, icmp_recv_TOTAL:87
+901361410:18:R:3, icmp_recv_TOTAL:121
+901361639:39:R:3, icmp_recv_TOTAL:64
+901364554:64:R:3, icmp_sent_TOTAL:44
+901366353:64:R:3, icmp_recv_TOTAL:95
+901369477:60:R:3, icmp_sent_TOTAL:35
+901371276:60:R:3, icmp_recv_TOTAL:59
+901378020:54:R:3, icmp_sent_TOTAL:47
+901379818:54:R:3, icmp_recv_TOTAL:84
+901431030:76:R:3, icmp_sent_TOTAL:59
+901432941:76:R:3, icmp_recv_TOTAL:108
+901443037:12:R:3, icmp_sent_TOTAL:37
+901444835:12:R:3, icmp_recv_TOTAL:83
+901470831:73:R:3, icmp_sent_TOTAL:38
+901472630:73:R:3, icmp_recv_TOTAL:54
+901480882:14:R:3, icmp_sent_TOTAL:43
+901482792:14:R:3, icmp_recv_TOTAL:108
+901518008:51:R:3, icmp_sent_TOTAL:25
+901518199:77:R:3, icmp_sent_TOTAL:60
+901519808:51:R:3, icmp_recv_TOTAL:77
+901520110:77:R:3, icmp_recv_TOTAL:105
+901523514:31:R:3, icmp_sent_TOTAL:33
+901525313:31:R:3, icmp_recv_TOTAL:95
+901549604:24:R:3, icmp_sent_TOTAL:28
+901551403:24:R:3, icmp_recv_TOTAL:52
+901571667:53:R:3, icmp_sent_TOTAL:71
+901573579:53:R:3, icmp_recv_TOTAL:117
+901575684:45:R:3, icmp_sent_TOTAL:30
+901577019:28:R:3, icmp_sent_TOTAL:29
+901577483:45:R:3, icmp_recv_TOTAL:44
+901578818:28:R:3, icmp_recv_TOTAL:71
+901581532:58:R:3, icmp_sent_TOTAL:22
+901583331:58:R:3, icmp_recv_TOTAL:55
+901595024:11:R:3, icmp_sent_TOTAL:33
+901596795:84:R:3, icmp_sent_TOTAL:29
+901596823:11:R:3, icmp_recv_TOTAL:84
+901598594:84:R:3, icmp_recv_TOTAL:50
+901601658:6:R:3, icmp_sent_TOTAL:47
+901603569:6:R:3, icmp_recv_TOTAL:129
+901605613:44:R:3, icmp_sent_TOTAL:36
+901605727:21:R:3, icmp_sent_TOTAL:104
+901607412:44:R:3, icmp_recv_TOTAL:40
+901607638:21:R:3, icmp_recv_TOTAL:137
+901626325:82:R:3, icmp_sent_TOTAL:23
+901628124:82:R:3, icmp_recv_TOTAL:33
+901653905:92:R:3, icmp_sent_TOTAL:91
+901655816:92:R:3, icmp_recv_TOTAL:183
+901666001:89:R:3, icmp_sent_TOTAL:65
+901667912:89:R:3, icmp_recv_TOTAL:105
+901674437:40:R:3, icmp_sent_TOTAL:47
+901676235:40:R:3, icmp_recv_TOTAL:86
+901695606:19:R:3, icmp_sent_TOTAL:45
+901697405:19:R:3, icmp_recv_TOTAL:64
+901717234:75:R:3, icmp_sent_TOTAL:33
+901719033:75:R:3, icmp_recv_TOTAL:51
+901729490:85:R:3, icmp_sent_TOTAL:61
+901731401:85:R:3, icmp_recv_TOTAL:168
+901760934:86:R:3, icmp_sent_TOTAL:30
+901762733:86:R:3, icmp_recv_TOTAL:81
+901770419:15:R:3, icmp_sent_TOTAL:20
+901772218:15:R:3, icmp_recv_TOTAL:34
+901774644:38:R:3, icmp_sent_TOTAL:219
+901776557:38:R:3, icmp_recv_TOTAL:310
+901778528:61:R:3, icmp_sent_TOTAL:101
+901780439:61:R:3, icmp_recv_TOTAL:203
+901786009:3:R:3, icmp_sent_TOTAL:107
+901787920:3:R:3, icmp_recv_TOTAL:146
+901793227:23:R:3, icmp_sent_TOTAL:64
+901795138:23:R:3, icmp_recv_TOTAL:122
+901831763:25:R:3, icmp_sent_TOTAL:38
+901833674:25:R:3, icmp_recv_TOTAL:129
+901862285:59:R:3, icmp_sent_TOTAL:21
+901864084:59:R:3, icmp_recv_TOTAL:31
+901864269:34:R:3, icmp_sent_TOTAL:78
+901866180:34:R:3, icmp_recv_TOTAL:119
+901874270:93:R:3, icmp_sent_TOTAL:44
+901876068:93:R:3, icmp_recv_TOTAL:89
+1200888298:78:R:4, icmp_sent_TOTAL:40
+1200890096:78:R:4, icmp_recv_TOTAL:86
+1200899439:71:R:4, icmp_sent_TOTAL:28
+1200901238:71:R:4, icmp_recv_TOTAL:39
+1200912959:41:R:4, icmp_sent_TOTAL:29
+1200913625:36:R:4, icmp_sent_TOTAL:27
+1200914758:41:R:4, icmp_recv_TOTAL:50
+1200915423:36:R:4, icmp_recv_TOTAL:21
+1200921579:26:R:4, icmp_sent_TOTAL:39
+1200923378:26:R:4, icmp_recv_TOTAL:81
+1200933575:72:R:4, icmp_sent_TOTAL:38
+1200935412:72:R:4, icmp_recv_TOTAL:78
+1200948547:87:R:4, icmp_sent_TOTAL:27
+1200950346:87:R:4, icmp_recv_TOTAL:31
+1200959321:10:R:4, icmp_sent_TOTAL:28
+1200961119:10:R:4, icmp_recv_TOTAL:41
+1200966138:69:R:4, icmp_sent_TOTAL:78
+1200968049:69:R:4, icmp_recv_TOTAL:126
+1200992911:50:R:4, icmp_sent_TOTAL:26
+1200994709:50:R:4, icmp_recv_TOTAL:80
+1200996347:81:R:4, icmp_sent_TOTAL:29
+1200998146:81:R:4, icmp_recv_TOTAL:95
+1200998513:62:R:4, icmp_sent_TOTAL:26
+1201000312:62:R:4, icmp_recv_TOTAL:59
+1201011115:52:R:4, icmp_sent_TOTAL:211
+1201013027:52:R:4, icmp_recv_TOTAL:304
+1201026363:57:R:4, icmp_sent_TOTAL:54
+1201028244:30:R:4, icmp_sent_TOTAL:24
+1201028273:57:R:4, icmp_recv_TOTAL:128
+1201030043:30:R:4, icmp_recv_TOTAL:32
+1201077127:13:R:4, icmp_sent_TOTAL:100
+1201079038:13:R:4, icmp_recv_TOTAL:183
+1201083680:91:R:4, icmp_sent_TOTAL:25
+1201085478:91:R:4, icmp_recv_TOTAL:23
+1201090205:33:R:4, icmp_sent_TOTAL:51
+1201092116:33:R:4, icmp_recv_TOTAL:118
+1201100029:37:R:4, icmp_sent_TOTAL:26
+1201101828:37:R:4, icmp_recv_TOTAL:38
+1201102473:90:R:4, icmp_sent_TOTAL:48
+1201102545:56:R:4, icmp_sent_TOTAL:46
+1201103996:46:R:4, icmp_sent_TOTAL:35
+1201104272:90:R:4, icmp_recv_TOTAL:97
+1201104344:56:R:4, icmp_recv_TOTAL:68
+1201104373:47:R:4, icmp_sent_TOTAL:47
+1201105795:46:R:4, icmp_recv_TOTAL:87
+1201106284:47:R:4, icmp_recv_TOTAL:122
+1201115682:74:R:4, icmp_sent_TOTAL:48
+1201117481:74:R:4, icmp_recv_TOTAL:90
+1201122665:2:R:4, icmp_sent_TOTAL:99
+1201124577:2:R:4, icmp_recv_TOTAL:135
+1201130663:32:R:4, icmp_sent_TOTAL:26
+1201132462:32:R:4, icmp_recv_TOTAL:35
+1201137220:8:R:4, icmp_sent_TOTAL:46
+1201137893:83:R:4, icmp_sent_TOTAL:26
+1201139019:8:R:4, icmp_recv_TOTAL:39
+1201139692:83:R:4, icmp_recv_TOTAL:41
+1201144608:79:R:4, icmp_sent_TOTAL:38
+1201146407:79:R:4, icmp_recv_TOTAL:67
+1201150942:88:R:4, icmp_sent_TOTAL:31
+1201152741:88:R:4, icmp_recv_TOTAL:59
+1201160195:67:R:4, icmp_sent_TOTAL:40
+1201161994:67:R:4, icmp_recv_TOTAL:40
+1201187191:70:R:4, icmp_sent_TOTAL:30
+1201188991:70:R:4, icmp_recv_TOTAL:75
+1201213058:20:R:4, icmp_sent_TOTAL:93
+1201214969:20:R:4, icmp_recv_TOTAL:166
+1201215178:65:R:4, icmp_sent_TOTAL:65
+1201217089:65:R:4, icmp_recv_TOTAL:106
+1201234904:4:R:4, icmp_sent_TOTAL:72
+1201236703:4:R:4, icmp_recv_TOTAL:95
+1201241881:35:R:4, icmp_sent_TOTAL:26
+1201243680:35:R:4, icmp_recv_TOTAL:30
+1201272200:29:R:4, icmp_sent_TOTAL:96
+1201274110:29:R:4, icmp_recv_TOTAL:126
+1201275748:43:R:4, icmp_sent_TOTAL:49
+1201276288:1:R:4, TOTAL_icmp_sent:6
+1201277547:43:R:4, icmp_recv_TOTAL:82
+1201277624:68:R:4, icmp_sent_TOTAL:123
+1201278201:1:R:4, TOTAL_icmp_recv:714
+1201279535:68:R:4, icmp_recv_TOTAL:206
+1201287334:66:R:4, icmp_sent_TOTAL:139
+1201288332:9:R:4, icmp_sent_TOTAL:30
+1201289245:66:R:4, icmp_recv_TOTAL:216
+1201290131:9:R:4, icmp_recv_TOTAL:82
+1201298282:49:R:4, icmp_sent_TOTAL:38
+1201299099:42:R:4, icmp_sent_TOTAL:38
+1201300081:49:R:4, icmp_recv_TOTAL:97
+1201300898:42:R:4, icmp_recv_TOTAL:55
+1201301073:55:R:4, icmp_sent_TOTAL:36
+1201302871:55:R:4, icmp_recv_TOTAL:23
+1201331562:63:R:4, icmp_sent_TOTAL:29
+1201333361:63:R:4, icmp_recv_TOTAL:60
+1201336652:16:R:4, icmp_sent_TOTAL:71
+1201338564:16:R:4, icmp_recv_TOTAL:114
+1201351688:48:R:4, icmp_sent_TOTAL:137
+1201353235:17:R:4, icmp_sent_TOTAL:42
+1201353599:48:R:4, icmp_recv_TOTAL:211
+1201354158:27:R:4, icmp_sent_TOTAL:110
+1201355034:17:R:4, icmp_recv_TOTAL:37
+1201356069:27:R:4, icmp_recv_TOTAL:149
+1201358774:80:R:4, icmp_sent_TOTAL:47
+1201359045:22:R:4, icmp_sent_TOTAL:50
+1201359494:18:R:4, icmp_sent_TOTAL:37
+1201359847:39:R:4, icmp_sent_TOTAL:45
+1201360572:80:R:4, icmp_recv_TOTAL:83
+1201360844:22:R:4, icmp_recv_TOTAL:91
+1201361405:18:R:4, icmp_recv_TOTAL:127
+1201361646:39:R:4, icmp_recv_TOTAL:69
+1201367243:64:R:4, icmp_sent_TOTAL:62
+1201369154:64:R:4, icmp_recv_TOTAL:114
+1201369475:60:R:4, icmp_sent_TOTAL:39
+1201371274:60:R:4, icmp_recv_TOTAL:66
+1201378058:54:R:4, icmp_sent_TOTAL:56
+1201379856:54:R:4, icmp_recv_TOTAL:95
+1201431025:76:R:4, icmp_sent_TOTAL:68
+1201432937:76:R:4, icmp_recv_TOTAL:119
+1201443034:12:R:4, icmp_sent_TOTAL:42
+1201444833:12:R:4, icmp_recv_TOTAL:87
+1201470819:73:R:4, icmp_sent_TOTAL:41
+1201472618:73:R:4, icmp_recv_TOTAL:59
+1201480888:14:R:4, icmp_sent_TOTAL:50
+1201482800:14:R:4, icmp_recv_TOTAL:118
+1201512000:51:R:4, icmp_sent_TOTAL:29
+1201513798:51:R:4, icmp_recv_TOTAL:86
+1201518207:77:R:4, icmp_sent_TOTAL:67
+1201520118:77:R:4, icmp_recv_TOTAL:113
+1201523530:31:R:4, icmp_sent_TOTAL:39
+1201525441:31:R:4, icmp_recv_TOTAL:100
+1201549609:24:R:4, icmp_sent_TOTAL:32
+1201551408:24:R:4, icmp_recv_TOTAL:63
+1201571662:53:R:4, icmp_sent_TOTAL:88
+1201573573:53:R:4, icmp_recv_TOTAL:133
+1201575692:45:R:4, icmp_sent_TOTAL:35
+1201577014:28:R:4, icmp_sent_TOTAL:32
+1201577491:45:R:4, icmp_recv_TOTAL:53
+1201578814:28:R:4, icmp_recv_TOTAL:79
+1201581557:58:R:4, icmp_sent_TOTAL:27
+1201583356:58:R:4, icmp_recv_TOTAL:58
+1201595030:11:R:4, icmp_sent_TOTAL:44
+1201596801:84:R:4, icmp_sent_TOTAL:39
+1201596829:11:R:4, icmp_recv_TOTAL:95
+1201598600:84:R:4, icmp_recv_TOTAL:69
+1201601663:6:R:4, icmp_sent_TOTAL:54
+1201603575:6:R:4, icmp_recv_TOTAL:136
+1201605601:44:R:4, icmp_sent_TOTAL:39
+1201605715:21:R:4, icmp_sent_TOTAL:110
+1201607400:44:R:4, icmp_recv_TOTAL:43
+1201607627:21:R:4, icmp_recv_TOTAL:145
+1201626320:82:R:4, icmp_sent_TOTAL:26
+1201628118:82:R:4, icmp_recv_TOTAL:43
+1201653893:92:R:4, icmp_sent_TOTAL:96
+1201655804:92:R:4, icmp_recv_TOTAL:188
+1201665990:89:R:4, icmp_sent_TOTAL:76
+1201667901:89:R:4, icmp_recv_TOTAL:113
+1201674445:40:R:4, icmp_sent_TOTAL:51
+1201676243:40:R:4, icmp_recv_TOTAL:89
+1201695594:19:R:4, icmp_sent_TOTAL:48
+1201697393:19:R:4, icmp_recv_TOTAL:71
+1201717242:75:R:4, icmp_sent_TOTAL:37
+1201719041:75:R:4, icmp_recv_TOTAL:54
+1201729516:85:R:4, icmp_sent_TOTAL:74
+1201731426:85:R:4, icmp_recv_TOTAL:181
+1201760950:86:R:4, icmp_sent_TOTAL:37
+1201762749:86:R:4, icmp_recv_TOTAL:89
+1201768149:38:R:4, icmp_sent_TOTAL:248
+1201770061:38:R:4, icmp_recv_TOTAL:351
+1201770434:15:R:4, icmp_sent_TOTAL:26
+1201772178:61:R:4, icmp_sent_TOTAL:112
+1201772233:15:R:4, icmp_recv_TOTAL:37
+1201774089:61:R:4, icmp_recv_TOTAL:216
+1201786007:3:R:4, icmp_sent_TOTAL:120
+1201787918:3:R:4, icmp_recv_TOTAL:153
+1201793215:23:R:4, icmp_sent_TOTAL:68
+1201795126:23:R:4, icmp_recv_TOTAL:125
+1201831788:25:R:4, icmp_sent_TOTAL:48
+1201833699:25:R:4, icmp_recv_TOTAL:138
+1201864256:34:R:4, icmp_sent_TOTAL:85
+1201866167:34:R:4, icmp_recv_TOTAL:130
+1201866434:59:R:4, icmp_sent_TOTAL:34
+1201868233:59:R:4, icmp_recv_TOTAL:42
+1201870788:93:R:4, icmp_sent_TOTAL:47
+1201872587:93:R:4, icmp_recv_TOTAL:94
+1500889035:78:R:5, icmp_sent_TOTAL:45
+1500890834:78:R:5, icmp_recv_TOTAL:90
+1500899422:71:R:5, icmp_sent_TOTAL:31
+1500901221:71:R:5, icmp_recv_TOTAL:42
+1500912951:41:R:5, icmp_sent_TOTAL:33
+1500913617:36:R:5, icmp_sent_TOTAL:31
+1500914750:41:R:5, icmp_recv_TOTAL:53
+1500915416:36:R:5, icmp_recv_TOTAL:22
+1500921572:26:R:5, icmp_sent_TOTAL:44
+1500923370:26:R:5, icmp_recv_TOTAL:87
+1500929128:72:R:5, icmp_sent_TOTAL:44
+1500930927:72:R:5, icmp_recv_TOTAL:84
+1500948539:87:R:5, icmp_sent_TOTAL:30
+1500950338:87:R:5, icmp_recv_TOTAL:33
+1500959314:10:R:5, icmp_sent_TOTAL:32
+1500961113:10:R:5, icmp_recv_TOTAL:45
+1500966116:69:R:5, icmp_sent_TOTAL:81
+1500968027:69:R:5, icmp_recv_TOTAL:134
+1500992904:50:R:5, icmp_sent_TOTAL:31
+1500994703:50:R:5, icmp_recv_TOTAL:86
+1500996330:81:R:5, icmp_sent_TOTAL:31
+1500998240:81:R:5, icmp_recv_TOTAL:105
+1500998486:62:R:5, icmp_sent_TOTAL:29
+1501000285:62:R:5, icmp_recv_TOTAL:65
+1501017112:52:R:5, icmp_sent_TOTAL:237
+1501019024:52:R:5, icmp_recv_TOTAL:330
+1501026341:57:R:5, icmp_sent_TOTAL:62
+1501028236:30:R:5, icmp_sent_TOTAL:26
+1501028253:57:R:5, icmp_recv_TOTAL:136
+1501030035:30:R:5, icmp_recv_TOTAL:32
+1501077125:13:R:5, icmp_sent_TOTAL:109
+1501079036:13:R:5, icmp_recv_TOTAL:195
+1501083672:91:R:5, icmp_sent_TOTAL:29
+1501085470:91:R:5, icmp_recv_TOTAL:25
+1501090204:33:R:5, icmp_sent_TOTAL:55
+1501092115:33:R:5, icmp_recv_TOTAL:123
+1501100011:37:R:5, icmp_sent_TOTAL:29
+1501101809:37:R:5, icmp_recv_TOTAL:41
+1501102482:90:R:5, icmp_sent_TOTAL:55
+1501102537:56:R:5, icmp_sent_TOTAL:50
+1501103969:46:R:5, icmp_sent_TOTAL:39
+1501104336:56:R:5, icmp_recv_TOTAL:73
+1501104375:47:R:5, icmp_sent_TOTAL:54
+1501104393:90:R:5, icmp_recv_TOTAL:109
+1501105768:46:R:5, icmp_recv_TOTAL:94
+1501106286:47:R:5, icmp_recv_TOTAL:128
+1501115671:74:R:5, icmp_sent_TOTAL:53
+1501117470:74:R:5, icmp_recv_TOTAL:97
+1501122785:2:R:5, icmp_sent_TOTAL:104
+1501124696:2:R:5, icmp_recv_TOTAL:138
+1501130656:32:R:5, icmp_sent_TOTAL:30
+1501132455:32:R:5, icmp_recv_TOTAL:37
+1501137199:8:R:5, icmp_sent_TOTAL:50
+1501137877:83:R:5, icmp_sent_TOTAL:31
+1501138998:8:R:5, icmp_recv_TOTAL:43
+1501139676:83:R:5, icmp_recv_TOTAL:45
+1501144591:79:R:5, icmp_sent_TOTAL:44
+1501146390:79:R:5, icmp_recv_TOTAL:71
+1501150925:88:R:5, icmp_sent_TOTAL:35
+1501152724:88:R:5, icmp_recv_TOTAL:61
+1501160194:67:R:5, icmp_sent_TOTAL:43
+1501161992:67:R:5, icmp_recv_TOTAL:42
+1501187174:70:R:5, icmp_sent_TOTAL:34
+1501188974:70:R:5, icmp_recv_TOTAL:79
+1501213162:20:R:5, icmp_sent_TOTAL:107
+1501215073:20:R:5, icmp_recv_TOTAL:183
+1501215177:65:R:5, icmp_sent_TOTAL:74
+1501217088:65:R:5, icmp_recv_TOTAL:115
+1501234911:4:R:5, icmp_sent_TOTAL:82
+1501236822:4:R:5, icmp_recv_TOTAL:102
+1501241873:35:R:5, icmp_sent_TOTAL:29
+1501243672:35:R:5, icmp_recv_TOTAL:32
+1501272300:29:R:5, icmp_sent_TOTAL:104
+1501274211:29:R:5, icmp_recv_TOTAL:133
+1501275740:43:R:5, icmp_sent_TOTAL:52
+1501276270:1:R:5, TOTAL_icmp_sent:6
+1501277539:43:R:5, icmp_recv_TOTAL:86
+1501277623:68:R:5, icmp_sent_TOTAL:140
+1501278181:1:R:5, TOTAL_icmp_recv:801
+1501279535:68:R:5, icmp_recv_TOTAL:220
+1501280901:66:R:5, icmp_sent_TOTAL:165
+1501282812:66:R:5, icmp_recv_TOTAL:240
+1501288315:9:R:5, icmp_sent_TOTAL:33
+1501290114:9:R:5, icmp_recv_TOTAL:85
+1501298265:49:R:5, icmp_sent_TOTAL:40
+1501299107:42:R:5, icmp_sent_TOTAL:42
+1501300176:49:R:5, icmp_recv_TOTAL:102
+1501300906:42:R:5, icmp_recv_TOTAL:58
+1501301062:55:R:5, icmp_sent_TOTAL:40
+1501302860:55:R:5, icmp_recv_TOTAL:25
+1501331555:63:R:5, icmp_sent_TOTAL:34
+1501333354:63:R:5, icmp_recv_TOTAL:64
+1501336651:16:R:5, icmp_sent_TOTAL:79
+1501338562:16:R:5, icmp_recv_TOTAL:119
+1501349104:17:R:5, icmp_sent_TOTAL:47
+1501350903:17:R:5, icmp_recv_TOTAL:39
+1501351685:48:R:5, icmp_sent_TOTAL:162
+1501353597:48:R:5, icmp_recv_TOTAL:235
+1501356224:27:R:5, icmp_sent_TOTAL:119
+1501357352:80:R:5, icmp_sent_TOTAL:56
+1501358136:27:R:5, icmp_recv_TOTAL:158
+1501359036:22:R:5, icmp_sent_TOTAL:56
+1501359151:80:R:5, icmp_recv_TOTAL:90
+1501359477:18:R:5, icmp_sent_TOTAL:40
+1501359836:39:R:5, icmp_sent_TOTAL:49
+1501360947:22:R:5, icmp_recv_TOTAL:101
+1501361388:18:R:5, icmp_recv_TOTAL:133
+1501361635:39:R:5, icmp_recv_TOTAL:73
+1501364553:64:R:5, icmp_sent_TOTAL:74
+1501366464:64:R:5, icmp_recv_TOTAL:125
+1501369473:60:R:5, icmp_sent_TOTAL:44
+1501371272:60:R:5, icmp_recv_TOTAL:72
+1501378007:54:R:5, icmp_sent_TOTAL:64
+1501379918:54:R:5, icmp_recv_TOTAL:103
+1501431009:76:R:5, icmp_sent_TOTAL:72
+1501432920:76:R:5, icmp_recv_TOTAL:124
+1501443033:12:R:5, icmp_sent_TOTAL:47
+1501444832:12:R:5, icmp_recv_TOTAL:92
+1501470828:73:R:5, icmp_sent_TOTAL:45
+1501472627:73:R:5, icmp_recv_TOTAL:60
+1501480880:14:R:5, icmp_sent_TOTAL:57
+1501482791:14:R:5, icmp_recv_TOTAL:126
+1501511992:51:R:5, icmp_sent_TOTAL:34
+1501513791:51:R:5, icmp_recv_TOTAL:90
+1501518196:77:R:5, icmp_sent_TOTAL:75
+1501520107:77:R:5, icmp_recv_TOTAL:123
+1501523502:31:R:5, icmp_sent_TOTAL:42
+1501525413:31:R:5, icmp_recv_TOTAL:109
+1501549602:24:R:5, icmp_sent_TOTAL:36
+1501551401:24:R:5, icmp_recv_TOTAL:67
+1501571767:53:R:5, icmp_sent_TOTAL:105
+1501573679:53:R:5, icmp_recv_TOTAL:151
+1501575690:45:R:5, icmp_sent_TOTAL:39
+1501577007:28:R:5, icmp_sent_TOTAL:36
+1501577489:45:R:5, icmp_recv_TOTAL:57
+1501578806:28:R:5, icmp_recv_TOTAL:86
+1501581540:58:R:5, icmp_sent_TOTAL:30
+1501583339:58:R:5, icmp_recv_TOTAL:63
+1501595022:11:R:5, icmp_sent_TOTAL:52
+1501596793:84:R:5, icmp_sent_TOTAL:44
+1501596933:11:R:5, icmp_recv_TOTAL:103
+1501598592:84:R:5, icmp_recv_TOTAL:75
+1501601656:6:R:5, icmp_sent_TOTAL:60
+1501603568:6:R:5, icmp_recv_TOTAL:145
+1501605609:44:R:5, icmp_sent_TOTAL:43
+1501605723:21:R:5, icmp_sent_TOTAL:115
+1501607407:44:R:5, icmp_recv_TOTAL:44
+1501607635:21:R:5, icmp_recv_TOTAL:149
+1501626313:82:R:5, icmp_sent_TOTAL:30
+1501628112:82:R:5, icmp_recv_TOTAL:47
+1501654013:92:R:5, icmp_sent_TOTAL:101
+1501655924:92:R:5, icmp_recv_TOTAL:198
+1501665997:89:R:5, icmp_sent_TOTAL:85
+1501667908:89:R:5, icmp_recv_TOTAL:125
+1501674443:40:R:5, icmp_sent_TOTAL:56
+1501676242:40:R:5, icmp_recv_TOTAL:97
+1501695602:19:R:5, icmp_sent_TOTAL:53
+1501697402:19:R:5, icmp_recv_TOTAL:74
+1501717230:75:R:5, icmp_sent_TOTAL:41
+1501719029:75:R:5, icmp_recv_TOTAL:58
+1501729498:85:R:5, icmp_sent_TOTAL:85
+1501731409:85:R:5, icmp_recv_TOTAL:193
+1501760942:86:R:5, icmp_sent_TOTAL:43
+1501762741:86:R:5, icmp_recv_TOTAL:95
+1501768142:38:R:5, icmp_sent_TOTAL:284
+1501770055:38:R:5, icmp_recv_TOTAL:391
+1501770417:15:R:5, icmp_sent_TOTAL:29
+1501772167:61:R:5, icmp_sent_TOTAL:133
+1501772215:15:R:5, icmp_recv_TOTAL:41
+1501774077:61:R:5, icmp_recv_TOTAL:241
+1501786005:3:R:5, icmp_sent_TOTAL:124
+1501787917:3:R:5, icmp_recv_TOTAL:158
+1501793214:23:R:5, icmp_sent_TOTAL:72
+1501795125:23:R:5, icmp_recv_TOTAL:132
+1501831762:25:R:5, icmp_sent_TOTAL:56
+1501833673:25:R:5, icmp_recv_TOTAL:151
+1501862294:59:R:5, icmp_sent_TOTAL:39
+1501864092:59:R:5, icmp_recv_TOTAL:45
+1501864264:34:R:5, icmp_sent_TOTAL:93
+1501866175:34:R:5, icmp_recv_TOTAL:141
+1501873957:93:R:5, icmp_sent_TOTAL:54
+1501875868:93:R:5, icmp_recv_TOTAL:100
+1800888292:78:R:6, icmp_sent_TOTAL:49
+1800890091:78:R:6, icmp_recv_TOTAL:97
+1800899423:71:R:6, icmp_sent_TOTAL:34
+1800901221:71:R:6, icmp_recv_TOTAL:44
+1800912962:41:R:6, icmp_sent_TOTAL:37
+1800913609:36:R:6, icmp_sent_TOTAL:35
+1800914761:41:R:6, icmp_recv_TOTAL:58
+1800915408:36:R:6, icmp_recv_TOTAL:27
+1800921573:26:R:6, icmp_sent_TOTAL:50
+1800923372:26:R:6, icmp_recv_TOTAL:93
+1800930324:72:R:6, icmp_sent_TOTAL:51
+1800932123:72:R:6, icmp_recv_TOTAL:89
+1800948550:87:R:6, icmp_sent_TOTAL:35
+1800950349:87:R:6, icmp_recv_TOTAL:34
+1800959315:10:R:6, icmp_sent_TOTAL:37
+1800961114:10:R:6, icmp_recv_TOTAL:49
+1800966118:69:R:6, icmp_sent_TOTAL:89
+1800968029:69:R:6, icmp_recv_TOTAL:144
+1800992905:50:R:6, icmp_sent_TOTAL:37
+1800994704:50:R:6, icmp_recv_TOTAL:91
+1800996348:81:R:6, icmp_sent_TOTAL:36
+1800998259:81:R:6, icmp_recv_TOTAL:107
+1800998497:62:R:6, icmp_sent_TOTAL:32
+1801000296:62:R:6, icmp_recv_TOTAL:69
+1801011108:52:R:6, icmp_sent_TOTAL:261
+1801013020:52:R:6, icmp_recv_TOTAL:353
+1801026333:57:R:6, icmp_sent_TOTAL:70
+1801028237:30:R:6, icmp_sent_TOTAL:29
+1801028244:57:R:6, icmp_recv_TOTAL:149
+1801030036:30:R:6, icmp_recv_TOTAL:34
+1801077107:13:R:6, icmp_sent_TOTAL:115
+1801079018:13:R:6, icmp_recv_TOTAL:206
+1801083683:91:R:6, icmp_sent_TOTAL:33
+1801085481:91:R:6, icmp_recv_TOTAL:28
+1801090195:33:R:6, icmp_sent_TOTAL:59
+1801092106:33:R:6, icmp_recv_TOTAL:128
+1801100022:37:R:6, icmp_sent_TOTAL:33
+1801101820:37:R:6, icmp_recv_TOTAL:46
+1801102465:90:R:6, icmp_sent_TOTAL:58
+1801102535:56:R:6, icmp_sent_TOTAL:54
+1801103988:46:R:6, icmp_sent_TOTAL:45
+1801104335:56:R:6, icmp_recv_TOTAL:76
+1801104372:47:R:6, icmp_sent_TOTAL:57
+1801104376:90:R:6, icmp_recv_TOTAL:113
+1801105787:46:R:6, icmp_recv_TOTAL:99
+1801106283:47:R:6, icmp_recv_TOTAL:135
+1801115653:74:R:6, icmp_sent_TOTAL:57
+1801117564:74:R:6, icmp_recv_TOTAL:101
+1801122777:2:R:6, icmp_sent_TOTAL:107
+1801124688:2:R:6, icmp_recv_TOTAL:142
+1801130657:32:R:6, icmp_sent_TOTAL:34
+1801132456:32:R:6, icmp_recv_TOTAL:39
+1801137200:8:R:6, icmp_sent_TOTAL:53
+1801137868:83:R:6, icmp_sent_TOTAL:33
+1801138999:8:R:6, icmp_recv_TOTAL:45
+1801139667:83:R:6, icmp_recv_TOTAL:48
+1801144602:79:R:6, icmp_sent_TOTAL:50
+1801146401:79:R:6, icmp_recv_TOTAL:73
+1801150916:88:R:6, icmp_sent_TOTAL:39
+1801152715:88:R:6, icmp_recv_TOTAL:65
+1801160185:67:R:6, icmp_sent_TOTAL:46
+1801161983:67:R:6, icmp_recv_TOTAL:46
+1801187175:70:R:6, icmp_sent_TOTAL:38
+1801188974:70:R:6, icmp_recv_TOTAL:82
+1801213163:20:R:6, icmp_sent_TOTAL:119
+1801215075:20:R:6, icmp_recv_TOTAL:192
+1801215168:65:R:6, icmp_sent_TOTAL:82
+1801217079:65:R:6, icmp_recv_TOTAL:124
+1801234893:4:R:6, icmp_sent_TOTAL:89
+1801236804:4:R:6, icmp_recv_TOTAL:110
+1801241884:35:R:6, icmp_sent_TOTAL:34
+1801243683:35:R:6, icmp_recv_TOTAL:34
+1801272292:29:R:6, icmp_sent_TOTAL:112
+1801274204:29:R:6, icmp_recv_TOTAL:141
+1801275747:43:R:6, icmp_sent_TOTAL:56
+1801276281:1:R:6, TOTAL_icmp_sent:7
+1801277546:43:R:6, icmp_recv_TOTAL:87
+1801277605:68:R:6, icmp_sent_TOTAL:155
+1801278192:1:R:6, TOTAL_icmp_recv:885
+1801279517:68:R:6, icmp_recv_TOTAL:237
+1801286585:66:R:6, icmp_sent_TOTAL:189
+1801288316:9:R:6, icmp_sent_TOTAL:36
+1801288496:66:R:6, icmp_recv_TOTAL:266
+1801290115:9:R:6, icmp_recv_TOTAL:92
+1801299099:42:R:6, icmp_sent_TOTAL:46
+1801300898:42:R:6, icmp_recv_TOTAL:65
+1801301051:55:R:6, icmp_sent_TOTAL:42
+1801301911:49:R:6, icmp_sent_TOTAL:44
+1801302849:55:R:6, icmp_recv_TOTAL:27
+1801303821:49:R:6, icmp_recv_TOTAL:107
+1801331556:63:R:6, icmp_sent_TOTAL:38
+1801333355:63:R:6, icmp_recv_TOTAL:68
+1801340718:16:R:6, icmp_sent_TOTAL:91
+1801342673:16:R:6, icmp_recv_TOTAL:127
+1801349127:17:R:6, icmp_sent_TOTAL:51
+1801350926:17:R:6, icmp_recv_TOTAL:41
+1801352808:48:R:6, icmp_sent_TOTAL:189
+1801354719:48:R:6, icmp_recv_TOTAL:259
+1801356159:27:R:6, icmp_sent_TOTAL:129
+1801357363:80:R:6, icmp_sent_TOTAL:65
+1801358069:27:R:6, icmp_recv_TOTAL:166
+1801359023:22:R:6, icmp_sent_TOTAL:60
+1801359274:80:R:6, icmp_recv_TOTAL:101
+1801359487:18:R:6, icmp_sent_TOTAL:44
+1801359817:39:R:6, icmp_sent_TOTAL:52
+1801360934:22:R:6, icmp_recv_TOTAL:104
+1801361399:18:R:6, icmp_recv_TOTAL:137
+1801361617:39:R:6, icmp_recv_TOTAL:75
+1801366573:64:R:6, icmp_sent_TOTAL:85
+1801368484:64:R:6, icmp_recv_TOTAL:134
+1801369465:60:R:6, icmp_sent_TOTAL:47
+1801371264:60:R:6, icmp_recv_TOTAL:76
+1801378020:54:R:6, icmp_sent_TOTAL:71
+1801379931:54:R:6, icmp_recv_TOTAL:111
+1801431019:76:R:6, icmp_sent_TOTAL:79
+1801432931:76:R:6, icmp_recv_TOTAL:130
+1801443024:12:R:6, icmp_sent_TOTAL:50
+1801444823:12:R:6, icmp_recv_TOTAL:95
+1801470819:73:R:6, icmp_sent_TOTAL:48
+1801472618:73:R:6, icmp_recv_TOTAL:64
+1801480889:14:R:6, icmp_sent_TOTAL:64
+1801482800:14:R:6, icmp_recv_TOTAL:129
+1801511991:51:R:6, icmp_sent_TOTAL:39
+1801513790:51:R:6, icmp_recv_TOTAL:98
+1801518197:77:R:6, icmp_sent_TOTAL:81
+1801520108:77:R:6, icmp_recv_TOTAL:129
+1801523521:31:R:6, icmp_sent_TOTAL:50
+1801525433:31:R:6, icmp_recv_TOTAL:114
+1801549593:24:R:6, icmp_sent_TOTAL:39
+1801551393:24:R:6, icmp_recv_TOTAL:72
+1801571768:53:R:6, icmp_sent_TOTAL:121
+1801573678:53:R:6, icmp_recv_TOTAL:164
+1801575682:45:R:6, icmp_sent_TOTAL:43
+1801577481:45:R:6, icmp_recv_TOTAL:63
+1801578313:28:R:6, icmp_sent_TOTAL:41
+1801580112:28:R:6, icmp_recv_TOTAL:91
+1801582325:58:R:6, icmp_sent_TOTAL:35
+1801584125:58:R:6, icmp_recv_TOTAL:70
+1801595023:11:R:6, icmp_sent_TOTAL:62
+1801596794:84:R:6, icmp_sent_TOTAL:48
+1801596934:11:R:6, icmp_recv_TOTAL:114
+1801598592:84:R:6, icmp_recv_TOTAL:82
+1801605514:6:R:6, icmp_sent_TOTAL:66
+1801605601:44:R:6, icmp_sent_TOTAL:47
+1801605705:21:R:6, icmp_sent_TOTAL:120
+1801607399:44:R:6, icmp_recv_TOTAL:46
+1801607451:6:R:6, icmp_recv_TOTAL:149
+1801607617:21:R:6, icmp_recv_TOTAL:154
+1801626314:82:R:6, icmp_sent_TOTAL:35
+1801628113:82:R:6, icmp_recv_TOTAL:51
+1801654005:92:R:6, icmp_sent_TOTAL:104
+1801655916:92:R:6, icmp_recv_TOTAL:201
+1801665979:89:R:6, icmp_sent_TOTAL:93
+1801667891:89:R:6, icmp_recv_TOTAL:132
+1801674435:40:R:6, icmp_sent_TOTAL:60
+1801676234:40:R:6, icmp_recv_TOTAL:99
+1801695593:19:R:6, icmp_sent_TOTAL:57
+1801697392:19:R:6, icmp_recv_TOTAL:80
+1801717232:75:R:6, icmp_sent_TOTAL:44
+1801719031:75:R:6, icmp_recv_TOTAL:62
+1801729499:85:R:6, icmp_sent_TOTAL:97
+1801731410:85:R:6, icmp_recv_TOTAL:203
+1801760953:86:R:6, icmp_sent_TOTAL:50
+1801762864:86:R:6, icmp_recv_TOTAL:104
+1801770408:15:R:6, icmp_sent_TOTAL:31
+1801772207:15:R:6, icmp_recv_TOTAL:47
+1801774646:38:R:6, icmp_sent_TOTAL:318
+1801776557:38:R:6, icmp_recv_TOTAL:428
+1801778491:61:R:6, icmp_sent_TOTAL:152
+1801780402:61:R:6, icmp_recv_TOTAL:260
+1801785987:3:R:6, icmp_sent_TOTAL:128
+1801787898:3:R:6, icmp_recv_TOTAL:165
+1801793216:23:R:6, icmp_sent_TOTAL:77
+1801795127:23:R:6, icmp_recv_TOTAL:137
+1801831772:25:R:6, icmp_sent_TOTAL:62
+1801833684:25:R:6, icmp_recv_TOTAL:159
+1801862284:59:R:6, icmp_sent_TOTAL:42
+1801864082:59:R:6, icmp_recv_TOTAL:49
+1801864367:34:R:6, icmp_sent_TOTAL:101
+1801866279:34:R:6, icmp_recv_TOTAL:150
+1801870787:93:R:6, icmp_sent_TOTAL:58
+1801872698:93:R:6, icmp_recv_TOTAL:105
+2100889527:78:R:7, icmp_sent_TOTAL:55
+2100891438:78:R:7, icmp_recv_TOTAL:103
+2100903557:71:R:7, icmp_sent_TOTAL:46
+2100905360:71:R:7, icmp_recv_TOTAL:54
+2100912943:41:R:7, icmp_sent_TOTAL:41
+2100913630:36:R:7, icmp_sent_TOTAL:39
+2100914742:41:R:7, icmp_recv_TOTAL:62
+2100915428:36:R:7, icmp_recv_TOTAL:27
+2100923260:26:R:7, icmp_sent_TOTAL:57
+2100925171:26:R:7, icmp_recv_TOTAL:100
+2100929127:72:R:7, icmp_sent_TOTAL:56
+2100930926:72:R:7, icmp_recv_TOTAL:95
+2100948532:87:R:7, icmp_sent_TOTAL:38
+2100950331:87:R:7, icmp_recv_TOTAL:38
+2100959316:10:R:7, icmp_sent_TOTAL:41
+2100961115:10:R:7, icmp_recv_TOTAL:53
+2100966111:69:R:7, icmp_sent_TOTAL:95
+2100968022:69:R:7, icmp_recv_TOTAL:153
+2100992906:50:R:7, icmp_sent_TOTAL:48
+2100994817:50:R:7, icmp_recv_TOTAL:126
+2100996341:81:R:7, icmp_sent_TOTAL:39
+2100998253:81:R:7, icmp_recv_TOTAL:114
+2100998540:62:R:7, icmp_sent_TOTAL:37
+2101000340:62:R:7, icmp_recv_TOTAL:75
+2101016790:52:R:7, icmp_sent_TOTAL:295
+2101018702:52:R:7, icmp_recv_TOTAL:387
+2101026345:57:R:7, icmp_sent_TOTAL:94
+2101028239:30:R:7, icmp_sent_TOTAL:34
+2101028257:57:R:7, icmp_recv_TOTAL:192
+2101030038:30:R:7, icmp_recv_TOTAL:37
+2101081722:13:R:7, icmp_sent_TOTAL:146
+2101083633:13:R:7, icmp_recv_TOTAL:247
+2101083665:91:R:7, icmp_sent_TOTAL:37
+2101085464:91:R:7, icmp_recv_TOTAL:31
+2101090207:33:R:7, icmp_sent_TOTAL:65
+2101092118:33:R:7, icmp_recv_TOTAL:134
+2101100013:37:R:7, icmp_sent_TOTAL:37
+2101101812:37:R:7, icmp_recv_TOTAL:51
+2101102476:90:R:7, icmp_sent_TOTAL:62
+2101102528:56:R:7, icmp_sent_TOTAL:58
+2101103980:46:R:7, icmp_sent_TOTAL:49
+2101104327:56:R:7, icmp_recv_TOTAL:85
+2101104388:90:R:7, icmp_recv_TOTAL:118
+2101105891:46:R:7, icmp_recv_TOTAL:108
+2101108918:47:R:7, icmp_sent_TOTAL:79
+2101110841:47:R:7, icmp_recv_TOTAL:160
+2101115665:74:R:7, icmp_sent_TOTAL:63
+2101117576:74:R:7, icmp_recv_TOTAL:109
+2101122770:2:R:7, icmp_sent_TOTAL:110
+2101124681:2:R:7, icmp_recv_TOTAL:149
+2101130658:32:R:7, icmp_sent_TOTAL:41
+2101132457:32:R:7, icmp_recv_TOTAL:54
+2101137203:8:R:7, icmp_sent_TOTAL:57
+2101137889:83:R:7, icmp_sent_TOTAL:38
+2101139002:8:R:7, icmp_recv_TOTAL:48
+2101139688:83:R:7, icmp_recv_TOTAL:52
+2101144583:79:R:7, icmp_sent_TOTAL:57
+2101146382:79:R:7, icmp_recv_TOTAL:80
+2101150936:88:R:7, icmp_sent_TOTAL:44
+2101152736:88:R:7, icmp_recv_TOTAL:70
+2101163898:67:R:7, icmp_sent_TOTAL:61
+2101165697:67:R:7, icmp_recv_TOTAL:60
+2101187176:70:R:7, icmp_sent_TOTAL:41
+2101188974:70:R:7, icmp_recv_TOTAL:87
+2101215161:65:R:7, icmp_sent_TOTAL:95
+2101217072:65:R:7, icmp_recv_TOTAL:143
+2101218240:20:R:7, icmp_sent_TOTAL:136
+2101220163:20:R:7, icmp_recv_TOTAL:210
+2101236389:4:R:7, icmp_sent_TOTAL:103
+2101238300:4:R:7, icmp_recv_TOTAL:123
+2101241865:35:R:7, icmp_sent_TOTAL:38
+2101243664:35:R:7, icmp_recv_TOTAL:39
+2101272284:29:R:7, icmp_sent_TOTAL:121
+2101274196:29:R:7, icmp_recv_TOTAL:149
+2101275741:43:R:7, icmp_sent_TOTAL:60
+2101276279:1:R:7, TOTAL_icmp_sent:7
+2101277540:43:R:7, icmp_recv_TOTAL:94
+2101277607:68:R:7, icmp_sent_TOTAL:173
+2101278304:1:R:7, TOTAL_icmp_recv:1016
+2101279519:68:R:7, icmp_recv_TOTAL:257
+2101280902:66:R:7, icmp_sent_TOTAL:219
+2101282814:66:R:7, icmp_recv_TOTAL:294
+2101288326:9:R:7, icmp_sent_TOTAL:40
+2101290125:9:R:7, icmp_recv_TOTAL:97
+2101298287:49:R:7, icmp_sent_TOTAL:49
+2101299111:42:R:7, icmp_sent_TOTAL:50
+2101300198:49:R:7, icmp_recv_TOTAL:114
+2101300910:42:R:7, icmp_recv_TOTAL:71
+2101304987:55:R:7, icmp_sent_TOTAL:53
+2101306786:55:R:7, icmp_recv_TOTAL:35
+2101335976:63:R:7, icmp_sent_TOTAL:56
+2101336756:16:R:7, icmp_sent_TOTAL:100
+2101337777:63:R:7, icmp_recv_TOTAL:85
+2101338667:16:R:7, icmp_recv_TOTAL:143
+2101349094:17:R:7, icmp_sent_TOTAL:55
+2101350892:17:R:7, icmp_recv_TOTAL:46
+2101356165:27:R:7, icmp_sent_TOTAL:145
+2101357345:80:R:7, icmp_sent_TOTAL:73
+2101358076:27:R:7, icmp_recv_TOTAL:182
+2101359027:22:R:7, icmp_sent_TOTAL:64
+2101359256:80:R:7, icmp_recv_TOTAL:108
+2101359489:18:R:7, icmp_sent_TOTAL:48
+2101359821:39:R:7, icmp_sent_TOTAL:58
+2101360938:22:R:7, icmp_recv_TOTAL:107
+2101361400:18:R:7, icmp_recv_TOTAL:142
+2101361619:39:R:7, icmp_recv_TOTAL:82
+2101362722:48:R:7, icmp_sent_TOTAL:246
+2101364544:64:R:7, icmp_sent_TOTAL:96
+2101364635:48:R:7, icmp_recv_TOTAL:319
+2101366456:64:R:7, icmp_recv_TOTAL:144
+2101370788:60:R:7, icmp_sent_TOTAL:54
+2101372587:60:R:7, icmp_recv_TOTAL:99
+2101378029:54:R:7, icmp_sent_TOTAL:86
+2101379940:54:R:7, icmp_recv_TOTAL:121
+2101431030:76:R:7, icmp_sent_TOTAL:86
+2101432941:76:R:7, icmp_recv_TOTAL:136
+2101443018:12:R:7, icmp_sent_TOTAL:54
+2101444928:12:R:7, icmp_recv_TOTAL:100
+2101470821:73:R:7, icmp_sent_TOTAL:52
+2101472620:73:R:7, icmp_recv_TOTAL:68
+2101499430:14:R:7, icmp_sent_TOTAL:73
+2101501341:14:R:7, icmp_recv_TOTAL:148
+2101512001:51:R:7, icmp_sent_TOTAL:43
+2101513912:51:R:7, icmp_recv_TOTAL:106
+2101518208:77:R:7, icmp_sent_TOTAL:88
+2101520120:77:R:7, icmp_recv_TOTAL:137
+2101527858:31:R:7, icmp_sent_TOTAL:69
+2101529776:31:R:7, icmp_recv_TOTAL:141
+2101549614:24:R:7, icmp_sent_TOTAL:43
+2101551413:24:R:7, icmp_recv_TOTAL:77
+2101571767:53:R:7, icmp_sent_TOTAL:142
+2101573678:53:R:7, icmp_recv_TOTAL:185
+2101575674:45:R:7, icmp_sent_TOTAL:47
+2101577473:45:R:7, icmp_recv_TOTAL:69
+2101581532:58:R:7, icmp_sent_TOTAL:37
+2101583332:58:R:7, icmp_recv_TOTAL:75
+2101586973:28:R:7, icmp_sent_TOTAL:50
+2101588884:28:R:7, icmp_recv_TOTAL:121
+2101595032:11:R:7, icmp_sent_TOTAL:71
+2101596795:84:R:7, icmp_sent_TOTAL:52
+2101596943:11:R:7, icmp_recv_TOTAL:121
+2101598594:84:R:7, icmp_recv_TOTAL:87
+2101605645:44:R:7, icmp_sent_TOTAL:52
+2101605914:21:R:7, icmp_sent_TOTAL:129
+2101607444:44:R:7, icmp_recv_TOTAL:48
+2101607824:21:R:7, icmp_recv_TOTAL:161
+2101610489:6:R:7, icmp_sent_TOTAL:90
+2101612400:6:R:7, icmp_recv_TOTAL:189
+2101626315:82:R:7, icmp_sent_TOTAL:38
+2101628114:82:R:7, icmp_recv_TOTAL:58
+2101659790:92:R:7, icmp_sent_TOTAL:138
+2101661701:92:R:7, icmp_recv_TOTAL:247
+2101666113:89:R:7, icmp_sent_TOTAL:101
+2101668024:89:R:7, icmp_recv_TOTAL:142
+2101674427:40:R:7, icmp_sent_TOTAL:61
+2101676338:40:R:7, icmp_recv_TOTAL:104
+2101699780:19:R:7, icmp_sent_TOTAL:70
+2101701715:19:R:7, icmp_recv_TOTAL:100
+2101717234:75:R:7, icmp_sent_TOTAL:47
+2101719033:75:R:7, icmp_recv_TOTAL:69
+2101729613:85:R:7, icmp_sent_TOTAL:112
+2101731524:85:R:7, icmp_recv_TOTAL:221
+2101760935:86:R:7, icmp_sent_TOTAL:56
+2101762846:86:R:7, icmp_recv_TOTAL:115
+2101770429:15:R:7, icmp_sent_TOTAL:37
+2101772228:15:R:7, icmp_recv_TOTAL:51
+2101774645:38:R:7, icmp_sent_TOTAL:385
+2101776557:38:R:7, icmp_recv_TOTAL:500
+2101778457:61:R:7, icmp_sent_TOTAL:183
+2101780369:61:R:7, icmp_recv_TOTAL:301
+2101786000:3:R:7, icmp_sent_TOTAL:132
+2101787910:3:R:7, icmp_recv_TOTAL:171
+2101793393:23:R:7, icmp_sent_TOTAL:83
+2101795304:23:R:7, icmp_recv_TOTAL:148
+2101831784:25:R:7, icmp_sent_TOTAL:71
+2101833694:25:R:7, icmp_recv_TOTAL:168
+2101862283:59:R:7, icmp_sent_TOTAL:47
+2101864082:59:R:7, icmp_recv_TOTAL:52
+2101864360:34:R:7, icmp_sent_TOTAL:108
+2101866272:34:R:7, icmp_recv_TOTAL:159
+2101874504:93:R:7, icmp_sent_TOTAL:77
+2101876437:93:R:7, icmp_recv_TOTAL:133
