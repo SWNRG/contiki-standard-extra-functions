@@ -37,7 +37,8 @@ static uint8_t uart_buffer_index = 0;
 /*********************************/
 
 #if OVERHEAD_STATS
-	static int udp_total_counter = 0;	
+	static int udp_total_counter = 0;
+	static int udp_previous =0;	
 #endif
 
 static struct uip_udp_conn *server_conn;
@@ -54,6 +55,11 @@ static rpl_dag_t *dag; //moved here to be global var
  */
 #include "net/rpl/rpl-dag.c"
 extern uint8_t ignore_version_number_incos;
+
+static int prevICMRecv = 0;
+static int prevICMPSent = 0;
+static int ICMPSent = 0;
+static int ICMPRecv = 0;
 
 PROCESS(udp_server_process, "UDP server process");
 //PROCESS(read_serial, "Read serial process");
@@ -384,12 +390,30 @@ PROCESS_THREAD(udp_server_process, ev, data)
       printf("R: %d, global repairs: %d\n",counter,rpl_stats.global_repairs);
 #endif
 
+#define OVERHEAD_STATS 1
 #if OVERHEAD_STATS
 		printf("R:%d, icmp_send:%d\n",counter, uip_stat.icmp.sent);
 		printf("R:%d, icmp_recv:%d\n",counter, uip_stat.icmp.recv);
 		printf("R:%d, Total incoming UDP:%d\n",counter, udp_total_counter);
 #endif
-      
+
+
+#define ANY_MODE 1
+// print if needed stats per turn NOT TOTALS
+#if ANY_MODE 
+		ICMPSent = uip_stat.icmp.sent - prevICMPSent;
+		prevICMPSent = uip_stat.icmp.sent;
+		ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
+		prevICMRecv = uip_stat.icmp.recv;
+				
+		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
+		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
+		udp_previous = udp_total_counter - udp_previous;		
+		printf("R:%d, CURRENT incoming UDP:%d\n",counter, udp_previous);
+		udp_previous = udp_total_counter;
+		
+#endif
+		      
     }
   }
   PROCESS_END();

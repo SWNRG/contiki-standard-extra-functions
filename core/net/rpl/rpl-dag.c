@@ -1511,7 +1511,7 @@ rpl_process_dio(uip_ipaddr_t *from, rpl_dio_t *dio)
        // George client nodes only
       // Papers suggest if the new dag is >20 per hour, ignore global repair
         if(ignore_version_number_incos == 0){
-        		printf("George: ignore_version_number_incos%d\n", ignore_version_number_incos);
+        		printf("George: ignore_version_number_incos=%d, hence global_repair happen\n", ignore_version_number_incos);
         		global_repair(from, dag, dio);
         }
       }

@@ -388,17 +388,38 @@ PROCESS_THREAD(udp_client_process, ev, data)
   printf("DixonQ active n value: %d\n",dixon_n_vals);
   printf("DixonQ confidence_level: %d\n",confidence_level);
   
+
+/********** open ALL upto the one you want ***********
+ *** STANDRARD-RPL: Close monitor_DAO() above, no extra messages (NO NP)
+ *** SLIM-MODE: ONLY NP-New Parent messages -> controller &
+ *** SP-Send Parent messages -> nodes 
+ *** ESSENTIAL MODE: Only those nodes who detect DIXON-Q irregularities
+ *** will start sending ICMP stats -> controller
+ *** FULL-MODE: All nodes send ICMP stats from the beggining -> controller */
+#define SLIM_MODE 0
+#define ESSENTIAL_MODE 0
+#define FULL_MODE 0
+  
+#if SLIM_MODE    
+	 printf("SLIM MODE ON: Only SP...\n");
+    monitor_DAO();   
+#endif 	 
+
+#if ESSENTIAL_MODE 
+	printf("ESSENTIAL MODE ON\n");
+#endif
+
+#if FULL_MODE
+	printf("FULL MODE ON\n");
+#endif
   	 
+  //monitor_ver_num();
+  	     
+
   etimer_set(&periodic, SEND_INTERVAL);
   while(1) {
     PROCESS_YIELD();
-    
-    
-    /* Close those two for "normal" RPL. No parent info to sink */
-    //monitor_DAO();    
-    //monitor_ver_num();
-    
-	 
+
     if(ev == tcpip_event) {
       tcpip_handler();
     }
@@ -420,9 +441,22 @@ PROCESS_THREAD(udp_client_process, ev, data)
  
       /* sending periodic data to sink (e.g. temperature measurements) */
       ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);  
-       
+
+// turn off if not needed
+#define CURRENT_ICMP 1
+#if CURRENT_ICMP
+		ICMPSent = uip_stat.icmp.sent - prevICMPSent;
+		prevICMPSent = uip_stat.icmp.sent;
+		ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
+		prevICMRecv = uip_stat.icmp.recv;	
+		
+		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
+		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);	
+#endif		
+		
+#define   STANDARD_RPL 0   
 // variable in project.conf
-#if OVERHEAD_STATS	
+#if STANDARD_RPL // ex-OVERHEAD_STATS	
 		printf("R:%d, icmp_sent_TOTAL:%d\n",counter,uip_stat.icmp.sent);
 		printf("R:%d, icmp_recv_TOTAL:%d\n",counter,uip_stat.icmp.recv);
 #endif
@@ -437,22 +471,24 @@ PROCESS_THREAD(udp_client_process, ev, data)
  * Either the node(s) are continiously running it, or the controller asks for
  * it by sending a message to turn it on.
  */	
-		ICMPSent = uip_stat.icmp.sent - prevICMPSent;
-		prevICMPSent = uip_stat.icmp.sent;
-		ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
-		prevICMRecv = uip_stat.icmp.recv;
+ 
+#if ESSENTIAL_MODE 
 				
-		//printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
-		//printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
-		
-		/* Try these for total number of packets sent/received until now */		
-		//int dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
-		//int dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);		
-		
-		/* August 2020: Use these, counting the differences....*/
+		/* August 2020: Use these, counting the differences....*/		
 		dixonQAnswerSent = addDixonQOut(ICMPSent);
 		dixonQAnswerRecv = addDixonQIn(ICMPRecv);
-						
+#endif			
+
+		/* Try these for total number of packets sent/received until now */		
+		//int dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
+		//int dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);
+		
+#if FULL_MODE
+	// In full mode, ALL NODES send ICMP & UDP stats from the beggining
+	sendICMP = 1 ;
+	sendUDP = 1;
+#endif
+								
 		/* Continiously monitoring fo abnormalities in icmp (Dixon q test outliers */
 		if (counter > dixon_n_vals + 3){ /* On bootstrap network is still forming */
 			//if(dixonQCounter == 0){ NOT NEEDED look below
@@ -460,12 +496,11 @@ PROCESS_THREAD(udp_client_process, ev, data)
 				if( dixonQAnswerSent > 0 && dixonQAnswerRecv > 0)
 				{
 					/* put current parent in black list and choose a new one? */
-
-					printf("R: %d, PANIC both icmps outliers, choose a new parent maybe?\n",counter);
-					
+#if ESSENTIAL_MODE
+					printf("R: %d, PANIC both icmps outliers, sendICMP==1\n",counter);
 					/* Close those two if you want to measure total packets in slim-mode */
-					sendICMP = 1 ;
-					
+					sendICMP = 1;
+#endif					
 					/* close this to measure overhead in essential-mode: Only nodes
 					 * who declare PANIC will enable by themselfs the send_to_controller
 					 * ICMP stats.
