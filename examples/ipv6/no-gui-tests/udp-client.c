@@ -250,7 +250,7 @@ monitor_ver_num(void) //TODO: Implement this method
 	static int ver_num_attacks = 0; // be careful, it could increase for ever!
 	char buf[MAX_PAYLOAD_LEN];
 	
-#define PRINT_DETAILS 0
+#define PRINT_DETAILS 1
 
 	if(dio_bigger_than_dag == 1 || dio_smaller_than_dag == 1 ){
 #if PRINT_DETAILS
@@ -261,8 +261,13 @@ monitor_ver_num(void) //TODO: Implement this method
 		sprintf(buf, "[VA:%d]",++ver_num_attacks);
 		uip_udp_packet_sendto(client_conn, buf, strlen(buf),
 					  &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));
-	}			     	
-	while(ignore_version_number_incos==1){
+	}	
+	// Hardcoding ver_num_attacks. Use the adaptable algorithm in ARRESTOR paper
+	if(ver_num_attacks>20){
+		ignore_version_number_incos=1;
+		ver_num_attacks=20; //make sure that it does not crash...
+	}	     	
+	if(ignore_version_number_incos==1){
 #if PRINT_DETAILS
 		printf("ignore_version_number_incos: %d\n",ignore_version_number_incos);
 #endif
@@ -384,8 +389,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
   while(1) {
     PROCESS_YIELD();
 
-    monitor_DAO();
-    
+/****** Close these two for Standard-RPL *********/
+    monitor_DAO();   
     monitor_ver_num();
 	 
     if(ev == tcpip_event) {
@@ -396,13 +401,27 @@ PROCESS_THREAD(udp_client_process, ev, data)
       etimer_reset(&periodic);
 
       counter++;
+           
+#define FULL_MODE 0
+#if FULL_MODE      
+      sendICMP = 1 ;
+#endif      
       
       /* sending periodic data to sink (e.g. temperature measurements) */
       ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);   
-	
-		//printf("R:%d, icmp_sent_TOTAL:%d\n",counter,uip_stat.icmp.sent);
-		//printf("R:%d, icmp_recv_TOTAL:%d\n",counter,uip_stat.icmp.recv);
 
+		int ICMPSent = uip_stat.icmp.sent - prevICMPSent;
+		prevICMPSent = uip_stat.icmp.sent;
+		int ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
+		prevICMRecv = uip_stat.icmp.recv;
+		
+/*************** Choose betweek total packets and current packets *****/	
+		//printf("R:%d, TOTAL_icmp_sent:%d\n",counter,uip_stat.icmp.sent);
+		//printf("R:%d, TOTAL_icmp_recv:%d\n",counter,uip_stat.icmp.recv);
+
+		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
+		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
+		
 /***********************************************************************/
 /* Hybrid Security Mechanism: This is the node-part.
  * it is lightweight, and it works in conjuction with the controller.
@@ -412,84 +431,62 @@ PROCESS_THREAD(udp_client_process, ev, data)
  * How to enable it: 
  * Either the node(s) are continiously running it, or the controller asks for
  * it by sending a message to turn it on.
- */	
-		int ICMPSent = uip_stat.icmp.sent - prevICMPSent;
-		prevICMPSent = uip_stat.icmp.sent;
-		int ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
-		prevICMRecv = uip_stat.icmp.recv;
-
-		//printf("R:%d, TOTAL_icmp_sent:%d\n",counter,uip_stat.icmp.sent);
-		//printf("R:%d, TOTAL_icmp_recv:%d\n",counter,uip_stat.icmp.recv);
-				
+ */
+ 	
 		/* Try these for total number of packets sent/received until now */		
 		//dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
 		//dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);
 
-		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
-		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
-		
+/******** Open/Close these two for Dixon-Q tests ********/		
 		dixonQAnswerSent = addDixonQOut(ICMPSent);
 		dixonQAnswerRecv = addDixonQIn(ICMPRecv);
 						
-		/* Continiously monitoring fo abnormalities in icmp (Dixon q test outliers */
+		/* Continiously monitoring fo abnormalities in icmp 
+		(Dixon q test outliers */
 		if (counter > dixon_n_vals + 3){ /* On bootstrap network is still forming */
-			//if(dixonQCounter == 0){ NOT NEEDED look below
-				/* both ICMP outliers, definitely under attack. Look for another parent */
+				/* both ICMP outliers, definitely under attack. 
+				   Look for another parent */
 				if( dixonQAnswerSent > 0 && dixonQAnswerRecv > 0)
 				{
 					/* put current parent in black list and choose a new one? */
-					printf("R: %d, PANIC both icmps outliers, choose a new parent maybe?\n",counter);
+					printf("R: %d, PANIC both icmps outliers\n",counter);
+/***** ESSENTIAL MODE******/						
+					sendICMP = 1 ;
 				}
 				else{			
 					//TODO: Differenciate actions for small/big outlier
-					if( dixonQAnswerSent > 0 ){ /* dixonQAnswerSent = 1 or 2 */
+					if( dixonQAnswerSent > 0 ){ /* dixonQAnswerSent = 1 or 2 */					
 						printf("R:%d, Sent icmps out of bounds (outlier)\n",counter);
-						sendICMP = 1 ;
-						enablePanicButton = 1; /* Central Management should ask all nodes to sendICMP */
+						//sendICMP = 1 ;
 						
-						//not needed
-						/* Dont test dixon for at least n times. Remember DixonQ test is valid only once */
+						/* Central Management should ask all nodes to sendICMP */
+						//enablePanicButton = 1; 
+						
+						//not used
 						dixonQCounter=1;
 					}
 				
 					if( dixonQAnswerRecv > 0 ){ /* dixonQAnswerRecv = 1 or 2 */
 						printf("R:%d, Recv icmps out of bounds (outlier)\n",counter);
-						sendICMP = 1 ;
-						enablePanicButton = 1; /* Central Management should ask all nodes to sendICMP */
+						//sendICMP = 1 ;
+						/* Central Management should ask all nodes to sendICMP */
+						//enablePanicButton = 1; 
 						
-						//not needed
-						/* Dont test dixon for at least n times. Remember DixonQ test is valid only once */
+						//not used
 						dixonQCounter=1;
 					}
 				}	
-			/*	
-			}else{ // dixonQCounter > 
-				// dixon should not be used on the same data twice. After outlier wait n turns
-				// the above is wrong! DixonQ says dont use THE SAME DATA TWICE... if new value came, ok
-				if(dixonQCounter < dixon_n_vals){
-					printf("dixnoQCounter:%d increasing before using data again...\n",dixonQCounter);
-					dixonQCounter++;
-				}
-				if(dixonQCounter == dixon_n_vals){
-					printf("Reseting dixonQCounter = 0. Restart monitoring ICMP\n");
-					dixonQCounter = 0;
-				}
-			}
-			*/
-		} //if counter > dixon_n_vals + 3 at the beggining the network is still forming
+		} //if counter > dixon_n_vals + 3 (after bootstrap)
     }
-/********** End of hybrid security node part implementing dixonQ outlier ******/
+/****** End of hybrid security node part implementing dixonQ outlier *****/
 
     if (sendUDP != 0){
    	sendUDPStats();   	
-   	//ctimer_set(&backoff_timer, SEND_TIME, sendUDPStats, NULL); 
     }
    
 	 if (sendICMP != 0){
 		sendICMPStats();
-   	//ctimer_set(&backoff_timer, SEND_TIME, sendICMPStats, NULL); 
-    }
-    //ctimer_set(&backoff_timer, SEND_TIME, send_all_neighbors, NULL);     
+    }    
   }
   PROCESS_END();
 }

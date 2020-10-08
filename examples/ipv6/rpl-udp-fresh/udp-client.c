@@ -396,13 +396,14 @@ PROCESS_THREAD(udp_client_process, ev, data)
  *** ESSENTIAL MODE: Only those nodes who detect DIXON-Q irregularities
  *** will start sending ICMP stats -> controller
  *** FULL-MODE: All nodes send ICMP stats from the beggining -> controller */
-#define SLIM_MODE 0
+#define SLIM_MODE 1
 #define ESSENTIAL_MODE 0
 #define FULL_MODE 0
   
 #if SLIM_MODE    
 	 printf("SLIM MODE ON: Only SP...\n");
-    monitor_DAO();   
+    monitor_DAO(); 
+    monitor_ver_num();  
 #endif 	 
 
 #if ESSENTIAL_MODE 
@@ -413,7 +414,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
 	printf("FULL MODE ON\n");
 #endif
   	 
-  //monitor_ver_num();
+  
   	     
 
   etimer_set(&periodic, SEND_INTERVAL);
@@ -472,8 +473,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
  * it by sending a message to turn it on.
  */	
  
-#if ESSENTIAL_MODE 
-				
+#if ESSENTIAL_MODE 				
 		/* August 2020: Use these, counting the differences....*/		
 		dixonQAnswerSent = addDixonQOut(ICMPSent);
 		dixonQAnswerRecv = addDixonQIn(ICMPRecv);

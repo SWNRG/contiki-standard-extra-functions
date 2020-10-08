@@ -409,7 +409,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
 		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
 		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
 		udp_previous = udp_total_counter - udp_previous;		
-		printf("R:%d, CURRENT incoming UDP:%d\n",counter, udp_previous);
+		printf("R:%d, CURRENT_in_UDP:%d\n",counter, udp_previous);
 		udp_previous = udp_total_counter;
 		
 #endif
