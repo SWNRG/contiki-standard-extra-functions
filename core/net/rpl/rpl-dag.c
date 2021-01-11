@@ -81,6 +81,20 @@ static uint8_t dio_smaller_than_dag = 0;
  */
 static uint8_t ignore_version_number_incos = 0;
 
+
+
+
+
+
+//set this to print when and how trickle is reset
+#define PRINT_TRICKLE_ON 1
+
+
+
+
+
+
+
 /*---------------------------------------------------------------------------*/
 /* RPL definitions. */
 
@@ -449,6 +463,10 @@ rpl_set_root(uint8_t instance_id, uip_ipaddr_t *dag_id)
 
   rpl_reset_dio_timer(instance);
 
+#if PRINT_TRICKLE_ON
+  printf("RPL: root set. Resetting trickle...\n");
+#endif
+
   return dag;
 }
 /*---------------------------------------------------------------------------*/
@@ -469,6 +487,11 @@ rpl_repair_root(uint8_t instance_id)
   RPL_LOLLIPOP_INCREMENT(instance->dtsn_out);
   PRINTF("RPL: rpl_repair_root initiating global repair with version %d\n", instance->current_dag->version);
   rpl_reset_dio_timer(instance);
+
+#if PRINT_TRICKLE_ON
+  printf("RPL: root glogal repair. Resetting trickle...\n");
+#endif
+
   return 1;
 }
 /*---------------------------------------------------------------------------*/
@@ -850,6 +873,11 @@ rpl_select_dag(rpl_instance_t *instance, rpl_parent_t *p)
     /* The DAO parent set changed - schedule a DAO transmission. */
     rpl_schedule_dao(instance);
     rpl_reset_dio_timer(instance);
+
+#if PRINT_TRICKLE_ON
+  printf("RPL: DAO Parent changed. Resetting trickle...\n");
+#endif
+
 #if DEBUG
     rpl_print_neighbor_list();
 #endif
@@ -1181,6 +1209,11 @@ rpl_join_instance(uip_ipaddr_t *from, rpl_dio_t *dio)
   ANNOTATE("#A join=%u\n", dag->dag_id.u8[sizeof(dag->dag_id) - 1]);
 
   rpl_reset_dio_timer(instance);
+  
+#if PRINT_TRICKLE_ON
+  printf("RPL: Joined a DAG. Resetting trickle...\n");
+#endif
+
   rpl_set_default_route(instance, from);
 
   if(instance->mop != RPL_MOP_NO_DOWNWARD_ROUTES) {
@@ -1336,6 +1369,11 @@ rpl_local_repair(rpl_instance_t *instance)
   instance->has_downward_route = 0;
 
   rpl_reset_dio_timer(instance);
+  
+#if PRINT_TRICKLE_ON
+  printf("RPL: Local repair initiated. Resetting trickle...\n");
+#endif
+  
   if(RPL_IS_STORING(instance)) {
     /* Request refresh of DAO registrations next DIO. Only for storing mode. In
      * non-storing mode, non-root nodes increment DTSN only on when their parent do,
@@ -1493,6 +1531,11 @@ rpl_process_dio(uip_ipaddr_t *from, rpl_dio_t *dio)
       // Papers suggest if the new dag is >20 per hour, ignore global repair
         if(ignore_version_number_incos == 0)        
         		rpl_reset_dio_timer(instance);
+        		
+#if PRINT_TRICKLE_ON
+  printf("RPL: Version number inconsistency. Resetting trickle...\n");
+#endif
+        		
       } else {     
 
         // George
@@ -1525,9 +1568,13 @@ rpl_process_dio(uip_ipaddr_t *from, rpl_dio_t *dio)
         
         // George	      
         dio_smaller_than_dag = 1;
-        printf("RPL: resetting dio_timer due to old version number received\n"); 	
-        
+        printf("RPL: resetting dio_timer due to old version number received\n"); 
         rpl_reset_dio_timer(instance);
+
+#if PRINT_TRICKLE_ON
+  printf("RPL: Old DAG version received. Resetting trickle...\n");
+#endif
+
         return;
       }
     }
@@ -1670,6 +1717,11 @@ printf("\n");
   if(dio->rank == INFINITE_RANK && p == dag->preferred_parent) {
     /* Our preferred parent advertised an infinite rank, reset DIO timer */
     rpl_reset_dio_timer(instance);
+    
+#if PRINT_TRICKLE_ON
+  printf("RPL: Parent with infinite rank detected. Resetting trickle...\n");
+#endif    
+    
   }
 
   /* Parent info has been updated, trigger rank recalculation */

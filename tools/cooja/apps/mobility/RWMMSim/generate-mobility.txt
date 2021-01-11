@@ -39,28 +39,28 @@
 #
 # ----------------------------------------------------------------------
 # Number of nodes
-1
+10
 # Time for simulation [s] 
-#5 HOURS
-18000 
+#3 HOURS
+10800 
 # Time resolution [s]
-0.2
+0.4
 # Minimum pause time [s]
 2
 # Maximum pause time [s]
-10
+6
 # Maximum x-coordinate [m]
-400
+320
 # Maximum y-coordinate [m]
-400
+320
 # Minimum speed [m/s]
-0.1
-# Maximum speed [m/s]
 2
+# Maximum speed [m/s]
+10
 # How long time to disregard from the start of the simulation [s]
 # (in RWMM, the beginning of the simulation can be disproportionate, hence
 # it is common to disregard the beginning of it.)
-4
+10
 # Radio Interference range [m] (dist to where interference occurs)
 50
 # Radio reception range [m] (dist to where radio reception always succeeds)

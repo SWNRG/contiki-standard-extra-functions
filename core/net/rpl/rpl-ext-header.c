@@ -51,7 +51,12 @@
 #include "net/rpl/rpl-ns.h"
 #include "net/packetbuf.h"
 
+
+// George OPEN FOR monitoring dodag-nconsinstency attack
+//#define DEBUG DEBUG_FULL
+
 #define DEBUG DEBUG_NONE
+
 #include "net/ip/uip-debug.h"
 
 #include <limits.h>

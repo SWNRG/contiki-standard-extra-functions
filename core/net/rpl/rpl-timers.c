@@ -191,7 +191,15 @@ handle_dio_timer(void *ptr)
     /* check if we need to double interval */
     if(instance->dio_intcurrent < instance->dio_intmin + instance->dio_intdoubl) {
       instance->dio_intcurrent++;
+      
+      
       PRINTF("RPL: DIO Timer interval doubled %d\n", instance->dio_intcurrent);
+     // George printing trickle timer increases...  
+      printf("RPL: DIO Timer interval doubled %d\n", instance->dio_intcurrent);
+    
+    
+    
+    
     }
     new_dio_interval(instance);
   }
@@ -221,6 +229,10 @@ rpl_reset_dio_timer(rpl_instance_t *instance)
     instance->dio_counter = 0;
     instance->dio_intcurrent = instance->dio_intmin;
     new_dio_interval(instance);
+    
+    // George printing trickle timer increases... 
+    printf("RPL: Resetting dio timer to minimum interval\n");
+    
   }
 #if RPL_CONF_STATS
   rpl_stats.resets++;

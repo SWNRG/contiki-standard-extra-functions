@@ -282,8 +282,7 @@ monitor_DAO(void)
  */
 	//uip_ipaddr_t *addr; // is this needed ???
 	
-#define PRINT_CHANGES 0
-
+#define PRINT_CHANGES 1
 	/* In contiki, you can directly compare if(parent == parent2) */
 	if(my_cur_parent != dao_preffered_parent){
 #if PRINT_CHANGES
@@ -296,7 +295,7 @@ monitor_DAO(void)
 		my_cur_parent = dao_preffered_parent;
 		my_cur_parent_ip = dao_preffered_parent_ip;
 		
-#define PRINT_PARENT 0
+#define PRINT_PARENT 1
 #if PRINT_PARENT
 	   printf("NP:");
 	   printLongAddr(my_cur_parent_ip);
@@ -351,7 +350,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
 
   set_global_address();
 
-	printf("PERIOD defined: %d\n",PERIOD);
+  printf("PERIOD defined: %d\n",PERIOD);
 	
   /* The data sink runs with a 100% duty cycle in order to ensure high 
      packet reception rates. */
@@ -397,7 +396,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
  *** will start sending ICMP stats -> controller
  *** FULL-MODE: All nodes send ICMP stats from the beggining -> controller */
 #define SLIM_MODE 1
-#define ESSENTIAL_MODE 0
+#define ESSENTIAL_MODE 1
 #define FULL_MODE 0
   
 #if SLIM_MODE    
@@ -444,7 +443,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
       ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);  
 
 // turn off if not needed
-#define CURRENT_ICMP 1
+#define CURRENT_ICMP 0
 #if CURRENT_ICMP
 		ICMPSent = uip_stat.icmp.sent - prevICMPSent;
 		prevICMPSent = uip_stat.icmp.sent;

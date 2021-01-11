@@ -18,7 +18,21 @@
 //#ifdef TEST_MORE_ROUTES
 /* configure number of neighbors and routes */
 #define NBR_TABLE_CONF_MAX_NEIGHBORS     10
-#define UIP_CONF_MAX_ROUTES   30
+
+
+
+
+
+
+// Oct 20 2020 changed from 30 -->40
+#define UIP_CONF_MAX_ROUTES   40
+
+
+
+
+
+
+
 //#else
 /* configure number of neighbors and routes */
 //#define NBR_TABLE_CONF_MAX_NEIGHBORS     10

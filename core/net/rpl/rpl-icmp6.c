@@ -67,7 +67,7 @@
 static  rpl_parent_t *dao_preffered_parent;
 static  uip_ipaddr_t *dao_preffered_parent_ip;
 static  uip_ipaddr_t dao_prefix_own_ip;
-
+static uint8_t dao_parent_set=0;
 /*---------------------------------------------------------------------------*/
 #define RPL_DIO_GROUNDED                 0x80
 #define RPL_DIO_MOP_SHIFT                3
@@ -1104,9 +1104,34 @@ dao_output(rpl_parent_t *parent, uint8_t lifetime)
   }
 
   if(parent == NULL || parent->dag == NULL || parent->dag->instance == NULL) {
+  	 
+  	 // George no parent yet, hence dont sent anything to the controller
+  	 PRINTF("RPL: No parent set yet\n");
+  	 dao_parent_set = 0;
+  	   	 
     return;
+  } 
+  
+  
+  
+  
+  /* 2020-10-10 the below, for networks > 25 nodes returns a "crazy" IP 
+   * for at least one node [00a0:....:0000] which is not to be found 
+  
+  
+  // 2020-10-10 moved inside dao_output_target_seq. Looks better???
+  
+  else { // George All these lines added for sending the parent to the controller
+		  // George they will be external to app layer for extra info to the sink
+		dao_preffered_parent = parent;
+		dao_preffered_parent_ip = rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
+		dao_prefix_own_ip = prefix; //node's current own IP address
+		dao_parent_set = 1; //now the parent can be used further
   }
-
+  */
+  
+  
+  
   RPL_LOLLIPOP_INCREMENT(dao_sequence);
 #if RPL_WITH_DAO_ACK
   /* set up the state since this will be the first transmission of DAO */
@@ -1126,14 +1151,6 @@ dao_output(rpl_parent_t *parent, uint8_t lifetime)
      that we have a down-link - unless this is a zero lifetime one */
   parent->dag->instance->has_downward_route = lifetime != RPL_ZERO_LIFETIME;
 #endif /* RPL_WITH_DAO_ACK */
-
-
-
-
-/* George they will be external to app layer for extra info to the sink*/ 
-dao_preffered_parent = parent;
-dao_preffered_parent_ip = rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
-dao_prefix_own_ip = prefix; //node's current own IP address
 
   /* Sending a DAO with own prefix as target */
   dao_output_target(parent, &prefix, lifetime);
@@ -1194,6 +1211,33 @@ dao_output_target_seq(rpl_parent_t *parent, uip_ipaddr_t *prefix,
 #ifdef RPL_DEBUG_DAO_OUTPUT
   RPL_DEBUG_DAO_OUTPUT(parent);
 #endif
+
+
+
+
+
+
+
+
+		// George they will be external to app layer for extra info to the sink
+		dao_preffered_parent = parent;
+		dao_preffered_parent_ip = rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
+		//dao_prefix_own_ip = prefix; //node's current own IP address
+		dao_parent_set = 1; //now the parent can be used further
+
+
+		//printf("my rpl-icmp6.c parent: ");
+		//printLongAddr(parent_ipaddr);
+		//printf("\n");
+
+
+
+
+
+
+
+
+
 
   buffer = UIP_ICMP_PAYLOAD;
   pos = 0;

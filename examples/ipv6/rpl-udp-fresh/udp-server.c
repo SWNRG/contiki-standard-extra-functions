@@ -74,10 +74,6 @@ tcpip_handler(void) /* CLIENTS' SIDE TRIGGERED */
   
   if(uip_newdata()) {
   
-#if OVERHEAD_STATS
-  udp_total_counter++;
-#endif
-  
     appdata = (char *)uip_appdata;
     appdata[uip_datalen()] = 0;
 #define PRINT_DETAILS 0
@@ -112,11 +108,17 @@ tcpip_handler(void) /* CLIENTS' SIDE TRIGGERED */
 		 printf("%s from ", appdata);
 		 printLongAddr(child_node);
 		 printf("\n");
+		 
+#if OVERHEAD_STATS
+	   /* Counting only data packets, NOT UDP for the controller protocol */
+		 udp_total_counter++;
+#endif
+
 #if SERVER_REPLY
     	 PRINTF("Server Replying... \n");
     	 send_custom_msg(&UIP_IP_BUF->srcipaddr, server_msg);    
 #endif
-	}
+	 }
   }
 }
 /*-------------- All direct children and their descentants -------------------*/
@@ -265,14 +267,14 @@ serial_input_byte(unsigned char c)
 		sprintf(buf, in_comm);
 		uip_udp_packet_sendto(client_conn, buf, strlen(buf),
 		 		&uip_node_ip, UIP_HTONS(UDP_SERVER_PORT));
-#define PRINT_DET 0
+#define PRINT_DET 1
 #if PRINT_DET
-		printf("#SEND %s to node ",in_comm);
+		printf("SENT %s to node ",in_comm);
 		printShortAddr(&uip_node_ip);
 		printf("\n");
 	
-		printLongAddr(&uip_node_ip);
-		printf(", in_comm msg: %s\n", in_comm);
+		//printLongAddr(&uip_node_ip);
+		//printf(", in_comm msg: %s\n", in_comm);
 #endif	
 		 //}else{
 #define print_output 0
@@ -390,7 +392,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
       printf("R: %d, global repairs: %d\n",counter,rpl_stats.global_repairs);
 #endif
 
-#define OVERHEAD_STATS 1
+#define OVERHEAD_STATS 0
 #if OVERHEAD_STATS
 		printf("R:%d, icmp_send:%d\n",counter, uip_stat.icmp.sent);
 		printf("R:%d, icmp_recv:%d\n",counter, uip_stat.icmp.recv);
@@ -408,10 +410,15 @@ PROCESS_THREAD(udp_server_process, ev, data)
 				
 		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
 		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
-		udp_previous = udp_total_counter - udp_previous;		
-		printf("R:%d, CURRENT_in_UDP:%d\n",counter, udp_previous);
-		udp_previous = udp_total_counter;
+		udp_previous = udp_total_counter - udp_previous;	
 		
+		//TODO: check if this is ok???
+		printf("R:%d, CURRENT_in_UDP:%d\n",counter, udp_total_counter);	
+		
+		
+		printf("R:%d, Current_in_UDP_from previous:%d\n",counter, udp_previous);
+		udp_previous = udp_total_counter;
+		udp_total_counter =0; // TODO: is this ok? restart the packer counter?	
 #endif
 		      
     }

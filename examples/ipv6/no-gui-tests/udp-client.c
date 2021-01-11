@@ -45,11 +45,12 @@ static uip_ipaddr_t destination_ipaddr;
 extern   rpl_parent_t *dao_preffered_parent;
 extern   uip_ipaddr_t *dao_preffered_parent_ip;
 extern   uip_ipaddr_t dao_prefix_own_ip;
+extern 	uint8_t dao_parent_set;
 
 /* Monitor this var. When changed, the node has changed parent */
-static rpl_parent_t *my_cur_parent;
+static rpl_parent_t *my_cur_parent = NULL;
 static uip_ipaddr_t *my_cur_parent_ip;
-static int counter=0; //counting rounds. Not really needed
+static int counter=0; //counting rounds.
 
 /* When this variable is true, start sending UDP stats */
 static uint8_t sendUDP = 0; 
@@ -140,9 +141,15 @@ tcpip_handler(void)
     PRINTF("uip Message Received from SINK: %s\n",str);
 
 	 if(str[0] == 'S' && str[1] == 'P'){
-		 printf("Responding to sink's probe about my parent\n"); 
-		 /* Send the parent again, after sink's request */
-		 send_msg_to_sink("NP:", my_cur_parent_ip);  	 
+		 /* dao_output has not yet a parent */
+		 //if(uip_ip6addr_cmp(my_cur_parent_ip,"[0101:000a:0000:080a:0000:0000:0000:0000]")==0){ 
+		 	// printf("Sink probed my parent, but it is not set yet\n"); 		 
+		// } else{
+			 printf("Sink is probing my parent\n"); 
+			 /* Send the parent again, after sink's request */
+			 send_msg_to_sink("NP:", my_cur_parent_ip); 	
+		// }
+
 	 }else if(str[0] == 'N' && str[1] == '1'){ 
 			printf("CO-MSG: Controller is probing my neighbors\n");		
 			send_all_neighbors();			
@@ -262,7 +269,7 @@ monitor_ver_num(void) //TODO: Implement this method
 		uip_udp_packet_sendto(client_conn, buf, strlen(buf),
 					  &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));
 	}	
-	// Hardcoding ver_num_attacks. Use the adaptable algorithm in ARRESTOR paper
+	// Hardcoding ver_num_attacks. Use the adaptable algorithm in ASSET paper
 	if(ver_num_attacks>20){
 		ignore_version_number_incos=1;
 		ver_num_attacks=20; //make sure that it does not crash...
@@ -283,8 +290,7 @@ monitor_DAO(void)
  */
 	//uip_ipaddr_t *addr; // is this needed ???
 	
-#define PRINT_CHANGES 0
-
+#define PRINT_CHANGES 1
 	/* In contiki, you can directly compare if(parent == parent2) */
 	if(my_cur_parent != dao_preffered_parent){
 #if PRINT_CHANGES
@@ -297,7 +303,8 @@ monitor_DAO(void)
 		my_cur_parent = dao_preffered_parent;
 		my_cur_parent_ip = dao_preffered_parent_ip;
 		
-#define PRINT_PARENT 0
+#define PRINT_PARENT 1
+
 #if PRINT_PARENT
 	   printf("NP:");
 	   printLongAddr(my_cur_parent_ip);
@@ -307,7 +314,7 @@ monitor_DAO(void)
 		send_msg_to_sink("NP:",my_cur_parent_ip);
 	}
 }
-/************* STATISTICS REQUESTED (ENABLED) BY THE SINK **************/ 
+/****** STATISTICS REQUESTED (ENABLED) BY THE SINK **************/ 
 static void
 sendUDPStats(void)
 {
@@ -347,7 +354,10 @@ PROCESS_THREAD(udp_client_process, ev, data)
   /* if > 0, there is an outlier in ICMP data */
   uint8_t dixonQAnswerSent = 0;
   uint8_t dixonQAnswerRecv = 0;
-  
+
+  // GET DAG
+  rpl_dag_t *dag = rpl_get_any_dag();
+    
   PROCESS_BEGIN();
   PROCESS_PAUSE();
 
@@ -384,15 +394,42 @@ PROCESS_THREAD(udp_client_process, ev, data)
   		UIP_HTONS(client_conn->lport), UIP_HTONS(client_conn->rport));
 
   uint8_t dixonQCounter = 0; /* when icmp indicates possible attack, use it */
-  	 
+
+
+// Open all until where you want
+#define SLIM_MODE 1
+#define ESSENTIAL_MODE 1
+#define FULL_MODE 0
+
+
+#if SLIM_MODE
+ 		printf("ATTENTION: slim-mode ON\n"); 
+#else
+		printf("ATTENTION: STANDARD-RPL ON\n"); 
+#endif
+
+#if ESSENTIAL_MODE 
+		printf("ATTENTION: essential-mode ON\n");     
+#endif 
+
+#if FULL_MODE 
+		printf("ATTENTION: full-function-mode ON\n");     
+      sendICMP = 1 ;
+      sendUDP  = 1 ;
+#endif 
+ 	 
   etimer_set(&periodic, SEND_INTERVAL);
   while(1) {
     PROCESS_YIELD();
 
-/****** Close these two for Standard-RPL *********/
-    monitor_DAO();   
-    monitor_ver_num();
-	 
+#if SLIM_MODE 
+    monitor_DAO(); 
+#endif    
+    
+#if ESSENTIAL_MODE 
+	monitor_ver_num();  
+#endif 
+
     if(ev == tcpip_event) {
       tcpip_handler();
     }
@@ -400,15 +437,13 @@ PROCESS_THREAD(udp_client_process, ev, data)
     if(etimer_expired(&periodic)) {
       etimer_reset(&periodic);
 
-      counter++;
-           
-#define FULL_MODE 0
-#if FULL_MODE      
-      sendICMP = 1 ;
-#endif      
-      
+      counter++;     
+
+		//printf("R:%d dio_intcurrent: %d\n", counter, dag->instance->dio_intcurrent);
+
       /* sending periodic data to sink (e.g. temperature measurements) */
       ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);   
+
 
 		int ICMPSent = uip_stat.icmp.sent - prevICMPSent;
 		prevICMPSent = uip_stat.icmp.sent;
@@ -437,6 +472,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
 		//dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
 		//dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);
 
+	
+#if ESSENTIAL_MODE
 /******** Open/Close these two for Dixon-Q tests ********/		
 		dixonQAnswerSent = addDixonQOut(ICMPSent);
 		dixonQAnswerRecv = addDixonQIn(ICMPRecv);
@@ -450,11 +487,11 @@ PROCESS_THREAD(udp_client_process, ev, data)
 				{
 					/* put current parent in black list and choose a new one? */
 					printf("R: %d, PANIC both icmps outliers\n",counter);
-/***** ESSENTIAL MODE******/						
+			
 					sendICMP = 1 ;
 				}
+//TODO: Differenciate actions for small/big outlier
 				else{			
-					//TODO: Differenciate actions for small/big outlier
 					if( dixonQAnswerSent > 0 ){ /* dixonQAnswerSent = 1 or 2 */					
 						printf("R:%d, Sent icmps out of bounds (outlier)\n",counter);
 						//sendICMP = 1 ;
@@ -477,6 +514,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
 					}
 				}	
 		} //if counter > dixon_n_vals + 3 (after bootstrap)
+#endif
     }
 /****** End of hybrid security node part implementing dixonQ outlier *****/
 

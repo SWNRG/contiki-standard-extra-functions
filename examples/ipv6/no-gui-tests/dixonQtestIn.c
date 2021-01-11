@@ -39,7 +39,7 @@
 //#include "dixonQtest.h"   
 
 #ifndef PRINT_ON
-#define PRINT_ON 1
+#define PRINT_ON 0
 #endif
 
 #define PRINT_DETAILS 0 //prints all details if outlier found

@@ -18,7 +18,20 @@
 //#ifdef TEST_MORE_ROUTES
 /* configure number of neighbors and routes */
 #define NBR_TABLE_CONF_MAX_NEIGHBORS     10
-#define UIP_CONF_MAX_ROUTES   30
+
+
+
+
+
+
+//#define UIP_CONF_MAX_ROUTES   30
+// George OCt 2020 is this better for big networks?
+#define UIP_CONF_MAX_ROUTES   40
+
+
+
+
+
 //#else
 /* configure number of neighbors and routes */
 //#define NBR_TABLE_CONF_MAX_NEIGHBORS     10
