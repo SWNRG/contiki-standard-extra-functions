@@ -36,7 +36,7 @@ obj_z1/rpl-dag.o: ../../../core/net/rpl/rpl-dag.c \
  ../../../core/./net/ipv6/multicast/roll-tm.h \
  ../../../core/./net/ipv6/multicast/uip-mcast6-stats.h \
  ../../../core/./lib/memb.h ../../../core/./net/ip/uip-debug.h \
- ../../../core/./net/net-debug.h
+ ../../../core/./net/net-debug.h ../../../core/net/rpl/rpl-extern.h
 ../../../core/net/rpl/rpl-dag.c :
  ../../../core/./contiki.h ../../../core/./contiki-version.h :
  ../../../platform/z1/./contiki-conf.h :
@@ -75,4 +75,4 @@ obj_z1/rpl-dag.o: ../../../core/net/rpl/rpl-dag.c \
  ../../../core/./net/ipv6/multicast/roll-tm.h :
  ../../../core/./net/ipv6/multicast/uip-mcast6-stats.h :
  ../../../core/./lib/memb.h ../../../core/./net/ip/uip-debug.h :
- ../../../core/./net/net-debug.h :
+ ../../../core/./net/net-debug.h ../../../core/net/rpl/rpl-extern.h :

@@ -53,8 +53,15 @@ static rpl_dag_t *dag; //moved here to be global var
 /* When the controller detects version number attack, it orders to stop
  * resetting the tricle timer. The variable lies in rpl-dag.c
  */
-#include "net/rpl/rpl-dag.c"
+//#include "net/rpl/rpl-dag.c"
+// June 2021 the above was causing compile errors in iot-lab
+#include "rpl-extern.h"
 extern uint8_t ignore_version_number_incos;
+
+// from rpl-private.h
+#include "net/rpl/rpl-private.h"
+extern rpl_stats_t rpl_stats;
+
 
 static int prevICMRecv = 0;
 static int prevICMPSent = 0;
@@ -360,10 +367,22 @@ PROCESS_THREAD(udp_server_process, ev, data)
   }
   udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
 
+
+
+
+
+/* IS THIS USED ANYWHERE ????????????????? */
+
+
 	/* separate threat is not needed??? */
 	/* if mote==Z1, uart0_set_input, if mote==sky, uart1_set_input */
-	uart0_init(BAUD2UBR(115200));
-	uart0_set_input(serial_input_byte);
+	//uart0_init(BAUD2UBR(115200));
+	//uart0_set_input(serial_input_byte);
+
+
+
+
+
 
   static struct etimer periodic;
   static struct ctimer backoff_timer;
@@ -386,6 +405,10 @@ PROCESS_THREAD(udp_server_process, ev, data)
        * this is a rank attack
       */
       printf("R: %d, my current rank: %d\n",counter, dag->rank);
+         
+#ifndef DODAG_ATTACK_STATS
+#define DODAG_ATTACK_STATS 1
+#endif
             
 #if DODAG_ATTACK_STATS      
       printf("R: %d, trickle resets number: %d\n",counter,rpl_stats.resets);

@@ -1,0 +1,431 @@
+[23:43:06 - AWT-EventQueue-0] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux_64.config
+[23:43:06 - AWT-EventQueue-0] [Cooja.java:2886] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[23:43:13 - Thread-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[23:43:13 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[23:43:14 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[23:43:14 - Thread-0] [CompileContiki.java:140] [INFO] - > make mal-ver-attack.z1 TARGET=z1 
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c:294:7: warning: unused variable ‘buf’ [-Wunused-variable]
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c: At top level:
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c:41:21: warning: ‘destination_ipaddr’ defined but not used [-Wunused-variable]
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c:122:1: warning: ‘tcpip_handler’ defined but not used [-Wunused-function]
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c:173:1: warning: ‘send_packet’ defined but not used [-Wunused-function]
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c: In function ‘sendICMPStats’:
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> mal-ver-attack.c:290:1: warning: control reaches end of non-void function [-Wreturn-type]
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:260: recipe for target 'mal-ver-attack.co' failed
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [mal-ver-attack.co] Error 1
+[23:43:14 - Thread-0] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[23:44:02 - Thread-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[23:44:02 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[23:44:02 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[23:44:02 - Thread-0] [CompileContiki.java:140] [INFO] - > make mal-ver-attack.z1 TARGET=z1 
+[23:44:02 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:03 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[23:44:04 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/mal-ver-attack.z1
+[23:44:04 - Thread-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[23:44:04 - Thread-0] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[23:44:05 - Thread-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[23:44:05 - Thread-0] [LogScriptEngine.java:265] [INFO] - Script timeout in 10805000 ms
+[23:44:05 - Thread-0] [ScriptRunner.java:387] [INFO] - Test script activated
+[23:44:06 - Thread-4] [SerialPortDiscoveryServer.java:20] [INFO] - Creating server for serial2pty serial port discovery. Listening on port 6100
+[23:44:07 - Thread-7] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624135447066
+[23:45:34 - Thread-3] [LogScriptEngine.java:309] [INFO] - Test script finished
+[23:45:34 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[23:45:34 - Thread-6] [Serial2Pty.java:202] [FATAL] - Error while reading from in pipe: java.io.IOException: Input/output error
+[23:45:34 - Thread-7] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624135534449	Duration: 87385 ms	Simulated time 519791 ms	Ratio 5.948218250062939
+[23:45:56 - Thread-8] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[23:45:57 - Thread-8] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[23:45:57 - Thread-8] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[23:45:57 - Thread-8] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:45:57 - Thread-8] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:45:57 - Thread-8] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:45:57 - Thread-8] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[23:45:57 - Thread-8] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:45:57 - Thread-8] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[23:45:57 - Thread-8] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** No rule to make target 'udp-malicious-client-controller-aware-DODAG-incons.z1'.  Stop.
+[23:45:57 - Thread-8] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[23:46:32 - Thread-10] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[23:46:32 - Thread-10] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[23:46:32 - Thread-10] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[23:46:32 - Thread-10] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:46:32 - Thread-10] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:46:32 - Thread-10] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:46:32 - Thread-10] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[23:46:32 - Thread-10] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:46:32 - Thread-10] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** No rule to make target 'udp-malicious-client-controller-aware-DODAG-incons.z1'.  Stop.
+[23:46:32 - Thread-10] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[23:46:32 - Thread-10] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[23:47:02 - Thread-12] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[23:47:02 - Thread-12] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[23:47:02 - Thread-12] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[23:47:02 - Thread-12] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:47:02 - Thread-12] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[23:47:02 - Thread-12] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:47:02 - Thread-12] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[23:47:02 - Thread-12] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[23:47:02 - Thread-12] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** No rule to make target 'udp-malicious-client-controller-aware-DODAG-incons.z1'.  Stop.
+[23:47:02 - Thread-12] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[23:47:02 - Thread-12] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[00:01:39 - Thread-14] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:01:42 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:02:09 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[00:02:19 - Thread-14] [Simulation.java:709] [FATAL] - Mote type was not created: org.contikios.cooja.mspmote.Z1MoteType
+[00:02:52 - Thread-18] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:02:52 - Thread-18] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[00:02:52 - Thread-18] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[00:02:53 - Thread-18] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[00:02:53 - Thread-18] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[00:02:53 - Thread-18] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[00:02:53 - Thread-18] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[00:02:53 - Thread-18] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[00:02:53 - Thread-18] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** No rule to make target 'udp-malicious-client-controller-aware-DODAG-incons.z1'.  Stop.
+[00:02:53 - Thread-18] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[00:02:53 - Thread-18] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[00:03:07 - Thread-20] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:03:08 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:03:12 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[00:03:18 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[00:03:21 - Thread-20] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[00:03:21 - Thread-20] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[00:03:21 - Thread-23] [AbstractCompileDialog.java:616] [WARN] - Could not find Contiki source: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c
+[00:03:21 - Thread-23] [AbstractCompileDialog.java:637] [WARN] - Could not find Contiki source: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c
+[00:03:21 - Thread-23] [AbstractCompileDialog.java:637] [WARN] - Could not find Contiki source: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c
+[00:03:34 - Thread-20] [Simulation.java:709] [FATAL] - Mote type was not created: org.contikios.cooja.mspmote.Z1MoteType
+[00:05:13 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:06:23 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:06:28 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[00:07:01 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:07:08 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:08:56 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:09:01 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[00:10:03 - AWT-EventQueue-0] [Cooja.java:3491] [INFO] - Saved to file: /home/user/contiki/examples/ipv6/2021-Jun-Testing-dodag-incons.csc
+[00:10:05 - Thread-28] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624137005171
+[00:13:32 - Thread-28] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624137212535	Duration: 207365 ms	Simulated time 6074075 ms	Ratio 29.291707858124564
+[00:13:32 - Thread-29] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:13:32 - Thread-29] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:13:32 - Thread-29] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:13:33 - Thread-29] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> > make mal-DODAG-incons.z1 TARGET=z1 
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-ext-header.c
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c: In function ‘update_hbh_header’:
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:572:18: error: lvalue required as left operand of assignment
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:573:88: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:584:102: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-ext-header.o' failed
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-ext-header.o] Error 1
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[00:13:33 - Thread-29] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[00:15:33 - Thread-29] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:15:33 - Thread-29] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:15:34 - Thread-29] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:15:34 - Thread-29] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:15:34 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[00:15:34 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:15:35 - Thread-29] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[00:15:35 - Thread-31] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624137335654
+[00:16:52 - Thread-31] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624137412751	Duration: 77098 ms	Simulated time 2213572 ms	Ratio 28.71114685205842
+[00:16:52 - Thread-32] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:16:52 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:16:53 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:16:53 - Thread-32] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> > make mal-DODAG-incons.z1 TARGET=z1 
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-ext-header.c
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c: In function ‘update_hbh_header’:
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:573:18: error: lvalue required as left operand of assignment
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:574:88: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:585:102: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-ext-header.o] Error 1
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-ext-header.o' failed
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[00:16:53 - Thread-32] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[00:39:33 - Thread-32] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:39:33 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:39:33 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:39:34 - Thread-32] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> > make mal-DODAG-incons.z1 TARGET=z1 
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-ext-header.c
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c: In function ‘update_hbh_header’:
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:575:18: error: lvalue required as left operand of assignment
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:576:88: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:588:102: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-ext-header.o' failed
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-ext-header.o] Error 1
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[00:39:34 - Thread-32] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[00:40:01 - Thread-32] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[00:40:01 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[00:40:01 - Thread-32] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[00:40:01 - Thread-32] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[00:40:01 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[00:40:02 - Thread-32] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[00:40:02 - Thread-35] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624138802814
+[00:41:12 - Thread-35] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624138872945	Duration: 70131 ms	Simulated time 1974280 ms	Ratio 28.151316821377137
+[14:15:05 - Thread-36] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:15:05 - Thread-36] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[14:15:05 - Thread-36] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[14:15:05 - Thread-36] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> > make mal-DODAG-incons.z1 TARGET=z1 
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-ext-header.c
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c: In function ‘update_hbh_header’:
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:579:18: error: lvalue required as left operand of assignment
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:585:88: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-ext-header.c:597:102: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘struct uip_ext_hdr_opt_rpl *’ [-Wformat]
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-ext-header.o' failed
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-ext-header.o] Error 1
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[14:15:05 - Thread-36] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[14:15:39 - Thread-36] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:15:39 - Thread-36] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[14:15:39 - Thread-36] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[14:15:40 - Thread-36] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[14:15:40 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[14:15:40 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:40 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:40 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:40 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:41 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:41 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:41 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:15:41 - Thread-36] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[14:16:26 - Thread-38] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624187786506
+[14:18:19 - Thread-38] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624187899954	Duration: 113448 ms	Simulated time 3317131 ms	Ratio 29.239219730625486
+[14:18:20 - Thread-39] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:18:20 - Thread-39] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[14:18:20 - Thread-39] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[14:18:20 - Thread-39] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[14:18:20 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:18:21 - Thread-39] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[14:18:22 - Thread-40] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624187902205
+[14:20:18 - Thread-40] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624188018066	Duration: 115861 ms	Simulated time 3683786 ms	Ratio 31.79487489319098
+[14:20:24 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.AbstractMspMoteType.configureAndInit(AbstractMspMoteType.java:118)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[14:20:32 - Thread-42] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[14:20:32 - Thread-42] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[14:20:32 - Thread-42] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[14:20:32 - Thread-42] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[14:20:32 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[14:20:32 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[14:20:33 - Thread-42] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[14:20:38 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.AbstractMspMoteType.configureAndInit(AbstractMspMoteType.java:118)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[15:05:13 - AWT-EventQueue-0] [Cooja.java:2315] [INFO] - Load command cancelled by user...
+[15:05:21 - Thread-45] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:05:21 - Thread-45] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[15:05:21 - Thread-45] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[15:05:21 - Thread-45] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:22 - Thread-45] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[15:05:29 - AWT-EventQueue-0] [Cooja.java:2183] [FATAL] - Exception when creating mote type
+org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+	at org.contikios.cooja.mspmote.AbstractMspMoteType.configureAndInit(AbstractMspMoteType.java:118)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2178)
+	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2157)
+	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2938)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+	at java.awt.Component.processMouseEvent(Component.java:6539)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6304)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+[15:05:43 - Thread-47] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:05:45 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[15:05:49 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[15:05:54 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[15:05:58 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make mal-DODAG-incons.z1 TARGET=z1 
+[15:05:59 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1
+[15:05:59 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:05:59 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-client-DODAG-inconsistency.z1
+[15:06:00 - Thread-47] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1
+[15:06:43 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make mal-ver-attack.z1 TARGET=z1 
+[15:06:47 - AWT-EventQueue-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/mal-ver-attack.z1
+[15:07:19 - AWT-EventQueue-0] [Cooja.java:3491] [INFO] - Saved to file: /home/user/contiki/examples/ipv6/2021-Jun-Testing-dodag-incons_and_version.csc
+[15:07:22 - Thread-52] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624190842185
+[15:08:25 - Thread-52] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624190905310	Duration: 63125 ms	Simulated time 1290356 ms	Ratio 20.441283168316833

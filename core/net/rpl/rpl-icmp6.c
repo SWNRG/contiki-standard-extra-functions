@@ -44,7 +44,6 @@
  * \addtogroup uip6
  * @{
  */
-
 #include "net/ip/tcpip.h"
 #include "net/ip/uip.h"
 #include "net/ipv6/uip-ds6.h"
@@ -63,11 +62,18 @@
 
 #include "net/ip/uip-debug.h"
 
-/* George they will be sent to app layer for extra info to the sink */ 
-static  rpl_parent_t *dao_preffered_parent;
-static  uip_ipaddr_t *dao_preffered_parent_ip;
-static  uip_ipaddr_t dao_prefix_own_ip;
-static uint8_t dao_parent_set=0;
+// George June 2021 externilzing the variables. compiler error in iot-lab
+#include "net/rpl/icmp6-extern.h"
+
+/* George they will be sent to app layer for extra info to the sink 
+ * June 2021 All the following, moved to icmp6-extern.h
+ * because iot-lab did not compile
+ */ 
+  rpl_parent_t *dao_preffered_parent;
+  uip_ipaddr_t *dao_preffered_parent_ip;
+  uip_ipaddr_t dao_prefix_own_ip;
+  uint8_t dao_parent_set;
+
 /*---------------------------------------------------------------------------*/
 #define RPL_DIO_GROUNDED                 0x80
 #define RPL_DIO_MOP_SHIFT                3
@@ -1219,16 +1225,17 @@ dao_output_target_seq(rpl_parent_t *parent, uip_ipaddr_t *prefix,
 
 
 
-		// George they will be external to app layer for extra info to the sink
-		dao_preffered_parent = parent;
-		dao_preffered_parent_ip = rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
-		//dao_prefix_own_ip = prefix; //node's current own IP address
-		dao_parent_set = 1; //now the parent can be used further
+	// George they will be external to app layer for extra info to the sink
+	dao_preffered_parent = parent;
+	dao_preffered_parent_ip = 
+			rpl_get_parent_ipaddr(dao_preffered_parent->dag->preferred_parent);
+	//dao_prefix_own_ip = prefix; //node's current own IP address
+	dao_parent_set = 1; //now the parent can be used further
 
 
-		//printf("my rpl-icmp6.c parent: ");
-		//printLongAddr(parent_ipaddr);
-		//printf("\n");
+	//printf("my rpl-icmp6.c parent: ");
+	//printLongAddr(parent_ipaddr);
+	//printf("\n");
 
 
 

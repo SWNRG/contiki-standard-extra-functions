@@ -70,31 +70,8 @@ void RPL_CALLBACK_PARENT_SWITCH(rpl_parent_t *old, rpl_parent_t *new);
 extern rpl_of_t rpl_of0, rpl_mrhof;
 static rpl_of_t * const objective_functions[] = RPL_SUPPORTED_OFS;
 
-/* George: Variables to monitor version number attack on the app layer.
- * If one of them is <>0 the controller will be notified
- */
-static uint8_t dio_bigger_than_dag = 0;
-static uint8_t dio_smaller_than_dag = 0;
-
-/* George: If this turns true, all nodes will stop resetting trickle timer, 
- * because there is a version attack going on
- */
-static uint8_t ignore_version_number_incos = 0;
-
-
-
-
-
-
 //set this to print when and how trickle is reset
 #define PRINT_TRICKLE_ON 1
-
-
-
-
-
-
-
 /*---------------------------------------------------------------------------*/
 /* RPL definitions. */
 
@@ -103,6 +80,20 @@ static uint8_t ignore_version_number_incos = 0;
 #else
 #define RPL_GROUNDED                    RPL_CONF_GROUNDED
 #endif /* !RPL_CONF_GROUNDED */
+
+
+/* Jun 2021 Below externilized vars moved to rpl-exern.h */
+#include "rpl-extern.h"
+/* George: Variables to monitor version number attack on the app layer.
+ * If one of them is <>0 the controller will be notified
+ */
+uint8_t dio_bigger_than_dag = 0;
+uint8_t dio_smaller_than_dag = 0;
+
+/* George: If this turns true, all nodes will stop resetting trickle timer, 
+ * because there is a version attack going on
+ */
+uint8_t ignore_version_number_incos = 0;
 
 /*---------------------------------------------------------------------------*/
 /* Per-parent RPL information */
@@ -1565,6 +1556,9 @@ rpl_process_dio(uip_ipaddr_t *from, rpl_dio_t *dio)
       /* The DIO sender is on an older version of the DAG. */
       printf("RPL: old version received => inconsistency detected\n");
       if(dag->joined) {
+        
+        
+        
         
         // George	      
         dio_smaller_than_dag = 1;

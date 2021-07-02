@@ -1,36 +1,297 @@
-[16:17:06 - main] [Cooja.java:1315] [INFO] - > Starting Cooja
-[16:17:06 - main] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux_64.config
-[16:17:06 - main] [Cooja.java:2886] [INFO] - External tools user settings: /home/user/.cooja.user.properties
-[16:17:06 - main] [Simulation.java:422] [INFO] - Simulation random seed: 123456
-[16:17:06 - main] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
-[16:17:06 - main] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
-[16:17:07 - main] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
-[16:17:07 - main] [CompileContiki.java:140] [INFO] - > make 20200920-updated-malicious-client.z1 TARGET=z1 
-[16:17:07 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
-[16:17:07 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:07 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:08 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1
-[16:17:09 - main] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1
+[21:56:22 - AWT-EventQueue-0] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux_64.config
+[21:56:22 - AWT-EventQueue-0] [Cooja.java:2886] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[21:56:27 - Thread-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[21:56:28 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[21:56:28 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[21:56:28 - Thread-0] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[21:56:28 - Thread-0] [CompileContiki.java:140] [INFO] - > make 20200920-updated-malicious-client.z1 TARGET=z1 
+[21:56:28 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[21:56:28 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[21:56:29 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1
+[21:56:30 - Thread-0] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1
+[21:56:30 - Thread-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[21:56:30 - Thread-0] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[21:56:31 - Thread-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[21:56:31 - Thread-0] [LogScriptEngine.java:265] [INFO] - Script timeout in 4800000 ms
+[21:56:31 - Thread-0] [ScriptRunner.java:387] [INFO] - Test script activated
+[21:56:38 - Thread-3] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624128998207
+[21:57:24 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 5.00%, done in 1007.5 sec
+[21:57:56 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 10.00%, done in 765.2 sec
+[21:58:50 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 15.00%, done in 784.8 sec
+[21:59:56 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 20.00%, done in 817.8 sec
+[22:01:21 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 25.00%, done in 869.0 sec
+[22:03:11 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 30.00%, done in 932.7 sec
+[22:04:30 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 35.00%, done in 889.0 sec
+[22:06:35 - Thread-3] [LogScriptEngine.java:389] [INFO] - Test script at 40.00%, done in 906.3 sec
+[22:07:19 - Thread-3] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624129639787	Duration: 641581 ms	Simulated time 2059439 ms	Ratio 3.209943873026165
+[22:07:33 - Thread-4] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624129653310
+[22:07:55 - Thread-4] [LogScriptEngine.java:389] [INFO] - Test script at 45.00%, done in 835.4 sec
+[22:08:02 - Thread-2] [LogScriptEngine.java:309] [INFO] - Test script finished
+[22:08:02 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:08:02 - Thread-4] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624129682292	Duration: 28982 ms	Simulated time 2195348 ms	Ratio 75.7486715892623
+[22:08:03 - Thread-5] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:08:03 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:08:03 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:08:03 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> /opt/msp430-47-expr/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/include/stdio.h:52:44: note: expected ‘const char *’ but argument is of type ‘int’
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:687:1: error: expected ‘;’ before ‘}’ token
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:482:16: warning: unused variable ‘addr’ [-Wunused-variable]
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c: At top level:
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:70:12: warning: ‘PARENT_SWITCH_THRESHOLD’ defined but not used [-Wunused-variable]
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:172:1: warning: ‘set32’ defined but not used [-Wunused-function]
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:187:1: warning: ‘set16’ defined but not used [-Wunused-function]
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-icmp6.o' failed
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-icmp6.o] Error 1
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[22:08:03 - Thread-5] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[22:10:05 - Thread-5] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:10:05 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:10:05 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:10:05 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> /opt/msp430-47-expr/bin/../lib/gcc/msp430/4.7.0/../../../../msp430/include/stdio.h:52:44: note: expected ‘const char *’ but argument is of type ‘int’
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:687:1: error: expected ‘;’ before ‘}’ token
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:482:16: warning: unused variable ‘addr’ [-Wunused-variable]
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c: At top level:
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:70:12: warning: ‘PARENT_SWITCH_THRESHOLD’ defined but not used [-Wunused-variable]
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:172:1: warning: ‘set32’ defined but not used [-Wunused-function]
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:187:1: warning: ‘set16’ defined but not used [-Wunused-function]
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-icmp6.o' failed
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-icmp6.o] Error 1
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[22:10:05 - Thread-5] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[22:31:40 - Thread-5] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:31:40 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:31:41 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:31:41 - Thread-5] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:31:41 - Thread-5] [CompileContiki.java:140] [INFO] - > make 20200920-updated-malicious-client.z1 TARGET=z1 
+[22:31:41 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:42 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:31:43 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1
+[22:31:43 - Thread-5] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1
+[22:31:43 - Thread-5] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[22:31:44 - Thread-5] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:31:44 - Thread-5] [LogScriptEngine.java:265] [INFO] - Script timeout in 4800000 ms
+[22:31:44 - Thread-5] [ScriptRunner.java:387] [INFO] - Test script activated
+[22:31:44 - Thread-9] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624131104289
+[22:32:35 - Thread-9] [LogScriptEngine.java:389] [INFO] - Test script at 5.00%, done in 978.0 sec
+[22:33:24 - Thread-9] [LogScriptEngine.java:389] [INFO] - Test script at 10.00%, done in 905.2 sec
+[22:34:37 - Thread-9] [LogScriptEngine.java:389] [INFO] - Test script at 15.00%, done in 980.3 sec
+[22:35:04 - Thread-8] [LogScriptEngine.java:309] [INFO] - Test script finished
+[22:35:04 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:35:04 - Thread-9] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624131304660	Duration: 200371 ms	Simulated time 815065 ms	Ratio 4.067718366654356
+[22:35:05 - Thread-10] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:35:08 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:35:11 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:35:16 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:35:36 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:35:50 - Thread-10] [Simulation.java:709] [FATAL] - Mote type was not created: org.contikios.cooja.mspmote.Z1MoteType
+[22:35:57 - Thread-15] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:35:57 - Thread-15] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:35:57 - Thread-15] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:35:57 - Thread-15] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:35:57 - Thread-15] [CompileContiki.java:140] [INFO] - > make 20200920-updated-malicious-client.z1 TARGET=z1 
+[22:35:57 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:58 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:59 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:59 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:59 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:35:59 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1
+[22:35:59 - Thread-15] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1
+[22:35:59 - Thread-15] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[22:35:59 - Thread-15] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:35:59 - Thread-15] [LogScriptEngine.java:265] [INFO] - Script timeout in 4800000 ms
+[22:35:59 - Thread-15] [ScriptRunner.java:387] [INFO] - Test script activated
+[22:36:27 - Thread-16] [LogScriptEngine.java:309] [INFO] - Test script finished
+[22:36:27 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:36:28 - Thread-18] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:36:33 - AWT-EventQueue-0] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:36:35 - Thread-18] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/ipv6/rpl-udp/udp-server.z1 with /home/user/contiki/examples/ipv6/rpl-udp/udp-server.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:36:38 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:36:49 - Thread-18] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/ipv6/rpl-udp/udp-client.z1 with /home/user/contiki/examples/ipv6/rpl-udp/udp-client.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:36:51 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:37:06 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[22:37:10 - Thread-18] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:37:23 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:37:40 - Thread-18] [Simulation.java:709] [FATAL] - Mote type was not created: org.contikios.cooja.mspmote.Z1MoteType
+[22:39:51 - Thread-24] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:39:51 - Thread-24] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1 with /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server-DODAG-incons-attack.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:39:51 - Thread-24] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[22:39:52 - Thread-24] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[22:39:52 - Thread-24] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:39:52 - Thread-24] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-icmp6.c
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c: In function ‘dio_output’:
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:547:30: error: ‘PARENT_SWITCH_THRESHOLD’ undeclared (first use in this function)
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:547:30: note: each undeclared identifier is reported only once for each function it appears in
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-icmp6.o' failed
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-icmp6.o] Error 1
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[22:39:52 - Thread-24] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[22:40:14 - Thread-26] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:40:14 - Thread-26] [CompileContiki.java:140] [INFO] - > make udp-server-DODAG-incons-attack.z1 TARGET=z1 
+[22:40:15 - Thread-26] [CompileContiki.java:140] [INFO] - > make udp-client-DODAG-inconsistency.z1 TARGET=z1 
+[22:40:15 - Thread-26] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:40:15 - Thread-26] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> 
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >>   CC        ../../../core/net/rpl/rpl-icmp6.c
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c: In function ‘dio_output’:
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:547:30: error: ‘PARENT_SWITCH_THRESHOLD’ undeclared (first use in this function)
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../core/net/rpl/rpl-icmp6.c:547:30: note: each undeclared identifier is reported only once for each function it appears in
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> make: *** [obj_z1/rpl-icmp6.o] Error 1
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> ../../../Makefile.include:240: recipe for target 'obj_z1/rpl-icmp6.o' failed
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:151] [FATAL] - >> Process returned error code 2
+[22:40:15 - Thread-26] [AbstractMspMoteType.java:154] [FATAL] - Compilation error: Bad return value
+[22:41:31 - Thread-28] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:41:31 - Thread-28] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:41:31 - Thread-28] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:41:31 - Thread-28] [CompileContiki.java:140] [INFO] - > make 20200920-updated-malicious-client.z1 TARGET=z1 
+[22:41:31 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[22:41:31 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:32 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:33 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:41:33 - Thread-28] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1
+[22:41:33 - Thread-28] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[22:41:33 - Thread-28] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:41:33 - Thread-28] [LogScriptEngine.java:265] [INFO] - Script timeout in 10805000 ms
+[22:41:33 - Thread-28] [ScriptRunner.java:387] [INFO] - Test script activated
+[22:41:33 - Thread-30] [SerialPortDiscoveryServer.java:20] [INFO] - Creating server for serial2pty serial port discovery. Listening on port 6100
+[22:41:36 - Thread-33] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624131696360
+[22:41:38 - Thread-32] [Serial2Pty.java:202] [FATAL] - Error while reading from in pipe: java.io.IOException: Input/output error
+[22:43:32 - Thread-33] [LogScriptEngine.java:389] [INFO] - Test script at 5.00%, done in 2266.9 sec
+[22:45:12 - Thread-33] [LogScriptEngine.java:389] [INFO] - Test script at 10.00%, done in 1969.4 sec
+[22:48:59 - Thread-34] [Cooja.java:2550] [WARN] - Memory usage is getting critical. Reboot Cooja to avoid out of memory error. Current memory usage is 88.563%.
+[22:49:06 - Thread-29] [LogScriptEngine.java:309] [INFO] - Test script finished
+[22:49:06 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:49:06 - Thread-33] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1624132146766	Duration: 450407 ms	Simulated time 1311233 ms	Ratio 2.9112180760956203
+[22:49:22 - Thread-34] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[22:49:22 - Thread-34] [CompileContiki.java:140] [INFO] - > make udp-server.z1 TARGET=z1 
+[22:49:22 - Thread-34] [CompileContiki.java:140] [INFO] - > make udp-client.z1 TARGET=z1 
+[22:49:22 - Thread-34] [Cooja.java:4261] [WARN] - Replaced [CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 with /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1 (default: /home/user/contiki/), but could not find it. This does not have to be an error, as the file might be created later.
+[22:49:22 - Thread-34] [CompileContiki.java:140] [INFO] - > make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1 
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/rpl-udp-fresh/udp-server.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:25 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki/examples/ipv6/no-gui-tests/udp-client.z1
+[22:49:26 - Thread-34] [MspMote.java:235] [INFO] - Loading firmware from: /home/user/contiki-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1
+[22:49:27 - Thread-34] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[22:49:27 - Thread-34] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[22:49:27 - Thread-34] [LogScriptEngine.java:265] [INFO] - Script timeout in 10805000 ms
+[22:49:27 - Thread-34] [ScriptRunner.java:387] [INFO] - Test script activated
+[22:49:38 - Thread-37] [Serial2Pty.java:202] [FATAL] - Error while reading from in pipe: java.io.IOException: Input/output error
+[22:49:46 - Thread-38] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1624132186136

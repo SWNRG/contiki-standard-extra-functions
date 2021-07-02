@@ -1,4 +1,4 @@
-all: udp-client udp-server
+all: udp-client udp-server udp-client-small
 CONTIKI=../../..
 
 CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"

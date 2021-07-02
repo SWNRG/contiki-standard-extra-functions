@@ -22,12 +22,27 @@
 #define UIP_IP_BUF   ((struct uip_ip_hdr *)&uip_buf[UIP_LLH_LEN])
 
 //#define DEBUG DEBUG_FULL
-#if DEBUG
-#include "net/ip/uip-debug.h"
-#endif
+#include "net/ip/uip-debug.h" //PRINTF is needed, no matter what
 
+
+/* 2021-04-26 Added KIBAM Battery support to measure 
+ * battery consumption. The files in apps/powertrace/powertrace.c/h
+ * have been updated with KIBAM. The variables below are the essential.
+ * In powetrace.c you cannot open multiple prints beceause the 
+ * z1 firmware does not fit into memory.
+ */
+#include "apps/powertrace/powertrace.c"
+//unsigned seconds=60*5;// warning: if this variable is changed, then the kinect variable the count the minutes should be changed
+//double fixed_perc_energy = 1;// 0 - 1
+//unsigned variation = 2;//0 - 99
+/* The variable "fixed_perc_energy" correspods to the variable that will tell the PowertraceK the percentage of energy the node will start, considering the full battery capacity is 1000000 microAh. For example, setting fixed_perc_energy = 0.2 means that the nodes will be initiated with 20 % of 1000000 microAh = 200000 microAh. */
+/* void powertrace_start(clock_time_t period, 
+ *								unsigned seconds, 
+ *								double fixed_perc_energy, 
+ *								unsigned variation)
+ */
+ 
 /* PERIOD defined in project-conf.h */
-
 #define START_INTERVAL		(15 * CLOCK_SECOND)
 #define SEND_INTERVAL		(PERIOD * CLOCK_SECOND)
 #define SEND_TIME		(random_rand() % (SEND_INTERVAL))
@@ -41,7 +56,9 @@ static uip_ipaddr_t server_ipaddr;
 static uip_ipaddr_t destination_ipaddr;
 
 /* Get the preffered parent, and the current own IP of the node */
-#include "net/rpl/rpl-icmp6.c"
+/* June 2021 Was not compiling in iot-lab */
+//#include "core/net/rpl/rpl-icmp6.c" 
+#include "net/rpl/icmp6-extern.h"
 extern   rpl_parent_t *dao_preffered_parent;
 extern   uip_ipaddr_t *dao_preffered_parent_ip;
 extern   uip_ipaddr_t dao_prefix_own_ip;
@@ -64,14 +81,14 @@ enablePanicButton = 0;
 /* When the controller detects version number attack, it orders to stop
  * resetting the tricle timer. The variables below lie in rpl-dag.c
  */
-#include "net/rpl/rpl-dag.c"
+//#include "net/rpl/rpl-dag.c"
+#include "net/rpl/rpl-extern.h"
 extern uint8_t ignore_version_number_incos; //if == 1 DIO will not reset trickle
 extern uint8_t dio_bigger_than_dag; // if version attack, this will be 1
 extern uint8_t dio_smaller_than_dag; // if version attack, this will be 1
  
 static int prevICMRecv = 0;
 static int prevICMPSent = 0;
-
 /*-----------------------------------------------------------------------*/
 PROCESS(udp_client_process, "UDP client process");
 AUTOSTART_PROCESSES(&udp_client_process);
@@ -361,12 +378,20 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PROCESS_BEGIN();
   PROCESS_PAUSE();
 
+// 2021-04-26 George original power trace was replaced with powertraceK
+// there are more printouts, they are commented out in apps/powertrace/powertrace.c
+//powertrace_start(CLOCK_SECOND * 300, 300, 1, 2);
+// for some reason, it is not working
+
+
   set_global_address();
 
   /* The data sink runs with a 100% duty cycle in order to ensure high 
      packet reception rates. */
   NETSTACK_MAC.off(1);
 
+  printf("Client in contiki/examples/ipv6/no-gui-test/udp-client.c\n");
+  
   PRINTF("UDP client process started nbr:%d routes:%d\n",
          NBR_TABLE_CONF_MAX_NEIGHBORS, UIP_CONF_MAX_ROUTES);
 

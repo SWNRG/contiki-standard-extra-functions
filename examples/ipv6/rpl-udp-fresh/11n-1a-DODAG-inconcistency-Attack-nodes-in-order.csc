@@ -320,7 +320,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>4</z>
+    <z>2</z>
     <height>160</height>
     <location_x>434</location_x>
     <location_y>4</location_y>
@@ -336,7 +336,7 @@
       <viewport>2.37708281081519 0.0 0.0 2.37708281081519 449.95949686059765 470.967913014221</viewport>
     </plugin_config>
     <width>418</width>
-    <z>6</z>
+    <z>3</z>
     <height>517</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
@@ -344,25 +344,27 @@
   <plugin>
     org.contikios.cooja.plugins.LogListener
     <plugin_config>
-      <filter />
+      <filter>KIBA</filter>
       <formatted_time />
       <coloring />
     </plugin_config>
-    <width>770</width>
-    <z>3</z>
-    <height>684</height>
-    <location_x>435</location_x>
-    <location_y>167</location_y>
+    <width>774</width>
+    <z>1</z>
+    <height>583</height>
+    <location_x>434</location_x>
+    <location_y>172</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.Notes
     <plugin_config>
       <notes>3 hours =
-10 800 000 milliseconds</notes>
+10 800 000 milliseconds
+
+attaker = dup-malicious-clinet-DODAG-inocns.c</notes>
       <decorations>true</decorations>
     </plugin_config>
     <width>470</width>
-    <z>5</z>
+    <z>0</z>
     <height>160</height>
     <location_x>719</location_x>
     <location_y>5</location_y>
@@ -380,7 +382,7 @@ while (true) {
       <active>true</active>
     </plugin_config>
     <width>591</width>
-    <z>2</z>
+    <z>4</z>
     <height>361</height>
     <location_x>19</location_x>
     <location_y>544</location_y>

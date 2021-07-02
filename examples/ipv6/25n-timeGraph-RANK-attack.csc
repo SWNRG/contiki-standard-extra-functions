@@ -9,7 +9,7 @@
   <project EXPORT="discard">[APPS_DIR]/serial_socket</project>
   <project EXPORT="discard">[APPS_DIR]/serial2pty</project>
   <simulation>
-    <title>25n-ver-attack</title>
+    <title>25n-rank-attack-ONLY</title>
     <randomseed>123456</randomseed>
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>
@@ -66,9 +66,9 @@
       org.contikios.cooja.mspmote.Z1MoteType
       <identifier>z13</identifier>
       <description>Z1 Mote Type #z13</description>
-      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.c</source>
-      <commands EXPORT="discard">make 20200920-updated-malicious-client.z1 TARGET=z1</commands>
-      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/20200920-updated-malicious-client.z1</firmware>
+      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/rank-attack-deticated-malicious-client.c</source>
+      <commands EXPORT="discard">make rank-attack-deticated-malicious-client.z1 TARGET=z1</commands>
+      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/rank-attack-deticated-malicious-client.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -592,7 +592,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>0</z>
+    <z>2</z>
     <height>160</height>
     <location_x>0</location_x>
     <location_y>518</location_y>
@@ -605,7 +605,7 @@
       <skin>org.contikios.cooja.plugins.skins.TrafficVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.MoteTypeVisualizerSkin</skin>
-      <viewport>1.8751116945465334 0.0 0.0 1.8751116945465334 62.16704724396584 35.34571898749227</viewport>
+      <viewport>1.8751116945465334 0.0 0.0 1.8751116945465334 84.16704724396583 60.34571898749225</viewport>
     </plugin_config>
     <width>521</width>
     <z>1</z>
@@ -621,7 +621,7 @@
       <coloring />
     </plugin_config>
     <width>745</width>
-    <z>2</z>
+    <z>3</z>
     <height>523</height>
     <location_x>528</location_x>
     <location_y>163</location_y>
@@ -681,7 +681,7 @@ while (true) {
       <active>true</active>
     </plugin_config>
     <width>431</width>
-    <z>4</z>
+    <z>5</z>
     <height>190</height>
     <location_x>3</location_x>
     <location_y>688</location_y>
@@ -696,10 +696,19 @@ contiki-malicious-controller-aware/../../
       <decorations>true</decorations>
     </plugin_config>
     <width>729</width>
-    <z>3</z>
+    <z>4</z>
     <height>160</height>
     <location_x>527</location_x>
     <location_y>3</location_y>
+  </plugin>
+  <plugin>
+    org.contikios.cooja.plugins.MoteInformation
+    <mote_arg>26</mote_arg>
+    <width>383</width>
+    <z>0</z>
+    <height>195</height>
+    <location_x>30</location_x>
+    <location_y>548</location_y>
   </plugin>
 </simconf>
 

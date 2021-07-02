@@ -71,7 +71,7 @@ float critical_value_i = 0; //confidence level to compare with
 static uint8_t all_values_exist_i = 0; /* array is not populated yet */
 /**************************************************************/ 
 static void sortInt_i(int grade[], int n){
-	int i, j, swapped;
+	int i, j;//, swapped;
 	int temp;
 	for (i = 0; i < n; ++i){
 		 for (j = i + 1; j < n; ++j)

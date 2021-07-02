@@ -9,7 +9,7 @@
   <project EXPORT="discard">[APPS_DIR]/serial_socket</project>
   <project EXPORT="discard">[APPS_DIR]/serial2pty</project>
   <simulation>
-    <title>test-Sep2020</title>
+    <title>25n-blackhole-attack</title>
     <randomseed>123456</randomseed>
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>
@@ -66,9 +66,9 @@
       org.contikios.cooja.mspmote.Z1MoteType
       <identifier>z13</identifier>
       <description>Z1 Mote Type #z13</description>
-      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware.c</source>
-      <commands EXPORT="discard">make udp-malicious-client-controller-aware.z1 TARGET=z1</commands>
-      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware.z1</firmware>
+      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/blackhole-controller-aware.c</source>
+      <commands EXPORT="discard">make blackhole-controller-aware.z1 TARGET=z1</commands>
+      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware/examples/ipv6/rpl-udp-fresh/blackhole-controller-aware.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -554,8 +554,8 @@
       <breakpoints />
       <interface_config>
         org.contikios.cooja.interfaces.Position
-        <x>218.44191759053214</x>
-        <y>70.91498240970655</y>
+        <x>46.7188138754382</x>
+        <y>121.04532945697</y>
         <z>0.0</z>
       </interface_config>
       <interface_config>
@@ -572,7 +572,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>4</z>
+    <z>0</z>
     <height>160</height>
     <location_x>0</location_x>
     <location_y>518</location_y>
@@ -585,11 +585,11 @@
       <skin>org.contikios.cooja.plugins.skins.TrafficVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.MoteTypeVisualizerSkin</skin>
-      <viewport>1.8751116945465338 0.0 0.0 1.8751116945465338 61.893713910632464 38.212385654158936</viewport>
+      <viewport>1.8751116945465338 0.0 0.0 1.8751116945465338 71.89371391063246 47.21238565415893</viewport>
     </plugin_config>
-    <width>521</width>
+    <width>453</width>
     <z>2</z>
-    <height>512</height>
+    <height>471</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
   </plugin>
@@ -602,9 +602,9 @@
     </plugin_config>
     <width>583</width>
     <z>1</z>
-    <height>488</height>
-    <location_x>529</location_x>
-    <location_y>7</location_y>
+    <height>471</height>
+    <location_x>455</location_x>
+    <location_y>-2</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.TimeLine
@@ -661,10 +661,10 @@ while (true) {
       <active>true</active>
     </plugin_config>
     <width>431</width>
-    <z>0</z>
+    <z>4</z>
     <height>190</height>
-    <location_x>3</location_x>
-    <location_y>688</location_y>
+    <location_x>4</location_x>
+    <location_y>617</location_y>
   </plugin>
   <plugin>
     de.fau.cooja.plugins.Serial2Pty
@@ -673,8 +673,8 @@ while (true) {
     <width>250</width>
     <z>3</z>
     <height>100</height>
-    <location_x>284</location_x>
-    <location_y>519</location_y>
+    <location_x>287</location_x>
+    <location_y>523</location_y>
   </plugin>
 </simconf>
 

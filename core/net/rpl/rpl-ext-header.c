@@ -52,10 +52,10 @@
 #include "net/packetbuf.h"
 
 
-// George OPEN FOR monitoring dodag-nconsinstency attack
-//#define DEBUG DEBUG_FULL
+// George OPEN THIS FOR monitoring dodag-inconsinstency attack
+#define DEBUG DEBUG_FULL
 
-#define DEBUG DEBUG_NONE
+//#define DEBUG DEBUG_NONE
 
 #include "net/ip/uip-debug.h"
 

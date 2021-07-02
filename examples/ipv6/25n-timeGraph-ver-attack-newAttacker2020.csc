@@ -66,9 +66,9 @@
       org.contikios.cooja.mspmote.Z1MoteType
       <identifier>z13</identifier>
       <description>Z1 Mote Type #z13</description>
-      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c</source>
-      <commands EXPORT="discard">make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1</commands>
-      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1</firmware>
+      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/mal-ver-attack.c</source>
+      <commands EXPORT="discard">make mal-ver-attack.z1 TARGET=z1</commands>
+      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware-version-attack/examples/ipv6/rpl-udp-fresh/mal-ver-attack.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -600,7 +600,7 @@
       <formatted_time />
       <coloring />
     </plugin_config>
-    <width>583</width>
+    <width>762</width>
     <z>1</z>
     <height>488</height>
     <location_x>529</location_x>
@@ -681,7 +681,7 @@ while (true) {
     <plugin_config>
       <notes>attacker:
 contiki-malicious-controller-aware-version-attack/../../
-idp-malicious-client-controller-aware-DODAG-incons.c</notes>
+mal-ver-attack.c</notes>
       <decorations>true</decorations>
     </plugin_config>
     <width>729</width>
