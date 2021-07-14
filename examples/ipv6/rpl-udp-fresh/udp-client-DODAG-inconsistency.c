@@ -470,9 +470,6 @@ uint8_t ICMPSent = 0;
       printf("\n");
       printf("My parent last oct: %d\n",ipLast);
 #endif
-      if ( (counter%10 == 0) && (ipLast == 1) ){ // sink only???
-      	PRINTF("Cur Round: %d\n",counter);
-      }
       
       /* sending periodic UDP data to sink (e.g. temperature measurements) */
       ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);   

@@ -155,10 +155,10 @@ print_all_routes(void)
 
 		 /* Controller is reading a line starting from "Route " */
 		 printf("Route: ");
-		 printIP6Address(local_child); //direct child
+		 printLongAddr(local_child); //direct child
 		 //printLongAddr(&r->ipaddr); // fd00:...
 		 printf(" ");
-		 printIP6Address(nexthop); // all decentant(s)
+		 printLongAddr(nexthop); // all decentant(s)
 		 /* when lt >>> 0, the connection does not exist any more */
 		 printf(" lt:%lu\n", r->state.lifetime);	 
 	}//for *r 
@@ -396,13 +396,13 @@ PROCESS_THREAD(udp_server_process, ev, data)
     
     if(etimer_expired(&periodic)) {
       etimer_reset(&periodic);
-      ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
+      //ctimer_set(&backoff_timer, SEND_TIME, ping_only, NULL);
       
       counter++;
       
-      // TODO: sent this to the controller. 
+      // TODO: send this to the controller. 
       /* If any node is found with equal or less, 
-       * this is a rank attack
+       * it means there is a rank attack
       */
       printf("R: %d, my current rank: %d\n",counter, dag->rank);
          

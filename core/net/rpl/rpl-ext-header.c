@@ -165,6 +165,10 @@ rpl_verify_hbh_header(int uip_ext_opt_offset)
     if(UIP_EXT_HDR_OPT_RPL_BUF->flags & RPL_HDR_OPT_RANK_ERR) {
       RPL_STAT(rpl_stats.loop_errors++);
       PRINTF("RPL: Rank error signalled in RPL option!\n");
+          
+    	// George printing trickle timer increases... 
+    	printf("RPL: Resetting dio timer to minimum interval\n");
+    
       /* Packet must be dropped and dio trickle timer reset, see RFC6550 - 11.2.2.2 */
       rpl_reset_dio_timer(instance);
       return 0;

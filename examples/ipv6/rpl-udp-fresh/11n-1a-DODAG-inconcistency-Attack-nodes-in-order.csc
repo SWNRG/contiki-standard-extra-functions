@@ -66,9 +66,9 @@
       org.contikios.cooja.mspmote.Z1MoteType
       <identifier>z13</identifier>
       <description>Z1 Mote Type #z13</description>
-      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.c</source>
-      <commands EXPORT="discard">make udp-malicious-client-controller-aware-DODAG-incons.z1 TARGET=z1</commands>
-      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware-DODAG-inconc/examples/ipv6/rpl-udp-fresh/udp-malicious-client-controller-aware-DODAG-incons.z1</firmware>
+      <source EXPORT="discard">[CONTIKI_DIR]-malicious-controller-aware-DODAG-inconsistency/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.c</source>
+      <commands EXPORT="discard">make mal-DODAG-incons.z1 TARGET=z1</commands>
+      <firmware EXPORT="copy">[CONTIKI_DIR]-malicious-controller-aware-DODAG-inconsistency/examples/ipv6/rpl-udp-fresh/mal-DODAG-incons.z1</firmware>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.RimeAddress</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.IPAddress</moteinterface>
@@ -320,7 +320,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>2</z>
+    <z>3</z>
     <height>160</height>
     <location_x>434</location_x>
     <location_y>4</location_y>
@@ -336,7 +336,7 @@
       <viewport>2.37708281081519 0.0 0.0 2.37708281081519 449.95949686059765 470.967913014221</viewport>
     </plugin_config>
     <width>418</width>
-    <z>3</z>
+    <z>0</z>
     <height>517</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
@@ -344,7 +344,7 @@
   <plugin>
     org.contikios.cooja.plugins.LogListener
     <plugin_config>
-      <filter>KIBA</filter>
+      <filter>ID:6</filter>
       <formatted_time />
       <coloring />
     </plugin_config>
@@ -360,11 +360,13 @@
       <notes>3 hours =
 10 800 000 milliseconds
 
-attaker = dup-malicious-clinet-DODAG-inocns.c</notes>
+attaker = dup-malicious-clinet-DODAG-inocns.c
+
+ATTACK AFFECTS ONLY ONE NODE, THE PARENT. CURRENTLY Node 11</notes>
       <decorations>true</decorations>
     </plugin_config>
     <width>470</width>
-    <z>0</z>
+    <z>2</z>
     <height>160</height>
     <location_x>719</location_x>
     <location_y>5</location_y>

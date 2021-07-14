@@ -228,11 +228,7 @@ rpl_reset_dio_timer(rpl_instance_t *instance)
   if(instance->dio_intcurrent > instance->dio_intmin) {
     instance->dio_counter = 0;
     instance->dio_intcurrent = instance->dio_intmin;
-    new_dio_interval(instance);
-    
-    // George printing trickle timer increases... 
-    printf("RPL: Resetting dio timer to minimum interval\n");
-    
+    new_dio_interval(instance);    
   }
 #if RPL_CONF_STATS
   rpl_stats.resets++;
