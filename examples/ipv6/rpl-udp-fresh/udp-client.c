@@ -22,9 +22,7 @@
 #define UIP_IP_BUF   ((struct uip_ip_hdr *)&uip_buf[UIP_LLH_LEN])
 
 //#define DEBUG DEBUG_FULL
-#if DEBUG
 #include "net/ip/uip-debug.h"
-#endif
 
 #ifndef PERIOD
 #define PERIOD 500 /* increase it to 700 avoid flooding */
@@ -146,7 +144,7 @@ tcpip_handler(void)
     str[uip_datalen()] = '\0';
     reply++;
 
-    PRINTF("uip Message Received from SINK: %s\n",str);
+    printf("uip Message Received from SINK: %s\n",str);
 
 	 if(str[0] == 'S' && str[1] == 'P'){
 		 printf("Responding to sink's probe about my parent\n"); 
@@ -179,17 +177,17 @@ tcpip_handler(void)
 			printf("CO-MSG: Stop sending neighbors\n"); 	
 	
 	 }else if(str[0] == 'T' && str[1] == '1'){
-	 			// sink orders to stop resetting trickle because version num attack
-	 			printf("CO-MSG: Stop resetting trickle timer ON\n"); 	 	
-				ignore_version_number_incos = 1;	
+ 			// sink orders to stop resetting trickle because version num attack
+ 			printf("CO-MSG: Stop resetting trickle timer ON\n"); 	 	
+			ignore_version_number_incos = 1;	
 
 	 }else if(str[0] == 'T' && str[1] == '0'){
-	 			// sink orders to stop resetting trickle because version num attack
-	 			printf("CO-MSG: Stop resetting trickle timer OFF\n"); 	 	
-				ignore_version_number_incos = 0;					
+ 			// sink orders to stop resetting trickle because version num attack
+ 			printf("CO-MSG: Stop resetting trickle timer OFF\n"); 	 	
+			ignore_version_number_incos = 0;					
 
 	 }else{	 
-	 	PRINTF("DATA recv '%s' (s:%d, r:%d)\n", str, seq_id, reply);
+	 		PRINTF("DATA recv '%s' (s:%d, r:%d)\n", str, seq_id, reply);
 	 }
   }
 }
@@ -340,8 +338,6 @@ sendICMPStats(void)
 				     &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));				
 }
 /*-----------------------------------------------------------------------*/
-
-
 PROCESS_THREAD(udp_client_process, ev, data)
 {
   static struct etimer periodic;
@@ -417,15 +413,19 @@ PROCESS_THREAD(udp_client_process, ev, data)
 #if FULL_MODE
 	printf("FULL MODE ON\n");
 #endif
-  	 
-  
-  	     
+
 
   etimer_set(&periodic, SEND_INTERVAL);
   while(1) {
     PROCESS_YIELD();
 
+	 /* Make sure the node receives this tcpip_event.
+	  * Without it, it cannot receive messages from the
+	  * sink, who will forward messages from the controller,
+	  * e.g., "SP" messages soliciting the node's parent
+	  */
     if(ev == tcpip_event) {
+    	//printf("R: %d tcpip_event...\n", counter);
       tcpip_handler();
     }
 

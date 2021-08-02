@@ -367,22 +367,12 @@ PROCESS_THREAD(udp_server_process, ev, data)
   }
   udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
 
-
-
-
-
-/* IS THIS USED ANYWHERE ????????????????? */
-
+/* SOS THOSE ARE USED FOR THE SINK TO RECEIVE MESSAGES FROM THE CONTROLLER */
 
 	/* separate threat is not needed??? */
 	/* if mote==Z1, uart0_set_input, if mote==sky, uart1_set_input */
-	//uart0_init(BAUD2UBR(115200));
-	//uart0_set_input(serial_input_byte);
-
-
-
-
-
+	uart0_init(BAUD2UBR(115200));
+	uart0_set_input(serial_input_byte);
 
   static struct etimer periodic;
   static struct ctimer backoff_timer;

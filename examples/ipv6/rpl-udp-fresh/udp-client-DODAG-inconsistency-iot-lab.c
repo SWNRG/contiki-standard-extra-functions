@@ -4,9 +4,6 @@
 #include "net/ip/uip.h"
 #include "net/ipv6/uip-ds6.h"
 #include "net/ip/uip-udp-packet.h"
-
-#include "net/rpl/rpl.h"      //coral
-
 #include "sys/ctimer.h"
 #include <stdio.h>
 #include <string.h>
@@ -22,27 +19,27 @@
 #define UIP_IP_BUF   ((struct uip_ip_hdr *)&uip_buf[UIP_LLH_LEN])
 
 //#define DEBUG DEBUG_FULL
-#include "net/ip/uip-debug.h" //PRINTF is needed, no matter what
+//#if DEBUG
+#include "net/ip/uip-debug.h"
+//#endif
 
-
-/* 2021-04-26 Added KIBAM Battery support to measure 
- * battery consumption. The files in apps/powertrace/powertrace.c/h
- * have been updated with KIBAM. The variables below are the essential.
- * In powetrace.c you cannot open multiple prints beceause the 
- * z1 firmware does not fit into memory.
- */
-#include "apps/powertrace/powertrace.c"
+//#include "apps/powertrace/powertrace.h"
+// ASSIGN THEM DIRECTLY TOO MUCH MEM ALOCATION
 //unsigned seconds=60*5;// warning: if this variable is changed, then the kinect variable the count the minutes should be changed
 //double fixed_perc_energy = 1;// 0 - 1
 //unsigned variation = 2;//0 - 99
 /* The variable "fixed_perc_energy" correspods to the variable that will tell the PowertraceK the percentage of energy the node will start, considering the full battery capacity is 1000000 microAh. For example, setting fixed_perc_energy = 0.2 means that the nodes will be initiated with 20 % of 1000000 microAh = 200000 microAh. */
-/* void powertrace_start(clock_time_t period, 
- *								unsigned seconds, 
- *								double fixed_perc_energy, 
- *								unsigned variation)
- */
- 
-/* PERIOD defined in project-conf.h */
+
+//extern double periodic_consumption; // set in powertrace. Used here with round
+//extern double total_consumption;
+
+// from powertrace sohan
+//extern uint32_t all_cpu, all_lpm, all_transmit, all_listen;
+
+#ifndef PERIOD
+#define PERIOD 500 /* increase it to 700 avoid flooding */
+#endif
+
 #define START_INTERVAL		(15 * CLOCK_SECOND)
 #define SEND_INTERVAL		(PERIOD * CLOCK_SECOND)
 #define SEND_TIME		(random_rand() % (SEND_INTERVAL))
@@ -62,21 +59,10 @@ static uip_ipaddr_t destination_ipaddr;
 extern   rpl_parent_t *dao_preffered_parent;
 extern   uip_ipaddr_t *dao_preffered_parent_ip;
 extern   uip_ipaddr_t dao_prefix_own_ip;
-extern 	uint8_t dao_parent_set;
 
 /* Monitor this var. When changed, the node has changed parent */
-static rpl_parent_t *my_cur_parent = NULL;
+static rpl_parent_t *my_cur_parent;
 static uip_ipaddr_t *my_cur_parent_ip;
-static int counter=0; //counting rounds.
-
-/* When this variable is true, start sending UDP stats */
-static uint8_t sendUDP = 0; 
-
-/* When this variable is true, start sending ICMP stats */
-static uint8_t sendICMP = 0; 
-
-/* When true, the controller will start probing all nodes for detais */
-enablePanicButton = 0;
 
 /* When the controller detects version number attack, it orders to stop
  * resetting the tricle timer. The variables below lie in rpl-dag.c
@@ -86,9 +72,19 @@ enablePanicButton = 0;
 extern uint8_t ignore_version_number_incos; //if == 1 DIO will not reset trickle
 extern uint8_t dio_bigger_than_dag; // if version attack, this will be 1
 extern uint8_t dio_smaller_than_dag; // if version attack, this will be 1
+
+/* When this variable is true, start sending UDP stats */
+static uint8_t sendUDP = 0; 
+
+/* When this variable is true, start sending ICMP stats */
+static uint8_t sendICMP = 0; 
+
+/* When true, the controller will start probing all nodes for detais */
+static int enablePanicButton = 0;
  
-static int prevICMRecv = 0;
-static int prevICMPSent = 0;
+static uint8_t prevICMRecv = 0;
+static uint8_t prevICMPSent = 0;
+static int counter=0; //counting rounds. Not really needed
 /*-----------------------------------------------------------------------*/
 PROCESS(udp_client_process, "UDP client process");
 AUTOSTART_PROCESSES(&udp_client_process);
@@ -158,15 +154,9 @@ tcpip_handler(void)
     PRINTF("uip Message Received from SINK: %s\n",str);
 
 	 if(str[0] == 'S' && str[1] == 'P'){
-		 /* dao_output has not yet a parent */
-		 //if(uip_ip6addr_cmp(my_cur_parent_ip,"[0101:000a:0000:080a:0000:0000:0000:0000]")==0){ 
-		 	// printf("Sink probed my parent, but it is not set yet\n"); 		 
-		// } else{
-			 printf("Sink is probing my parent\n"); 
-			 /* Send the parent again, after sink's request */
-			 send_msg_to_sink("NP:", my_cur_parent_ip); 	
-		// }
-
+		 printf("Responding to sink's probe about my parent\n"); 
+		 /* Send the parent again, after sink's request */
+		 send_msg_to_sink("NP:", my_cur_parent_ip);  	 
 	 }else if(str[0] == 'N' && str[1] == '1'){ 
 			printf("CO-MSG: Controller is probing my neighbors\n");		
 			send_all_neighbors();			
@@ -274,7 +264,7 @@ monitor_ver_num(void) //TODO: Implement this method
 	static int ver_num_attacks = 0; // be careful, it could increase for ever!
 	char buf[MAX_PAYLOAD_LEN];
 	
-#define PRINT_DETAILS 1
+#define PRINT_DETAILS 0
 
 	if(dio_bigger_than_dag == 1 || dio_smaller_than_dag == 1 ){
 #if PRINT_DETAILS
@@ -285,15 +275,10 @@ monitor_ver_num(void) //TODO: Implement this method
 		sprintf(buf, "[VA:%d]",++ver_num_attacks);
 		uip_udp_packet_sendto(client_conn, buf, strlen(buf),
 					  &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));
-	}	
-	// Hardcoding ver_num_attacks. Use the adaptable algorithm in ASSET paper
-	if(ver_num_attacks>20){
-		ignore_version_number_incos=1;
-		ver_num_attacks=20; //make sure that it does not crash...
-	}	     	
-	if(ignore_version_number_incos==1){
+	}			     	
+	while(ignore_version_number_incos==1){
 #if PRINT_DETAILS
-		printf("ignore_version_number_incos: %d\n",ignore_version_number_incos);
+		printf("Client: dags per hour > 20, ignoring resets");
 #endif
 	}	
 }
@@ -308,6 +293,7 @@ monitor_DAO(void)
 	//uip_ipaddr_t *addr; // is this needed ???
 	
 #define PRINT_CHANGES 1
+
 	/* In contiki, you can directly compare if(parent == parent2) */
 	if(my_cur_parent != dao_preffered_parent){
 #if PRINT_CHANGES
@@ -320,9 +306,8 @@ monitor_DAO(void)
 		my_cur_parent = dao_preffered_parent;
 		my_cur_parent_ip = dao_preffered_parent_ip;
 		
-#define PRINT_PARENT 1
-
-#if PRINT_PARENT
+#define PRINT_NEW_PARENT 0
+#if PRINT_NEW_PARENT
 	   printf("NP:");
 	   printLongAddr(my_cur_parent_ip);
 	   printf(", sending to %d\n", 
@@ -331,7 +316,7 @@ monitor_DAO(void)
 		send_msg_to_sink("NP:",my_cur_parent_ip);
 	}
 }
-/****** STATISTICS REQUESTED (ENABLED) BY THE SINK **************/ 
+/************* STATISTICS REQUESTED (ENABLED) BY THE SINK **************/ 
 static void
 sendUDPStats(void)
 {
@@ -361,133 +346,137 @@ sendICMPStats(void)
 				     &server_ipaddr, UIP_HTONS(UDP_SERVER_PORT));				
 }
 /*-----------------------------------------------------------------------*/
-
-
 PROCESS_THREAD(udp_client_process, ev, data)
 {
-  static struct etimer periodic;
-  static struct ctimer backoff_timer;
+	static struct etimer periodic;
+	static struct ctimer backoff_timer;
 
-  /* if > 0, there is an outlier in ICMP data */
-  uint8_t dixonQAnswerSent = 0;
-  uint8_t dixonQAnswerRecv = 0;
+	PROCESS_BEGIN();
+	PROCESS_PAUSE();
 
-  // GET DAG
-  rpl_dag_t *dag = rpl_get_any_dag();
-    
-  PROCESS_BEGIN();
-  PROCESS_PAUSE();
+	/* if > 0, there is an outlier in ICMP data */
+	uint8_t dixonQAnswerSent = 0;
+	uint8_t dixonQAnswerRecv = 0;
+	uint8_t ICMPRecv = 0;
+	uint8_t ICMPSent = 0;
 
-// 2021-04-26 George original power trace was replaced with powertraceK
+	// RTIMER_SECOND = 32768
+
+//George original power trace was replaced with powertraceK
 // there are more printouts, they are commented out in apps/powertrace/powertrace.c
-//powertrace_start(CLOCK_SECOND * 300, 300, 1, 2);
-// for some reason, it is not working
+//powertrace_start(CLOCK_SECOND * seconds, seconds, fixed_perc_energy, variation);
 
+// 2021-04-21 powertrace original but simplified from sohran. 
+//original powertracing, once every ten seconds
+	//powertrace_start(CLOCK_SECOND * 100);
 
-  set_global_address();
+	//powertrace_start(SEND_INTERVAL); 
 
-  /* The data sink runs with a 100% duty cycle in order to ensure high 
-     packet reception rates. */
-  NETSTACK_MAC.off(1);
+	set_global_address();
 
-  printf("Client in contiki/examples/ipv6/no-gui-test/udp-client.c\n");
-  
-  PRINTF("UDP client process started nbr:%d routes:%d\n",
+	printf("PERIOD defined: %d\n",PERIOD);
+
+	/* The data sink runs with a 100% duty cycle in order 
+	 * to ensure high packet reception rates. */
+	NETSTACK_MAC.off(1);
+
+	PRINTF("UDP client process started nbr:%d routes:%d\n",
          NBR_TABLE_CONF_MAX_NEIGHBORS, UIP_CONF_MAX_ROUTES);
 
-  //print_local_addresses();	
-	
-  /* new connection with remote host */
-  client_conn = udp_new(NULL, UIP_HTONS(UDP_SERVER_PORT), NULL); 
-  if(client_conn == NULL) {
-    printf("No UDP connection available, exiting the process!\n");
-    PROCESS_EXIT();
-  }
-  udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
+ 	print_local_addresses();
 
-  // Destination PORT
-  server_conn = udp_new(NULL, UIP_HTONS(UDP_CLIENT_PORT), NULL);
-  if(server_conn == NULL) {
-    printf("No UDP connection available, exiting the process!\n");
-    PROCESS_EXIT();
-  }
-  udp_bind(server_conn, UIP_HTONS(UDP_SERVER_PORT));
+	/* new connection with remote host */
+ 	client_conn = udp_new(NULL, UIP_HTONS(UDP_SERVER_PORT), NULL); 
+	if(client_conn == NULL) {
+		printf("No UDP connection available, exiting the process!\n");
+    	PROCESS_EXIT();
+  	}
+	udp_bind(client_conn, UIP_HTONS(UDP_CLIENT_PORT)); 
 
-  PRINTF("Created a connection with the server ");
-  PRINT6ADDR(&client_conn->ripaddr);
-  PRINTF(" local/remote port %u/%u\n",
+	// Destination PORT
+	server_conn = udp_new(NULL, UIP_HTONS(UDP_CLIENT_PORT), NULL);
+	if(server_conn == NULL) {
+		printf("No UDP connection available, exiting the process!\n");
+		PROCESS_EXIT();
+  	}
+   udp_bind(server_conn, UIP_HTONS(UDP_SERVER_PORT));
+
+	PRINTF("Created a connection with the server ");
+	PRINT6ADDR(&client_conn->ripaddr);
+	PRINTF(" local/remote port %u/%u\n",
   		UIP_HTONS(client_conn->lport), UIP_HTONS(client_conn->rport));
 
-  uint8_t dixonQCounter = 0; /* when icmp indicates possible attack, use it */
+	uint8_t dixonQCounter = 0; /* when icmp indicates possible attack, use it */
 
-
-// Open all until where you want
+	printf("DixonQ active n value: %d\n",dixon_n_vals);
+	printf("DixonQ confidence_level: %d\n",confidence_level);
+  
+// Open ALL until where you want
 #define SLIM_MODE 1
-#define ESSENTIAL_MODE 1
+#define ESSENTIAL_MODE 0
 #define FULL_MODE 0
 
-
 #if SLIM_MODE
- 		printf("ATTENTION: slim-mode ON\n"); 
+	printf("ATTENTION: slim-mode ON\n"); 
 #else
-		printf("ATTENTION: STANDARD-RPL ON\n"); 
+	printf("ATTENTION: STANDARD-RPL ON\n"); 
 #endif
 
 #if ESSENTIAL_MODE 
-		printf("ATTENTION: essential-mode ON\n");     
+   printf("ATTENTION: essential-mode ON\n");     
 #endif 
 
 #if FULL_MODE 
-		printf("ATTENTION: full-function-mode ON\n");     
-      sendICMP = 1 ;
-      sendUDP  = 1 ;
+	printf("ATTENTION: full-function-mode ON\n");     
+	sendICMP = 1 ;
+	sendUDP  = 1 ;
 #endif 
- 	 
-  etimer_set(&periodic, SEND_INTERVAL);
-  while(1) {
-    PROCESS_YIELD();
+	 
+	etimer_set(&periodic, SEND_INTERVAL);
+	while(1) {
+		PROCESS_YIELD();
 
 #if SLIM_MODE 
-    monitor_DAO(); 
+    	monitor_DAO(); 
 #endif    
     
 #if ESSENTIAL_MODE 
-	monitor_ver_num();  
+		monitor_ver_num();  
 #endif 
 	 
-	 /* Make sure the node receives this tcpip_event.
-	  * Without it, it cannot receive messages from the
-	  * sink, who will forward messages from the controller,
-	  * e.g., "SP" messages soliciting the node's parent
-	  */
-    if(ev == tcpip_event) { 
-    	//printf("R: %d tcpip_event...\n", counter);
-      tcpip_handler();
-    }
+    	if(ev == tcpip_event) {
+      		tcpip_handler();
+    	}
 
-    if(etimer_expired(&periodic)) {
-      etimer_reset(&periodic);
+    	if(etimer_expired(&periodic)) {
+			etimer_reset(&periodic);
+			counter++;
+#ifndef PRINT_IP_ON
+#define PRINT_IP_ON 0
+#endif
+#if PRINT_IP_ON   
+       	uint8_t *ipLast = ((uint8_t *)my_cur_parent_ip)[15];   
+			printf("my_cur_parent_ip: "); 
+			printShortAddr(my_cur_parent_ip);
+			printf("\n");
+			printf("My parent last oct: %d\n",ipLast);
+#endif
+			if(counter%10==0){/* print own_ip & parent every 10 rounds */
+				printf("R%d, My parent: ", counter);				
+				printLongAddr(my_cur_parent_ip);
+				printf("\n");
+			}
+			/* sending periodic UDP data to sink (e.g. temperature measurements) */
+			ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);   
+	
+			if (counter > 3){	/* Initial "grace" period */  
+				 printf("R: %d, trickle resets: %d\n",counter,rpl_stats.resets);
+				 printf("R: %d, global repairs: %d\n",counter,rpl_stats.global_repairs);
+				 printf("R: %d, local repairs: %d\n",counter,rpl_stats.local_repairs);
+				 //printf("R:%d, icmp_sent_TOTAL:%d\n",counter,uip_stat.icmp.sent);
+				 //printf("R:%d, icmp_recv_TOTAL:%d\n",counter,uip_stat.icmp.recv);
+			}
 
-      counter++;     
-
-		//printf("R:%d dio_intcurrent: %d\n", counter, dag->instance->dio_intcurrent);
-
-      /* sending periodic data to sink (e.g. temperature measurements) */
-      ctimer_set(&backoff_timer, SEND_TIME, send_packet, NULL);   
-
-
-		int ICMPSent = uip_stat.icmp.sent - prevICMPSent;
-		prevICMPSent = uip_stat.icmp.sent;
-		int ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
-		prevICMRecv = uip_stat.icmp.recv;
-		
-/*************** Choose betweek total packets and current packets *****/	
-		//printf("R:%d, TOTAL_icmp_sent:%d\n",counter,uip_stat.icmp.sent);
-		//printf("R:%d, TOTAL_icmp_recv:%d\n",counter,uip_stat.icmp.recv);
-
-		printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
-		printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
-		
 /***********************************************************************/
 /* Hybrid Security Mechanism: This is the node-part.
  * it is lightweight, and it works in conjuction with the controller.
@@ -497,66 +486,76 @@ PROCESS_THREAD(udp_client_process, ev, data)
  * How to enable it: 
  * Either the node(s) are continiously running it, or the controller asks for
  * it by sending a message to turn it on.
- */
- 	
-		/* Try these for total number of packets sent/received until now */		
-		//dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
-		//dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);
+ */	
+       ICMPSent = uip_stat.icmp.sent - prevICMPSent;
+       prevICMPSent = uip_stat.icmp.sent;
+       ICMPRecv = uip_stat.icmp.recv - prevICMRecv;
+       prevICMRecv = uip_stat.icmp.recv;
 
-	
+       printf("R:%d, icmp_sent:%d\n",counter,ICMPSent);
+       printf("R:%d, icmp_recv:%d\n",counter,ICMPRecv);
+						
+       //printf("R:%d, CURRENT_icmp_sent:%d\n",counter,ICMPSent);
+       //printf("R:%d, CURRENT_icmp_recv:%d\n",counter,ICMPRecv);
+		
+       /* Try these for total number of packets sent/received until now */		
+       //int dixonQAnswerSent = addDixonQOut(uip_stat.icmp.sent);
+       //int dixonQAnswerRecv = addDixonQIn(uip_stat.icmp.recv);
+
 #if ESSENTIAL_MODE
-/******** Open/Close these two for Dixon-Q tests ********/		
-		dixonQAnswerSent = addDixonQOut(ICMPSent);
-		dixonQAnswerRecv = addDixonQIn(ICMPRecv);
+       dixonQAnswerSent = addDixonQOut(ICMPSent);
+       dixonQAnswerRecv = addDixonQIn(ICMPRecv);
 						
-		/* Continiously monitoring fo abnormalities in icmp 
-		(Dixon q test outliers */
+		/* Continiously monitoring fo abnormalities in icmp (Dixon q test outliers */
 		if (counter > dixon_n_vals + 3){ /* On bootstrap network is still forming */
-				/* both ICMP outliers, definitely under attack. 
-				   Look for another parent */
-				if( dixonQAnswerSent > 0 && dixonQAnswerRecv > 0)
-				{
-					/* put current parent in black list and choose a new one? */
-					printf("R: %d, PANIC both icmps outliers\n",counter);
-			
+			/* both ICMP outliers, definitely under attack. Look for another parent */
+			if( dixonQAnswerSent > 0 && dixonQAnswerRecv > 0){
+				/* put current parent in black list and choose a new one? */
+				printf("R: %d, PANIC both icmps outliers, choose a new parent maybe?\n",counter);
+			}
+			else{
+				//TODO: Differenciate actions for small/big outlier
+				if( dixonQAnswerSent > 0 ){ /* dixonQAnswerSent = 1 or 2 */
+					printf("R:%d, Sent icmps out of bounds (outlier)\n",counter);
 					sendICMP = 1 ;
+					enablePanicButton = 1; /* Central Management should ask all nodes to sendICMP */
+					dixonQCounter=1;
 				}
-//TODO: Differenciate actions for small/big outlier
-				else{			
-					if( dixonQAnswerSent > 0 ){ /* dixonQAnswerSent = 1 or 2 */					
-						printf("R:%d, Sent icmps out of bounds (outlier)\n",counter);
-						//sendICMP = 1 ;
-						
-						/* Central Management should ask all nodes to sendICMP */
-						//enablePanicButton = 1; 
-						
-						//not used
-						dixonQCounter=1;
-					}
-				
-					if( dixonQAnswerRecv > 0 ){ /* dixonQAnswerRecv = 1 or 2 */
-						printf("R:%d, Recv icmps out of bounds (outlier)\n",counter);
-						//sendICMP = 1 ;
-						/* Central Management should ask all nodes to sendICMP */
-						//enablePanicButton = 1; 
-						
-						//not used
-						dixonQCounter=1;
-					}
-				}	
-		} //if counter > dixon_n_vals + 3 (after bootstrap)
-#endif
-    }
-/****** End of hybrid security node part implementing dixonQ outlier *****/
+				if( dixonQAnswerRecv == 1 || dixonQAnswerRecv == 2){
+					printf("R:%d, Recv icmps out of bounds (outlier)\n",counter);
+					sendICMP = 1 ;
+					enablePanicButton = 1; /* Central Management should ask all nodes to sendICMP */
+					dixonQCounter=1;
+				}
+			} //else
+		} //if counter > dixon_n_vals + 3 at the beggining the network is still forming
+#endif //ESSENTIAL_MODE
+    } //if(etimer_expired(&periodic))
+/********** End of hybrid security node part implementing dixonQ outlier ******/
 
-    if (sendUDP != 0){
-   	sendUDPStats();   	
-    }
-   
-	 if (sendICMP != 0){
+		if (sendUDP != 0){
+		sendUDPStats();
+		//ctimer_set(&backoff_timer, SEND_TIME, sendUDPStats, NULL); 
+		}
+
+		if (sendICMP != 0){
 		sendICMPStats();
-    }    
-  }
+		//ctimer_set(&backoff_timer, SEND_TIME, sendICMPStats, NULL); 
+		}
+		//ctimer_set(&backoff_timer, SEND_TIME, send_all_neighbors, NULL);
+
+		// Printing energy from altered powertrace.c
+		//printf("R:%d, Battery: Energy Periodic consumption (microA): %u\n",counter,(int)(periodic_consumption)); 
+
+		//printf("Battery: Energy Total consumption (microA): %lu\n",(unsigned long) (total_consumption));
+
+		// George , June 2021
+		// I will try to use the power consumption from iot-lab.
+		// if it does not work, DO ENABLE THESE. DONT FORGET to copy files needed  
+		//printf("POWER R:%u %lu %lu %lu %lu %lu %lu %lu %lu\n", counter,
+		// all_cpu, all_lpm, all_transmit, all_listen);      
+  
+  } //while (1)
   PROCESS_END();
-}
+} //PROCESS
 /*-----------------------------------------------------------------------*/
