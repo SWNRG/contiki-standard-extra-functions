@@ -2,3 +2,12 @@
 *.a
 *.o
 *.d
+*.log
+*.bin
+*.sky
+*.map
+*.hex
+*.elf
+obj_*
+symbols.*
+COOJA.testlog
